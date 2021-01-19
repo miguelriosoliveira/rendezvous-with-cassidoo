@@ -14,9 +14,9 @@
  * $ 4
  */
 
-export default function largestRect(matrix: string[][]) {
-  let maxArea = 0;
-  let auxArray = matrix[0];
+export default function largestRect(matrix: string[][]): number {
+	const maxArea = 0;
+	// const auxArray = matrix[0];
 
-  return maxArea;
+	return maxArea;
 }

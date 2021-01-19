@@ -28,7 +28,7 @@ function canSee(p1: Point, p2: Point) {
 	return pointsDistance(p1, p2) <= MAX_DISTANCE;
 }
 
-export default function canToggle({ switch: switch_, hub, light }: Network) {
+export default function canToggle({ switch: switch_, hub, light }: Network): boolean {
 	if (canSee(switch_, light)) {
 		return true;
 	}
