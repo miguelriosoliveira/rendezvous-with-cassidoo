@@ -14,9 +14,32 @@
  * $ 4
  */
 
+import { maxHistogramArea } from './utils';
+
 export default function largestRect(matrix: string[][]): number {
-	const maxArea = 0;
-	// const auxArray = matrix[0];
+	let maxArea = 0;
+	const nCols = matrix[0].length;
+	const auxArray = [...Array(nCols)].map(() => 0);
+
+	matrix.forEach(row => {
+		row.forEach((item, index) => {
+			if (item === '1') {
+				auxArray[index] += 1;
+			} else {
+				auxArray[index] = 0;
+			}
+		});
+
+		console.log({ auxArray });
+
+		const histogramArea = maxHistogramArea(auxArray);
+
+		console.log({ histogramArea });
+
+		if (histogramArea > maxArea) {
+			maxArea = histogramArea;
+		}
+	});
 
 	return maxArea;
 }
