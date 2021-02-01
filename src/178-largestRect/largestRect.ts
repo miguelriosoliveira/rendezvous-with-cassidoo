@@ -14,7 +14,7 @@
  * $ 4
  */
 
-import { maxHistogramArea } from './utils';
+import maxHistogramArea from './maxHistogramArea';
 
 export default function largestRect(matrix: string[][]): number {
 	let maxArea = 0;
