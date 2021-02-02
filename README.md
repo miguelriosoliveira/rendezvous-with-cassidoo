@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main)](https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main)
+
 # Rendevous With Cassidoo
 
 My answers to the Interview Questions of the [rendezvous with cassidoo](https://buttondown.email/cassidoo/archive) newsletter.
