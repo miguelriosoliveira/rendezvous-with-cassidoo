@@ -30,11 +30,11 @@ export default function largestRect(matrix: string[][]): number {
 			}
 		});
 
-		console.log({ auxArray });
+		// console.log({ auxArray });
 
 		const histogramArea = maxHistogramArea(auxArray);
 
-		console.log({ histogramArea });
+		// console.log({ histogramArea });
 
 		if (histogramArea > maxArea) {
 			maxArea = histogramArea;
