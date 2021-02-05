@@ -24,7 +24,7 @@ describe('testing stockQueue', () => {
 			{ sym: 'GME', cost: 280 },
 			{ sym: 'PYPL', cost: 234 },
 			{ sym: 'AMZN', cost: 3206 },
-			{ sym: 'AMZN', cost: 3213 },
+			{ sym: 'AMZN', cost: 300 },
 		];
 
 		const stockQueueUpdated = stockQueue(snapshot);
@@ -32,7 +32,7 @@ describe('testing stockQueue', () => {
 		expect(stockQueueUpdated).toStrictEqual([
 			{ sym: 'GME', cost: 280 },
 			{ sym: 'PYPL', cost: 234 },
-			{ sym: 'AMZN', cost: 3213 },
+			{ sym: 'AMZN', cost: 300 },
 		]);
 	});
 
@@ -42,12 +42,12 @@ describe('testing stockQueue', () => {
 			{ sym: 'AMZN', cost: 234 },
 			{ sym: 'AMZN', cost: 3206 },
 			{ sym: 'AMZN', cost: 3213 },
-			{ sym: 'AMZN', cost: 325 },
+			{ sym: 'AMZN', cost: 3 },
 		];
 
 		const stockQueueUpdated = stockQueue(snapshot);
 
-		expect(stockQueueUpdated).toStrictEqual([{ sym: 'AMZN', cost: 3213 }]);
+		expect(stockQueueUpdated).toStrictEqual([{ sym: 'AMZN', cost: 3 }]);
 	});
 
 	it('should return empty stock queue', () => {

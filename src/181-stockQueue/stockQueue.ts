@@ -29,12 +29,10 @@ export default function stockQueue(snapshot: Stock[]): Stock[] {
 	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
-		if (!stockDict[stock.sym]) {
-			stockDict[stock.sym] = stock.cost;
-		} else if (stockDict[stock.sym] < stock.cost) {
+		if (stockDict[stock.sym]) {
 			delete stockDict[stock.sym];
-			stockDict[stock.sym] = stock.cost;
 		}
+		stockDict[stock.sym] = stock.cost;
 	});
 
 	return Object.entries(stockDict).map(([sym, cost]) => ({ sym, cost }));
