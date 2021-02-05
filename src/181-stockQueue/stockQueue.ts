@@ -26,12 +26,15 @@ export default function stockQueue(snapshot: Stock[]): Stock[] {
 
 	snapshot.forEach(stock => {
 		const stockIndexFound = stockQueueUpdated.findIndex(
-			stockInQueue => stockInQueue.sym === stock.sym && stockInQueue.cost < stock.cost,
+			stockInQueue => stockInQueue.sym === stock.sym,
 		);
-		if (stockIndexFound >= 0) {
+
+		if (stockIndexFound < 0) {
+			stockQueueUpdated.push(stock);
+		} else if (stockQueueUpdated[stockIndexFound].cost < stock.cost) {
 			stockQueueUpdated.splice(stockIndexFound, 1);
+			stockQueueUpdated.push(stock);
 		}
-		stockQueueUpdated.push(stock);
 	});
 
 	return stockQueueUpdated;
