@@ -29,15 +29,12 @@ export default function stockQueue(snapshot: Stock[]): Stock[] {
 	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
-		// const stockIndexFound = stockDict.findIndex(stockInQueue => stockInQueue.sym === stock.sym);
-		// if (stockIndexFound < 0) {
-		// 	stockDict.push(stock);
-		// } else if (stockDict[stockIndexFound].cost < stock.cost) {
-		// 	stockDict.splice(stockIndexFound, 1);
-		// 	stockDict.push(stock);
-		// }
-
-		stockDict[stock.sym] = stock.cost;
+		if (!stockDict[stock.sym]) {
+			stockDict[stock.sym] = stock.cost;
+		} else if (stockDict[stock.sym] < stock.cost) {
+			delete stockDict[stock.sym];
+			stockDict[stock.sym] = stock.cost;
+		}
 	});
 
 	return Object.entries(stockDict).map(([sym, cost]) => ({ sym, cost }));
