@@ -21,21 +21,24 @@ interface Stock {
 	cost: number;
 }
 
+interface StockDict {
+	[index: string]: number;
+}
+
 export default function stockQueue(snapshot: Stock[]): Stock[] {
-	const stockQueueUpdated: Stock[] = [];
+	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
-		const stockIndexFound = stockQueueUpdated.findIndex(
-			stockInQueue => stockInQueue.sym === stock.sym,
-		);
+		// const stockIndexFound = stockDict.findIndex(stockInQueue => stockInQueue.sym === stock.sym);
+		// if (stockIndexFound < 0) {
+		// 	stockDict.push(stock);
+		// } else if (stockDict[stockIndexFound].cost < stock.cost) {
+		// 	stockDict.splice(stockIndexFound, 1);
+		// 	stockDict.push(stock);
+		// }
 
-		if (stockIndexFound < 0) {
-			stockQueueUpdated.push(stock);
-		} else if (stockQueueUpdated[stockIndexFound].cost < stock.cost) {
-			stockQueueUpdated.splice(stockIndexFound, 1);
-			stockQueueUpdated.push(stock);
-		}
+		stockDict[stock.sym] = stock.cost;
 	});
 
-	return stockQueueUpdated;
+	return Object.entries(stockDict).map(([sym, cost]) => ({ sym, cost }));
 }
