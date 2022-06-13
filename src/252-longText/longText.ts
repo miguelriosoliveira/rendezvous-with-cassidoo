@@ -21,10 +21,10 @@ const vowels: { [key: string]: boolean } = {
 
 export function longText(text: string, nVowels: number) {
 	const newText = text.split('').map(letter => {
-		if (vowels[letter]) {
-			return letter.repeat(nVowels);
+		if (!vowels[letter.toLowerCase()]) {
+			return letter;
 		}
-		return letter;
+		return letter.repeat(nVowels);
 	});
 
 	return newText.join('');
