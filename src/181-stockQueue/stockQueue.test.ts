@@ -1,4 +1,4 @@
-import stockQueue from './stockQueue';
+import stockQueue, { Stock } from './stockQueue';
 
 describe('testing stockQueue', () => {
 	it('should return stock queue with 3 stocks', () => {
@@ -51,7 +51,7 @@ describe('testing stockQueue', () => {
 	});
 
 	it('should return empty stock queue', () => {
-		const snapshot = [];
+		const snapshot = [] as Stock[];
 		const stockQueueUpdated = stockQueue(snapshot);
 		expect(stockQueueUpdated).toStrictEqual([]);
 	});
