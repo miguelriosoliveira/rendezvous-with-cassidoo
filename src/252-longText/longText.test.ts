@@ -10,4 +10,9 @@ describe('testing longText', () => {
 		const text = longText('lol', 10);
 		expect(text).toBe('looooooooool');
 	});
+
+	it('should return long LOL', () => {
+		const text = longText('LOL', 10);
+		expect(text).toBe('LOOOOOOOOOOL');
+	});
 });
