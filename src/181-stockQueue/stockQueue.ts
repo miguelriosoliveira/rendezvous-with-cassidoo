@@ -16,7 +16,7 @@ $ [{ sym: ‘PYPL’, cost: 234 },
    { sym: ‘GME’, cost: 325 }]
 */
 
-interface Stock {
+export interface Stock {
 	sym: string;
 	cost: number;
 }
