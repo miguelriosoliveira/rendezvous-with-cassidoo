@@ -7,26 +7,20 @@
 	"extends": [
 		"airbnb-base",
 		"plugin:@typescript-eslint/recommended",
+		"plugin:jest/all",
 		"plugin:prettier/recommended",
-		"prettier/@typescript-eslint",
-		"plugin:jest/all"
+		"plugin:unicorn/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["@typescript-eslint", "prettier", "jest"],
-	"settings": {
-		"import/resolver": {
-			"typescript": {}
-		},
-		"jest": {
-			"version": 26
-		}
-	},
+	"plugins": ["@typescript-eslint", "prettier", "jest", "unicorn"],
+
 	"rules": {
 		"camelcase": "off",
+		"no-plusplus": "off",
 
 		"import/extensions": ["warn", { ".ts": "never", ".tsx": "never" }],
 		"import/order": [
@@ -44,6 +38,42 @@
 		"jest/no-commented-out-tests": "off",
 		"jest/prefer-expect-assertions": "off",
 
-		"prettier/prettier": "error"
+		"prettier/prettier": "error",
+
+		"unicorn/filename-case": [
+			"error",
+			{
+				"cases": {
+					"camelCase": true,
+					"pascalCase": true
+				}
+			}
+		],
+		"unicorn/no-array-for-each": "off",
+		"unicorn/no-nested-ternary": "off",
+		"unicorn/no-null": "off",
+		"unicorn/prevent-abbreviations": [
+			"error",
+			{
+				"replacements": {
+					"ref": false,
+					"refs": false,
+					"prop": false,
+					"props": false
+				},
+				"allowList": {
+					"props": true,
+					"params": true
+				}
+			}
+		]
+	},
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		},
+		"jest": {
+			"version": 26
+		}
 	}
 }
