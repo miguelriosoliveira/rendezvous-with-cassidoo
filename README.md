@@ -9,6 +9,9 @@ Each directory is related to a issue and has its own tests.
 I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-are-what-we-repeatedly-do-excellence-then-is/)!
 
 ## Questions
+<details>
+  <summary>Click to expand!</summary>
+
 - [176 - find2020](src/176-find2020/README.md)
 - [177 - canToggle](src/177-canToggle/README.md)
 - [181 - stockQueue](src/181-stockQueue/README.md)
@@ -19,6 +22,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [258 - findIntersection](src/258-findIntersection/README.md)
 - [259 - numberOfOnes](src/259-numberOfOnes/README.md)
 - [260 - swapPairs](src/260-swapPairs/README.md)
+</details>
 
 ## Installing & Running
 
