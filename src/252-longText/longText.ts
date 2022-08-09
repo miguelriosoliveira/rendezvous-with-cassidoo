@@ -11,20 +11,20 @@ $ 'looooooooool'
 ```
 */
 
-const vowels: { [key: string]: boolean } = {
-	a: true,
-	e: true,
-	i: true,
-	o: true,
-	u: true,
+type VowelsMap = { [key: string]: number };
+
+const vowels: VowelsMap = {
+	a: 1,
+	e: 1,
+	i: 1,
+	o: 1,
+	u: 1,
 };
 
 export function longText(text: string, nVowels: number) {
 	const newText = text.split('').map(letter => {
-		if (!vowels[letter.toLowerCase()]) {
-			return letter;
-		}
-		return letter.repeat(nVowels);
+		const multiplier = vowels[letter.toLowerCase()] || 1 / nVowels;
+		return letter.repeat(nVowels * multiplier);
 	});
 
 	return newText.join('');
