@@ -13,21 +13,16 @@ $ 'apple'
 ```
 */
 
-function isAscending(numbers: number[]) {
-	return numbers.every((number_, index) => index === 0 || number_ > numbers[index - 1]);
-}
-
 function isSubsequence(string_: string, word: string) {
 	const wordLetters = word.split('');
-	const stringLetterIndexesInWordWithoutRepeat: number[] = [];
+	let maxIndex = -1;
 	const letterIndexesInWord = string_.split('').map(letter => {
-		const index = wordLetters.findIndex(
-			(l, index_) => l === letter && !stringLetterIndexesInWordWithoutRepeat.includes(index_),
-		);
-		stringLetterIndexesInWordWithoutRepeat.push(index);
+		const index = wordLetters.findIndex((l, index_) => l === letter && index_ > maxIndex);
+		maxIndex = index;
 		return index;
 	});
-	return isAscending(letterIndexesInWord);
+
+	return !letterIndexesInWord.includes(-1);
 }
 
 export function longestWord(string_: string, dict: string[]) {
