@@ -1,4 +1,4 @@
-import stockQueue, { Stock } from './stockQueue';
+import { stockQueue, Stock } from './stockQueue';
 
 describe('testing stockQueue', () => {
 	it('should return stock queue with 3 stocks', () => {

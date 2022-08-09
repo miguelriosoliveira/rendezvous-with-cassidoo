@@ -1,7 +1,7 @@
-import find2020 from './find2020';
+import { find2020 } from './find2020';
 
 describe('testing find2020', () => {
-	it("should return the position of '2020' in a random string made by 2s and 0s", () => {
+	it('should return the position 14', () => {
 		const position2020 = find2020('2220000202220020200');
 		expect(position2020).toBe(14);
 	});
@@ -18,6 +18,11 @@ describe('testing find2020', () => {
 
 	it('should return the position 0', () => {
 		const position2020 = find2020('20202222');
+		expect(position2020).toBe(0);
+	});
+
+	it('should return the position 0 even with 2 occurrences', () => {
+		const position2020 = find2020('20202222222020');
 		expect(position2020).toBe(0);
 	});
 });

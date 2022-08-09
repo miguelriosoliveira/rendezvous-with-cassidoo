@@ -1,4 +1,4 @@
-import canToggle, { Network } from './canToggle';
+import { canToggle, Network } from './canToggle';
 
 describe('testing canToggle', () => {
 	it('should return true', () => {

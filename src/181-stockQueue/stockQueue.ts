@@ -25,7 +25,7 @@ interface StockDict {
 	[index: string]: number;
 }
 
-export default function stockQueue(snapshot: Stock[]): Stock[] {
+export function stockQueue(snapshot: Stock[]): Stock[] {
 	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
