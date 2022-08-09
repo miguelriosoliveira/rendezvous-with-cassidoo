@@ -16,7 +16,7 @@ let listB = [2,3,4,5,6]
 */
 
 export function findIntersectionInArrays(listA: number[], listB: number[]) {
-	let indexInB = -1;
+	let indexInB;
 	const indexInA = listA.findIndex(itemInA => {
 		indexInB = listB.indexOf(itemInA);
 		return indexInB > -1;
@@ -35,7 +35,8 @@ export function findIntersectionInLinkedLists(firstNodeA: Node, firstNodeB: Node
 	let currentNodeB = firstNodeB;
 
 	while (currentNodeA) {
-		while (currentNodeB && currentNodeB.value <= currentNodeA.value) {
+		// while (currentNodeB && currentNodeB.value <= currentNodeA.value) {
+		while (currentNodeB) {
 			if (currentNodeA.value === currentNodeB.value) {
 				return currentNodeA;
 			}
