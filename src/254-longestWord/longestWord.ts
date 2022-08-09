@@ -14,25 +14,25 @@ $ 'apple'
 */
 
 function isAscending(numbers: number[]) {
-	return numbers.every((num, index) => index === 0 || num > numbers[index - 1]);
+	return numbers.every((number_, index) => index === 0 || number_ > numbers[index - 1]);
 }
 
-function isSubsequence(str: string, word: string) {
+function isSubsequence(string_: string, word: string) {
 	const wordLetters = word.split('');
-	const strLetterIndexesInWordWithoutRepeat: number[] = [];
-	const letterIndexesInWord = str.split('').map(letter => {
+	const stringLetterIndexesInWordWithoutRepeat: number[] = [];
+	const letterIndexesInWord = string_.split('').map(letter => {
 		const index = wordLetters.findIndex(
-			(l, i) => l === letter && !strLetterIndexesInWordWithoutRepeat.includes(i),
+			(l, index_) => l === letter && !stringLetterIndexesInWordWithoutRepeat.includes(index_),
 		);
-		strLetterIndexesInWordWithoutRepeat.push(index);
+		stringLetterIndexesInWordWithoutRepeat.push(index);
 		return index;
 	});
 	return isAscending(letterIndexesInWord);
 }
 
-export function longestWord(str: string, dict: string[]) {
+export function longestWord(string_: string, dict: string[]) {
 	const longest = [...dict]
 		.sort((a, b) => b.length - a.length)
-		.find(word => isSubsequence(word, str));
+		.find(word => isSubsequence(word, string_));
 	return longest || null;
 }

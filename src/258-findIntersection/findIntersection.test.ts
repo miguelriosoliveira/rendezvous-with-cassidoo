@@ -8,6 +8,13 @@ describe('testing arrays version', () => {
 		expect(intersection).toStrictEqual([1, 2]);
 	});
 
+	it('should find intersection [1, 0]', () => {
+		const listA = [1, 4, 5, 6];
+		const listB = [4, 5, 6];
+		const intersection = findIntersectionInArrays(listA, listB);
+		expect(intersection).toStrictEqual([1, 0]);
+	});
+
 	it('should not find any intersection', () => {
 		const listA = [1, 4, 5, 6];
 		const listB = [9, 10, 11, 12];
