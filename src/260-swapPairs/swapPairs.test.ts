@@ -1,3 +1,4 @@
+/* eslint-disable jest/max-expects */
 import { Node, swapPairsArray, swapPairsLinkedList } from './swapPairs';
 
 describe('testing swapPairs with arrays', () => {
