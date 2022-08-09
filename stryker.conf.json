@@ -6,5 +6,10 @@
 	"testRunner": "jest",
 	"coverageAnalysis": "perTest",
 	"checkers": ["typescript"],
-	"tsconfigFile": "tsconfig.json"
+	"tsconfigFile": "tsconfig.json",
+	"dashboard": {
+		"project": "github.com/miguelriosoliveira/rendezvous-with-cassidoo",
+		"version": "main",
+		"reportType": "full"
+	}
 }
