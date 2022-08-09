@@ -29,9 +29,7 @@ export default function stockQueue(snapshot: Stock[]): Stock[] {
 	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
-		if (stockDict[stock.sym]) {
-			delete stockDict[stock.sym];
-		}
+		delete stockDict[stock.sym];
 		stockDict[stock.sym] = stock.cost;
 	});
 
