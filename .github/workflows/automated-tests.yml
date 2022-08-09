@@ -25,6 +25,9 @@ jobs:
     - name: Run tests
       run: yarn test
 
+    - name: Run mutations
+      run: yarn test:mutation
+
     - name: Send coverage report to coveralls.io
       uses: coverallsapp/github-action@v1.1.1
       with:
