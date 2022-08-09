@@ -33,13 +33,9 @@ export function canToggle({ switch: switch_, hub, light }: Network): boolean {
 		return true;
 	}
 
-	if (
+	return (
 		hub.length > 0 &&
 		canSee(switch_, hub[0]) &&
 		canToggle({ switch: hub[0], hub: hub.slice(1), light })
-	) {
-		return true;
-	}
-
-	return false;
+	);
 }

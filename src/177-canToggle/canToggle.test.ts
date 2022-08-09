@@ -1,7 +1,7 @@
 import { canToggle, Network } from './canToggle';
 
 describe('testing canToggle', () => {
-	it('should return true', () => {
+	it('should return true (light is reachable)', () => {
 		const network: Network = {
 			switch: [0, 1],
 			hub: [
@@ -11,9 +11,21 @@ describe('testing canToggle', () => {
 			light: [1, 6],
 		};
 
-		const isTogglable = canToggle(network);
+		const isToggleable = canToggle(network);
 
-		expect(isTogglable).toBe(true);
+		expect(isToggleable).toBe(true);
+	});
+
+	it('should return true (light is exactly 5 units away)', () => {
+		const network: Network = {
+			switch: [0, 1],
+			hub: [],
+			light: [0, 6],
+		};
+
+		const isToggleable = canToggle(network);
+
+		expect(isToggleable).toBe(true);
 	});
 
 	it('should return false (network disconnected at some point)', () => {
@@ -26,9 +38,9 @@ describe('testing canToggle', () => {
 			light: [1, 6],
 		};
 
-		const isTogglable = canToggle(network);
+		const isToggleable = canToggle(network);
 
-		expect(isTogglable).toBe(false);
+		expect(isToggleable).toBe(false);
 	});
 
 	it('should return false (light too far)', () => {
@@ -41,8 +53,8 @@ describe('testing canToggle', () => {
 			light: [7, 6],
 		};
 
-		const isTogglable = canToggle(network);
+		const isToggleable = canToggle(network);
 
-		expect(isTogglable).toBe(false);
+		expect(isToggleable).toBe(false);
 	});
 });
