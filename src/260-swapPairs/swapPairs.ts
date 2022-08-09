@@ -13,10 +13,6 @@ Example:
 */
 
 export function swapPairsArray(pairs: number[]): number[] {
-	if (pairs.length === 0) {
-		return [];
-	}
-
 	if (pairs.length % 2 !== 0) {
 		throw new Error('Uneven list');
 	}
