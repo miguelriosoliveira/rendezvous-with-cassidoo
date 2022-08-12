@@ -1,6 +1,4 @@
-/*
-Write a function that takes in a number from 1 to 1000 and returns that number in Roman Numerals.
-*/
+// Write a function that takes in a number from 1 to 1000 and returns that number in Roman Numerals.
 
 const SYMBOLS_MAP: { [key: number]: string } = {
 	1: 'I',
@@ -21,12 +19,6 @@ const SYMBOLS_MAP: { [key: number]: string } = {
 const ARABIC_NUMBERS_DESC = Object.keys(SYMBOLS_MAP)
 	.map(Number)
 	.sort((a, b) => b - a);
-
-// Initially number = 3549
-// Since 3549 >= 1000 ; largest base value will be 1000 initially.
-// Divide 3549/1000. Quotient = 3, Remainder = 549. The corresponding symbol M will be repeated thrice.
-// We append the Result value in the 2nd List.
-// Now Remainder is not equal to 0 so we call the function again.
 
 interface ConvertRecursivelyProps {
 	number: number;

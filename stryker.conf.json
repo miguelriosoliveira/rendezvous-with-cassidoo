@@ -7,6 +7,7 @@
 	"coverageAnalysis": "perTest",
 	"checkers": ["typescript"],
 	"tsconfigFile": "tsconfig.json",
+	"ignoreStatic": true,
 	"dashboard": {
 		"project": "github.com/miguelriosoliveira/rendezvous-with-cassidoo",
 		"version": "main",
