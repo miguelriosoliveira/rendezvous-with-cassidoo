@@ -23,6 +23,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [258 - findIntersection](src/258-findIntersection/README.md)
 - [259 - numberOfOnes](src/259-numberOfOnes/README.md)
 - [260 - swapPairs](src/260-swapPairs/README.md)
+- [261 - parensSubstring](src/261-parensSubstring/README.md)
 </details>
 
 ## Installing & Running
