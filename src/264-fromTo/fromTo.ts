@@ -15,12 +15,13 @@ undefined
 */
 
 export function fromTo(from: number, to: number) {
-	const length = Math.abs(to - from) + 1;
 	const order = from > to ? -1 : 1;
-	const numbers = Array.from({ length }, (_, index) => from + index * order);
-	let currentIndex = -1;
+	let currentValue = from - order;
 	return function gen() {
-		currentIndex++;
-		return numbers[currentIndex];
+		currentValue += order;
+		if (order === 1) {
+			return currentValue <= to ? currentValue : undefined;
+		}
+		return currentValue >= to ? currentValue : undefined;
 	};
 }
