@@ -31,4 +31,10 @@ describe('testing fromTo', () => {
 		// eslint-disable-next-line jest/max-expects
 		expect(gen()).toBeUndefined();
 	});
+
+	it('should generate only one number', () => {
+		const gen = fromTo(2, 2);
+		expect(gen()).toBe(2);
+		expect(gen()).toBeUndefined();
+	});
 });
