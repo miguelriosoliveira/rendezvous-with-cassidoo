@@ -25,12 +25,12 @@ jobs:
     - name: Run tests
       run: yarn test:cov
 
-    - name: Run mutations
-      run: yarn test:mutation
-      env:
-        STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-
     - name: Send coverage report to coveralls.io
       uses: coverallsapp/github-action@v1.1.1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Run mutations
+      run: yarn test:mutation
+      env:
+        STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
