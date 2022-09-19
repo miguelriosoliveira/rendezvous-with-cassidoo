@@ -1,13 +1,11 @@
 {
 	"env": {
 		"es2021": true,
-		"node": true,
-		"jest": true
+		"node": true
 	},
 	"extends": [
 		"airbnb-base",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:jest/all",
 		"plugin:prettier/recommended",
 		"plugin:unicorn/recommended"
 	],
@@ -16,7 +14,7 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["@typescript-eslint", "prettier", "jest", "unicorn"],
+	"plugins": ["@typescript-eslint", "unicorn"],
 
 	"rules": {
 		"camelcase": "off",
@@ -34,12 +32,6 @@
 			}
 		],
 		"import/prefer-default-export": "off",
-
-		"jest/no-commented-out-tests": "off",
-		"jest/prefer-expect-assertions": "off",
-		"jest/unbound-method": "off",
-
-		"prettier/prettier": "error",
 
 		"unicorn/filename-case": [
 			"error",
@@ -75,9 +67,6 @@
 	"settings": {
 		"import/resolver": {
 			"typescript": {}
-		},
-		"jest": {
-			"version": 26
 		}
 	}
 }

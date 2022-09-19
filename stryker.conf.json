@@ -3,9 +3,12 @@
 	"_comment": "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information",
 	"packageManager": "yarn",
 	"reporters": ["html", "clear-text", "progress", "dashboard"],
-	"testRunner": "jest",
+	"commandRunner": { "command": "yarn test:cov" },
+	"timeoutMS": 1000,
 	"coverageAnalysis": "perTest",
 	"ignoreStatic": true,
+	"checkers": ["typescript"],
+	"tsconfigFile": "tsconfig.json",
 	"dashboard": {
 		"project": "github.com/miguelriosoliveira/rendezvous-with-cassidoo",
 		"version": "main",

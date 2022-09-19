@@ -22,6 +22,6 @@ describe('testing addg', () => {
 	});
 
 	it('should throw error when called after the end call', () => {
-		expect(() => addg(2)(3)()()).toThrow('(0 , addg_1.addg)(...)(...)(...) is not a function');
+		expect(() => addg(2)(3)()()).toThrow('is not a function');
 	});
 });
