@@ -23,7 +23,7 @@ jobs:
       run: yarn --frozen-lockfile
 
     - name: Run tests
-      run: yarn test
+      run: yarn test:cov
 
     - name: Run mutations
       run: yarn test:mutation
