@@ -13,6 +13,8 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 <details>
   <summary>Click to expand!</summary>
 
+- [001 - convertToRomans](src/001-convertToRomans/README.md)
+- [002 - postfix](src/002-postfix/README.md)
 - [176 - find2020](src/176-find2020/README.md)
 - [177 - canToggle](src/177-canToggle/README.md)
 - [181 - stockQueue](src/181-stockQueue/README.md)
@@ -24,6 +26,12 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [259 - numberOfOnes](src/259-numberOfOnes/README.md)
 - [260 - swapPairs](src/260-swapPairs/README.md)
 - [261 - parensSubstring](src/261-parensSubstring/README.md)
+- [262 - formatTable](src/262-formatTable/README.md)
+- [263 - addg](src/263-addg/README.md)
+- [264 - fromTo](src/264-fromTo/README.md)
+- [265 - cornerHit](src/265-cornerHit/README.md)
+- [266 - calculateGPA](src/266-calculateGPA/README.md)
+- [267 - ordinal](src/267-ordinal/README.md)
 </details>
 
 ## Installing & Running
