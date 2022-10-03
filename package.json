@@ -8,7 +8,8 @@
 		"lint": "eslint --fix",
 		"test": "vitest",
 		"test:cov": "vitest run --coverage",
-		"test:mutation": "dotenv stryker run"
+		"test:mutation": "dotenv stryker run",
+		"index": "sh generate-index.sh"
 	},
 	"dependencies": {
 		"dotenv-cli": "^6.0.0"
