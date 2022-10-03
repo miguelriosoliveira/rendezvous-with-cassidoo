@@ -34,3 +34,15 @@ export function fibLike(first: number, second: number, nDigits: number): FibSequ
 		}),
 	];
 }
+
+export function isFibLike(sequence: number[]): boolean {
+	if (sequence.length < 3) {
+		return false;
+	}
+
+	return sequence.slice(2).every((value, index) => {
+		const previous2 = sequence[index];
+		const previous1 = sequence[index + 1];
+		return value === previous2 + previous1;
+	});
+}
