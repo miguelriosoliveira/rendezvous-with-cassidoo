@@ -22,10 +22,11 @@ export function fibLike(first: number, second: number, nDigits: number): FibSequ
 
 	let previous2 = first;
 	let previous1 = second;
+
 	return [
 		first,
 		second,
-		...Array.from({ length: nDigits - 2 }, (v, index) => index).map((value, index, array) => {
+		...Array.from({ length: nDigits - 2 }).map(() => {
 			const newNumber = previous2 + previous1;
 			previous2 = previous1;
 			previous1 = newNumber;
