@@ -32,6 +32,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [265 - cornerHit](src/265-cornerHit/README.md)
 - [266 - calculateGPA](src/266-calculateGPA/README.md)
 - [267 - ordinal](src/267-ordinal/README.md)
+- [268 - fibLike](src/268-fibLike/README.md)
 </details>
 
 ## Installing & Running
