@@ -1,4 +1,4 @@
-import { fibLike } from './fibLike';
+import { fibLike, isFibLike } from './fibLike';
 
 describe('testing fibLike', () => {
 	it('should return fibonacci-like sequence', () => {
@@ -9,5 +9,19 @@ describe('testing fibLike', () => {
 
 	it('should throw error if desired length is less then minimum', () => {
 		expect(() => fibLike(0, 1, 1)).toThrow('length should be greater than 1');
+	});
+});
+
+describe('testing isFibLike', () => {
+	it('should return that is a fibonacci-like sequence', () => {
+		expect(isFibLike([10, 20, 30, 50, 80])).toBe(true);
+		expect(isFibLike([3, 7, 10, 17, 27])).toBe(true);
+		expect(isFibLike([0, 1, 1, 2, 3, 5, 8, 13, 21, 34])).toBe(true);
+	});
+
+	it('should return that is NOT a fibonacci-like sequence', () => {
+		expect(isFibLike([])).toBe(false);
+		expect(isFibLike([1, 1, 1])).toBe(false);
+		expect(isFibLike([0, 1, 2, 3, 4, 5])).toBe(false);
 	});
 });
