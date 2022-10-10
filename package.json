@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@stryker-mutator/core": "^6.2.2",
-		"@stryker-mutator/typescript-checker": "^6.2.2",
+		"@stryker-mutator/typescript-checker": "^6.2.3",
 		"@types/node": "^18.8.3",
 		"@typescript-eslint/eslint-plugin": "^5.39.0",
 		"@typescript-eslint/parser": "^5.39.0",
