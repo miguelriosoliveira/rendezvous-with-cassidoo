@@ -14,12 +14,5 @@ let n = 3
 
 export function truncate(phrase: string, length: number): string {
 	// regex to match words including accents: https://stackoverflow.com/a/26900132/4916416
-	let phraseCopy = phrase;
-	const words = phraseCopy.match(/[A-Za-zÀ-ÖØ-öø-ÿ]+/g) || [];
-
-	words.forEach(word => {
-		phraseCopy = phraseCopy.replace(word, word.slice(0, length));
-	});
-
-	return phraseCopy;
+	return phrase.replace(/[A-Za-zÀ-ÖØ-öø-ÿ]+/g, word => word.slice(0, length));
 }
