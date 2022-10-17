@@ -34,6 +34,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [267 - ordinal](src/267-ordinal)
 - [268 - fibLike](src/268-fibLike)
 - [269 - truncate](src/269-truncate)
+- [270 - passDoors](src/270-passDoors)
 </details>
 
 ## Installing & Running
