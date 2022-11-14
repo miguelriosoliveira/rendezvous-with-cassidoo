@@ -28,7 +28,7 @@
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-unicorn": "^44.0.2",
-		"husky": "^8.0.1",
+		"husky": "^8.0.2",
 		"prettier": "^2.7.1",
 		"typescript": "^4.8.4",
 		"vitest": "^0.24.5"
