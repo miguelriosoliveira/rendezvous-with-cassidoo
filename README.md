@@ -35,6 +35,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [268 - fibLike](src/268-fibLike)
 - [269 - truncate](src/269-truncate)
 - [270 - passDoors](src/270-passDoors)
+- [274 - combineStrings](src/274-combineStrings)
 </details>
 
 ## Installing & Running
