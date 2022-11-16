@@ -47,22 +47,7 @@
 		"unicorn/no-nested-ternary": "off",
 		"unicorn/no-null": "off",
 		"unicorn/prefer-spread": "off",
-		"unicorn/prevent-abbreviations": [
-			"error",
-			{
-				"replacements": {
-					"acc": false,
-					"ref": false,
-					"refs": false,
-					"prop": false,
-					"props": false
-				},
-				"allowList": {
-					"props": true,
-					"params": true
-				}
-			}
-		]
+		"unicorn/prevent-abbreviations": "off"
 	},
 	"settings": {
 		"import/resolver": {
