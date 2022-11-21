@@ -36,24 +36,19 @@ export function verticalSlashes(slashes: string): string {
 
 	const slashArray = slashes.split('') as Slash[];
 	slashArray.forEach((slash, i) => {
-		if (i === 0) {
-			leftPadInfos.push({ slash, leftPad: 0 });
-			return;
-		}
+		const { slash: prevSlash, leftPad: prevLeftPad } = leftPadInfos[i - 1] || {
+			slash: '',
+			leftPad: 0,
+		};
 
-		const { slash: prevSlash, leftPad: prevLeftPad } = leftPadInfos[i - 1];
-
+		let leftPad = prevLeftPad;
 		if (prevSlash === BACKSLASH) {
-			if (slash === BACKSLASH) {
-				leftPadInfos.push({ slash, leftPad: prevLeftPad + 1 });
-			} else {
-				leftPadInfos.push({ slash, leftPad: prevLeftPad });
-			}
-		} else if (slash === BACKSLASH) {
-			leftPadInfos.push({ slash, leftPad: prevLeftPad });
+			leftPad += Number(slash === BACKSLASH);
 		} else {
-			leftPadInfos.push({ slash, leftPad: prevLeftPad - 1 });
+			leftPad -= Number(slash === FORWARD_SLASH);
 		}
+
+		leftPadInfos.push({ slash, leftPad });
 	});
 
 	return leftPadInfos
