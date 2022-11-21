@@ -1,6 +1,6 @@
 # combineStrings
 
-Interview question of the [issue #274 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/normal-is-nothing-more-than-a-cycle-on-a-washing/).
+Interview question of the [issue #273 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/normal-is-nothing-more-than-a-cycle-on-a-washing/).
 
 ## The Question
 
