@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Cache node_modules
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: node_modules
         key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
@@ -26,7 +26,7 @@ jobs:
       run: yarn test:cov
 
     - name: Send coverage report to coveralls.io
-      uses: coverallsapp/github-action@v1.1.1
+      uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
