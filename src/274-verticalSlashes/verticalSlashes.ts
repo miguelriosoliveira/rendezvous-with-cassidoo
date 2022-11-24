@@ -37,7 +37,7 @@ export function verticalSlashes(slashes: string): string {
 	const slashArray = slashes.split('') as Slash[];
 	slashArray.forEach((slash, i) => {
 		const { slash: prevSlash, leftPad: prevLeftPad } = leftPadInfos[i - 1] || {
-			slash: '',
+			slash: null,
 			leftPad: 0,
 		};
 
