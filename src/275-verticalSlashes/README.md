@@ -1,6 +1,6 @@
 # verticalSlashes
 
-Interview question of the [issue #274 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/normal-is-not-something-to-aspire-to-its-4437/).
+Interview question of the [issue #275 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/normal-is-not-something-to-aspire-to-its-4437/).
 
 ## The Question
 
