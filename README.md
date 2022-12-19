@@ -37,6 +37,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [270 - passDoors](src/270-passDoors)
 - [274 - combineStrings](src/274-combineStrings)
 - [275 - verticalSlashes](src/275-verticalSlashes)
+- [279 - capitalAfterVowel](src/279-capitalAfterVowel)
 </details>
 
 ## Installing & Running
