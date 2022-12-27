@@ -22,28 +22,22 @@ export function replaceZeros(numbers: string): string {
 }
 
 export function replaceZerosWithoutRegex(numbers: string): string {
-	let result = '';
 	let count = 0;
-
-	numbers.split('').forEach(number => {
-		// counting zeroes
-		if (number === '0') {
-			count++;
-			return;
-		}
-		// appending counter value and clearing it
-		if (count > 0) {
-			result += count;
+	return [...numbers, ''] // extra empty value to check for possible last zero
+		.map(number => {
+			// counting zeroes
+			if (number === '0') {
+				count++;
+				return '';
+			}
+			// append the non-zero number when there is no count
+			if (count <= 0) {
+				return number;
+			}
+			// appending counter value and clearing it
+			const concat = count + number;
 			count = 0;
-		}
-		// not forget to append the non-zero number too
-		result += number;
-	});
-
-	// extra check for possible last zero
-	if (count > 0) {
-		result += count;
-	}
-
-	return result;
+			return concat;
+		})
+		.join('');
 }
