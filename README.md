@@ -38,6 +38,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [274 - combineStrings](src/274-combineStrings)
 - [275 - verticalSlashes](src/275-verticalSlashes)
 - [279 - capitalAfterVowel](src/279-capitalAfterVowel)
+- [280 - replaceZeros](src/280-replaceZeros)
 </details>
 
 ## Installing & Running
