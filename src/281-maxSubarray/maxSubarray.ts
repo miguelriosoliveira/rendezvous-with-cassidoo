@@ -14,10 +14,6 @@ Example:
 */
 
 export function maxSubarray(arr: number[], n: number): number[] {
-	if (n > arr.length) {
-		throw new Error('Invalid "n"');
-	}
-
 	return arr
 		.map((_, i) => arr.slice(i, i + n))
 		.map(subarray => ({ subarray, sum: subarray.reduce((sum, num) => sum + num, 0) }))

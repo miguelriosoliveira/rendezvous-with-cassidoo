@@ -13,9 +13,9 @@ describe('testing maxSubarray', () => {
 		expect(maxSubarray(arr, n)).toStrictEqual([0, 5]);
 	});
 
-	it('should throw error when "n" is greater than length of array', () => {
+	it('should the same input array as response when "n" is greater than the array length', () => {
 		const arr = [1, 2, 0, 5];
 		const n = 20;
-		expect(() => maxSubarray(arr, n)).toThrowError('Invalid "n"');
+		expect(maxSubarray(arr, n)).toStrictEqual(arr);
 	});
 });
