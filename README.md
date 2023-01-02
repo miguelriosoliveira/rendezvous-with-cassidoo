@@ -39,6 +39,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [275 - verticalSlashes](src/275-verticalSlashes)
 - [279 - capitalAfterVowel](src/279-capitalAfterVowel)
 - [280 - replaceZeros](src/280-replaceZeros)
+- [281 - maxSubarray](src/281-maxSubarray)
 </details>
 
 ## Installing & Running
