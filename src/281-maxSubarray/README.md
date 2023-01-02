@@ -4,22 +4,16 @@ Interview question of the [issue #281 of rendezvous with cassidoo](https://butto
 
 ## The Question
 
-**Given a string of any length which contains only digits from 0 to 9, replace each consecutive run of the digit 0 with its length.**
+**Given an array of integers `arr` and an integer `n`, return a subarray of `arr` of length `n` where the sum is the largest.** Make sure you maintain the order of the original array, and if `n` is greater than `arr.length`, you can choose what you want to return.
 
 Example:
 
 ```js
-> maxSubarray('1234500362000440')
-> 1234523623441
+> maxSubarray([-4,2,-5,1,2,3,6,-5,1], 4)
+> [1,2,3,6]
 
-> maxSubarray('123450036200044')
-> 123452362344
-
-> maxSubarray('000000000000')
-> 12
-
-> maxSubarray('123456789')
-> 123456789
+> maxSubarray([1,2,0,5], 2)
+> [0,5]
 ```
 
 ## Installing & Running

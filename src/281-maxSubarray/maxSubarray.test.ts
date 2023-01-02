@@ -1,37 +1,21 @@
-import { replaceZeros, replaceZerosWithoutRegex } from './maxSubarray';
+import { maxSubarray } from './maxSubarray';
 
-describe('testing replaceZeros', () => {
-	it('should evaluate "1234500362000440" to "1234523623441"', () => {
-		expect(replaceZeros('1234500362000440')).toBe('1234523623441');
+describe('testing maxSubarray', () => {
+	it('should get max subarray [1, 2, 3, 6]', () => {
+		const arr = [-4, 2, -5, 1, 2, 3, 6, -5, 1];
+		const n = 4;
+		expect(maxSubarray(arr, n)).toStrictEqual([1, 2, 3, 6]);
 	});
 
-	it('should evaluate "123450036200044" to "123452362344"', () => {
-		expect(replaceZeros('123450036200044')).toBe('123452362344');
+	it('should get max subarray [0, 5]', () => {
+		const arr = [1, 2, 0, 5];
+		const n = 2;
+		expect(maxSubarray(arr, n)).toStrictEqual([0, 5]);
 	});
 
-	it('should evaluate "000000000000" to "12"', () => {
-		expect(replaceZeros('000000000000')).toBe('12');
-	});
-
-	it('should evaluate "123456789" to "123456789"', () => {
-		expect(replaceZeros('123456789')).toBe('123456789');
-	});
-});
-
-describe('testing replaceZerosWithoutRegex', () => {
-	it('should evaluate "1234500362000440" to "1234523623441"', () => {
-		expect(replaceZerosWithoutRegex('1234500362000440')).toBe('1234523623441');
-	});
-
-	it('should evaluate "123450036200044" to "123452362344"', () => {
-		expect(replaceZerosWithoutRegex('123450036200044')).toBe('123452362344');
-	});
-
-	it('should evaluate "000000000000" to "12"', () => {
-		expect(replaceZerosWithoutRegex('000000000000')).toBe('12');
-	});
-
-	it('should evaluate "123456789" to "123456789"', () => {
-		expect(replaceZerosWithoutRegex('123456789')).toBe('123456789');
+	it('should throw error when "n" is greater than length of array', () => {
+		const arr = [1, 2, 0, 5];
+		const n = 20;
+		expect(() => maxSubarray(arr, n)).toThrowError('Invalid "n"');
 	});
 });
