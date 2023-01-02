@@ -1,43 +1,25 @@
 /*
-Given a string of any length which contains only digits from 0 to 9,
-replace each consecutive run of the digit 0 with its length.
+Given an array of integers `arr` and an integer `n`, return a subarray of `arr` of length `n`
+where the sum is the largest.
+Make sure you maintain the order of the original array, and if `n` is greater than `arr.length`,
+you can choose what you want to return.
 
 Example:
 
-> replaceZeros('1234500362000440')
-> 1234523623441
+> maxSubarray([-4,2,-5,1,2,3,6,-5,1], 4)
+> [1,2,3,6]
 
-> replaceZeros('123450036200044')
-> 123452362344
-
-> replaceZeros('000000000000')
-> 12
-
-> replaceZeros('123456789')
-> 123456789
+> maxSubarray([1,2,0,5], 2)
+> [0,5]
 */
 
-export function replaceZeros(numbers: string): string {
-	return numbers.replace(/0+/g, match => match.length.toString());
-}
+export function maxSubarray(arr: number[], n: number): number[] {
+	if (n > arr.length) {
+		throw new Error('Invalid "n"');
+	}
 
-export function replaceZerosWithoutRegex(numbers: string): string {
-	let count = 0;
-	return [...numbers, ''] // extra empty value to check for possible last zero
-		.map(number => {
-			// counting zeroes
-			if (number === '0') {
-				count++;
-				return '';
-			}
-			// append the non-zero number when there is no count
-			if (count <= 0) {
-				return number;
-			}
-			// appending counter value and clearing it
-			const concat = count + number;
-			count = 0;
-			return concat;
-		})
-		.join('');
+	return arr
+		.map((_, i) => arr.slice(i, i + n))
+		.map(subarray => ({ subarray, sum: subarray.reduce((sum, num) => sum + num, 0) }))
+		.sort((a, b) => b.sum - a.sum)[0].subarray;
 }
