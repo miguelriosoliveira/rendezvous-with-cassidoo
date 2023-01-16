@@ -41,6 +41,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [280 - replaceZeros](src/280-replaceZeros)
 - [281 - maxSubarray](src/281-maxSubarray)
 - [282 - sumEveryOther](src/282-sumEveryOther)
+- [283 - spinTheWheel](src/283-spinTheWheel)
 </details>
 
 ## Installing & Running
