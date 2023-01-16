@@ -19,6 +19,7 @@
 	"rules": {
 		"camelcase": "off",
 		"no-plusplus": "off",
+		"no-useless-constructor": "off",
 
 		"import/extensions": ["warn", { ".ts": "never", ".tsx": "never" }],
 		"import/order": [
