@@ -17,11 +17,13 @@ Examples:
 
 export function missingBits(bits: number[]): string {
 	const result = [
-		...bits.slice(0, -1).map((bit, i) => {
-			const diff = bits[i + 1] - bit;
-			return diff === 1 ? bit : diff === 2 ? `${bit},${bit + 1}` : `${bit},...`;
-		}),
-		bits.at(-1),
+		...bits
+			.slice(0, -1) // until next to last bit, to avoid leading ellipses
+			.map((bit, i) => {
+				const diff = bits[i + 1] - bit;
+				return diff === 1 ? bit : diff === 2 ? `${bit},${bit + 1}` : `${bit},...`;
+			}),
+		bits.at(-1), // inserting last bit
 	];
 	return `[${result}]`;
 }
