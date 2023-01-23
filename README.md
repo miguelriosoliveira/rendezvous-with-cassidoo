@@ -42,6 +42,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [281 - maxSubarray](src/281-maxSubarray)
 - [282 - sumEveryOther](src/282-sumEveryOther)
 - [283 - spinTheWheel](src/283-spinTheWheel)
+- [284 - missingBits](src/284-missingBits)
 </details>
 
 ## Installing & Running
