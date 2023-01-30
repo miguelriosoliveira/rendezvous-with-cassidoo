@@ -1,8 +1,12 @@
 echo 'Generating index...'
 
-for dir in src/*; do
-	question=$(echo $dir | cut -d"/" -f2)
-	question_number=$(echo $question | cut -d"-" -f1)
-	question_name=$(echo $question | cut -d"-" -f2)
-  echo "- [$question_number - $question_name]($dir)"
+for year_dir in src/*; do
+	year=$(echo $year_dir | cut -d"/" -f2)
+	echo "#### $year"
+	for dir in $year_dir/*; do
+		question=$(echo $dir | cut -d"/" -f3)
+		question_number=$(echo $question | cut -d"-" -f1)
+		question_name=$(echo $question | cut -d"-" -f2)
+		echo "- [$question_number - $question_name]($dir)"
+	done
 done
