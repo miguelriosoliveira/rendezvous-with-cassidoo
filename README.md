@@ -48,6 +48,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [282 - sumEveryOther](src/2023/282-sumEveryOther)
 - [283 - spinTheWheel](src/2023/283-spinTheWheel)
 - [284 - missingBits](src/2023/284-missingBits)
+- [285 - generateArrays](src/2023/285-generateArrays)
 </details>
 
 ## Installing & Running
