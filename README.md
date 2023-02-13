@@ -1,5 +1,15 @@
-[![Coverage Status](https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main)](https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmiguelriosoliveira%2Frendezvous-with-cassidoo%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/miguelriosoliveira/rendezvous-with-cassidoo/main)
+<!-- [![Coverage Status](https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main)](https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main) -->
+<!-- [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmiguelriosoliveira%2Frendezvous-with-cassidoo%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/miguelriosoliveira/rendezvous-with-cassidoo/main) -->
+
+<div style="display: flex; gap: 3px;">
+<a target="_blank" href="https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main" rel="nofollow">
+	<img src="https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main" alt="Coverage Status" />
+</a>
+
+<a target="_blank" href="https://dashboard.stryker-mutator.io/reports/github.com/miguelriosoliveira/rendezvous-with-cassidoo/main" rel="nofollow">
+	<img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmiguelriosoliveira%2Frendezvous-with-cassidoo%2Fmain" alt="Mutation testing badge"/>
+</a>
+</div>
 
 # Rendezvous With Cassidoo
 
@@ -10,18 +20,26 @@ Each directory is related to a issue and has its own tests.
 I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-are-what-we-repeatedly-do-excellence-then-is/)!
 
 ## Questions
+
 <details>
   <summary>Click to expand!</summary>
 
 #### 2017
+
 - [001 - convertToRomans](src/2017/001-convertToRomans)
 - [002 - postfix](src/2017/002-postfix)
+
 #### 2020
+
 - [176 - find2020](src/2020/176-find2020)
+
 #### 2021
+
 - [177 - canToggle](src/2021/177-canToggle)
 - [181 - stockQueue](src/2021/181-stockQueue)
+
 #### 2022
+
 - [252 - longText](src/2022/252-longText)
 - [254 - longestWord](src/2022/254-longestWord)
 - [256 - deepCopy](src/2022/256-deepCopy)
@@ -43,7 +61,9 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [275 - verticalSlashes](src/2022/275-verticalSlashes)
 - [279 - capitalAfterVowel](src/2022/279-capitalAfterVowel)
 - [280 - replaceZeros](src/2022/280-replaceZeros)
+
 #### 2023
+
 - [281 - maxSubarray](src/2023/281-maxSubarray)
 - [282 - sumEveryOther](src/2023/282-sumEveryOther)
 - [283 - spinTheWheel](src/2023/283-spinTheWheel)
