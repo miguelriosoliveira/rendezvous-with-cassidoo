@@ -1,15 +1,5 @@
-<!-- [![Coverage Status](https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main)](https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main) -->
-<!-- [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmiguelriosoliveira%2Frendezvous-with-cassidoo%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/miguelriosoliveira/rendezvous-with-cassidoo/main) -->
-
-<div style="display: flex; gap: 3px;">
-<a target="_blank" href="https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main" rel="nofollow">
-	<img src="https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main" alt="Coverage Status" />
-</a>
-
-<a target="_blank" href="https://dashboard.stryker-mutator.io/reports/github.com/miguelriosoliveira/rendezvous-with-cassidoo/main" rel="nofollow">
-	<img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmiguelriosoliveira%2Frendezvous-with-cassidoo%2Fmain" alt="Mutation testing badge"/>
-</a>
-</div>
+[![Coverage Status](https://coveralls.io/repos/github/miguelriosoliveira/rendezvous-with-cassidoo/badge.svg?branch=main)](https://coveralls.io/github/miguelriosoliveira/rendezvous-with-cassidoo?branch=main)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmiguelriosoliveira%2Frendezvous-with-cassidoo%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/miguelriosoliveira/rendezvous-with-cassidoo/main)
 
 # Rendezvous With Cassidoo
 
