@@ -15,7 +15,7 @@ undefined
 */
 
 export function fromTo(from: number, to: number) {
-	const order = from > to ? -1 : 1;
+	const order = Math.sign(to - from) || 1;
 	let currentValue = from - order;
 	return function gen() {
 		currentValue += order;
