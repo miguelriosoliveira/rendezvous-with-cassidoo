@@ -2,7 +2,7 @@ echo 'Generating index...'
 
 for year_dir in src/*; do
 	year=$(echo $year_dir | cut -d"/" -f2)
-	echo "#### $year"
+	echo "\n#### $year\n"
 	for dir in $year_dir/*; do
 		question=$(echo $dir | cut -d"/" -f3)
 		question_number=$(echo $question | cut -d"-" -f1)
