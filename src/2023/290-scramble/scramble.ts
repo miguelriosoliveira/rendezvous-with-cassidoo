@@ -23,7 +23,7 @@ function shuffleWord(word: string): string {
 		first,
 		middle
 			.split('')
-			.map((_, i) => (i < middle.length - 1 ? middle[i + 1] : middle[0]))
+			.map((_, i) => middle[(i + 1) % middle.length])
 			.join(''),
 		last,
 	].join('');
