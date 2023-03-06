@@ -62,6 +62,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [287 - printDigits](src/2023/287-printDigits)
 - [288 - numBalanced](src/2023/288-numBalanced)
 - [289 - repeatedGroups](src/2023/289-repeatedGroups)
+- [290 - scramble](src/2023/290-scramble)
 </details>
 
 ## Installing & Running
