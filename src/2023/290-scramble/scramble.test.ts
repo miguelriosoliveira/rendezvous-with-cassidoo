@@ -1,6 +1,6 @@
 import { scramble } from './scramble';
 
-describe('testing scramble', () => {
+describe('#scramble', () => {
 	it('should scramble example', () => {
 		const sentence = 'A quick brown fox jumped over the lazy dog.';
 		const scrambledSentence = scramble(sentence);

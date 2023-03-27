@@ -1,6 +1,6 @@
 import { missingBits } from './missingBits';
 
-describe('testing missingBits', () => {
+describe('#missingBits', () => {
 	it('should show 1 gap', () => {
 		const missing = missingBits([1, 2, 3, 4, 20, 21, 22, 23]);
 		expect(missing).toBe('[1,2,3,4,...,20,21,22,23]');

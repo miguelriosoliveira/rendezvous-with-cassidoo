@@ -1,6 +1,6 @@
 import { generateArrays } from './generateArrays';
 
-describe('testing generateArrays', () => {
+describe('#generateArrays', () => {
 	it('should generate an array with 4 sub-arrays', () => {
 		expect(generateArrays(4)).toStrictEqual([[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]);
 	});

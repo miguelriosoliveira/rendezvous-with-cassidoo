@@ -1,6 +1,6 @@
 import { repeatedGroups } from './repeatedGroups';
 
-describe('testing repeatedGroups', () => {
+describe('#repeatedGroups', () => {
 	it('should return a group of 2s', () => {
 		const numbers = [1, 2, 2, 4, 5];
 		expect(repeatedGroups(numbers)).toStrictEqual([[2, 2]]);

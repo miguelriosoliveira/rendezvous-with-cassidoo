@@ -1,6 +1,6 @@
 import { convertToRomans } from './convertToRomans';
 
-describe('testing convertToRomans', () => {
+describe('#convertToRomans', () => {
 	it('should convert the standard values', () => {
 		const SYMBOLS_MAP = {
 			1: 'I',

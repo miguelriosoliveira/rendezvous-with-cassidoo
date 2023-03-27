@@ -1,6 +1,6 @@
 import { findIntersectionInArrays, findIntersectionInLinkedLists, Node } from './findIntersection';
 
-describe('testing arrays version', () => {
+describe('#arrays version', () => {
 	it('should find intersection [1, 2]', () => {
 		const listA = [1, 4, 5, 6];
 		const listB = [2, 3, 4, 5, 6];
@@ -23,7 +23,7 @@ describe('testing arrays version', () => {
 	});
 });
 
-describe('testing linked lists version', () => {
+describe('#linked lists version', () => {
 	it('should find intersection node 4', () => {
 		// listA: 1 -> 4 -> 5 -> 6
 		const node6: Node = { value: 6, next: null };

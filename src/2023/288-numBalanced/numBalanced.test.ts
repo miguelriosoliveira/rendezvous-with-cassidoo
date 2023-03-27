@@ -1,6 +1,6 @@
 import { numBalanced } from './numBalanced';
 
-describe('testing numBalanced', () => {
+describe('#numBalanced', () => {
 	it('should return 0', () => {
 		expect(numBalanced('()')).toBe(0);
 	});

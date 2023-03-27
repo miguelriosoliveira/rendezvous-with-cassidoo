@@ -1,6 +1,6 @@
 import { ordinal } from './ordinal';
 
-describe('testing ordinal', () => {
+describe('#ordinal', () => {
 	it('should return ordinal suffix', () => {
 		expect(ordinal(0)).toBe('0th');
 		expect(ordinal(1)).toBe('1st');

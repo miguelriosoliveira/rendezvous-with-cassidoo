@@ -1,6 +1,6 @@
 import { postfix } from './postfix';
 
-describe('testing postfix', () => {
+describe('#postfix', () => {
 	it('should result in 23', () => {
 		const result = postfix('5 4 * 6 2 / +');
 		expect(result).toBe(23);

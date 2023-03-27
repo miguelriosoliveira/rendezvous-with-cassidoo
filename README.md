@@ -64,6 +64,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [289 - repeatedGroups](src/2023/289-repeatedGroups)
 - [290 - scramble](src/2023/290-scramble)
 - [291 - fractionMath](src/2023/291-fractionMath)
+- [293 - rollDice](src/2023/293-rollDice)
 </details>
 
 ## Installing & Running

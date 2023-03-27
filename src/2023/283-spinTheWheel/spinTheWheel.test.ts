@@ -1,6 +1,6 @@
 import { SpinTheWheel } from './spinTheWheel';
 
-describe('testing spinTheWheel', () => {
+describe('#spinTheWheel', () => {
 	it('should fail', () => {
 		const game = new SpinTheWheel([0, 0]);
 		expect(() => game.spin(100)).toThrow('invalid interval');

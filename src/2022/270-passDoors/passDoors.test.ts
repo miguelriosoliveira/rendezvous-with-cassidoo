@@ -1,6 +1,6 @@
 import { passDoors } from './passDoors';
 
-describe('testing passDoors', () => {
+describe('#passDoors', () => {
 	// Initial: 1 1 1 1 1 1 1
 	// Pass 1:  0 0 0 0 0 0 0
 	// Pass 2:  0 1 0 1 0 1 0

@@ -1,6 +1,6 @@
 import { addg } from './addg';
 
-describe('testing addg', () => {
+describe('#addg', () => {
 	it('should return undefined', () => {
 		expect(addg()).toBeUndefined();
 	});
