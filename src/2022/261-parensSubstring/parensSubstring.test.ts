@@ -1,6 +1,6 @@
 import { parensSubstring } from './parensSubstring';
 
-describe('testing parensSubstring', () => {
+describe('#parensSubstring', () => {
 	it('should return 2 for "(()("', () => {
 		const substr = parensSubstring('(()(');
 		expect(substr).toBe(2);

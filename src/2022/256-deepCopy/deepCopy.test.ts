@@ -1,6 +1,6 @@
 import { deepCopy, Node } from './deepCopy';
 
-describe('testing deepCopy', () => {
+describe('#deepCopy', () => {
 	it('should make a copy with the same values but different reference', () => {
 		// Target structure:
 		// [

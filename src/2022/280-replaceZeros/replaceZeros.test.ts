@@ -1,6 +1,6 @@
 import { replaceZeros, replaceZerosWithoutRegex } from './replaceZeros';
 
-describe('testing replaceZeros', () => {
+describe('#replaceZeros', () => {
 	it('should evaluate "1234500362000440" to "1234523623441"', () => {
 		expect(replaceZeros('1234500362000440')).toBe('1234523623441');
 	});
@@ -18,7 +18,7 @@ describe('testing replaceZeros', () => {
 	});
 });
 
-describe('testing replaceZerosWithoutRegex', () => {
+describe('#replaceZerosWithoutRegex', () => {
 	it('should evaluate "1234500362000440" to "1234523623441"', () => {
 		expect(replaceZerosWithoutRegex('1234500362000440')).toBe('1234523623441');
 	});

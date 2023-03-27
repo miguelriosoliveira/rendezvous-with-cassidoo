@@ -1,6 +1,6 @@
 import { hideEmail } from './hideEmail';
 
-describe('testing hideEmail', () => {
+describe('#hideEmail', () => {
 	it('should hide first part only (1)', () => {
 		const hiddenEmail = hideEmail('example@example.com');
 		expect(hiddenEmail).toBe('e*****e@example.com');

@@ -1,6 +1,6 @@
 import { verticalSlashes } from './verticalSlashes';
 
-describe('testing verticalSlashes', () => {
+describe('#verticalSlashes', () => {
 	it('should draw slashes 1', async () => {
 		const expected = `
 \\

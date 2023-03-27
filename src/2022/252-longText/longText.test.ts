@@ -1,6 +1,6 @@
 import { longText } from './longText';
 
-describe('testing longText', () => {
+describe('#longText', () => {
 	it('should return long hello world', () => {
 		const text = longText('hello world', 3);
 		expect(text).toBe('heeellooo wooorld');

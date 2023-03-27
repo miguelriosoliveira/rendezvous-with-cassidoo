@@ -1,6 +1,6 @@
 import { numberOfOnes } from './numberOfOnes';
 
-describe('testing numberOfOnes', () => {
+describe('#numberOfOnes', () => {
 	it('should find 7 ones', () => {
 		const ones = numberOfOnes(14);
 		expect(ones).toBe(7);

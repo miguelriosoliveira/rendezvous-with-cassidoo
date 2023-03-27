@@ -1,6 +1,6 @@
 import { longestWord } from './longestWord';
 
-describe('testing longestWord', () => {
+describe('#longestWord', () => {
 	it('should return apple', () => {
 		const longest = longestWord('abppplee', ['able', 'ale', 'apple', 'bale', 'kangaroo']);
 		expect(longest).toBe('apple');

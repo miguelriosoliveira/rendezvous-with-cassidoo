@@ -1,6 +1,6 @@
 import { calculateGPA } from './calculateGpa';
 
-describe('testing calculateGPA', () => {
+describe('#calculateGPA', () => {
 	it('should return 4', () => {
 		expect(calculateGPA(['A'])).toBe(4);
 	});

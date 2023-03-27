@@ -1,6 +1,6 @@
 import { fractionMath } from './fractionMath';
 
-describe('testing fractionMath', () => {
+describe('#fractionMath', () => {
 	it('should add fractions', () => {
 		expect(fractionMath('3/4', 'add', '3/4')).toBe('3/2');
 		expect(fractionMath('3/4', 'add', '3/5')).toBe('27/20');

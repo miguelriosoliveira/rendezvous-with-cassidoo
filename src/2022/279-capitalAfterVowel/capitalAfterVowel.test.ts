@@ -1,6 +1,6 @@
 import { capitalAfterVowel, capitalAfterVowelWithRegex } from './capitalAfterVowel';
 
-describe('testing capitalAfterVowel', () => {
+describe('#capitalAfterVowel', () => {
 	it('"hello world" should evaluate to "heLlo WoRld"', () => {
 		expect(capitalAfterVowel('hello world')).toBe('heLlo WoRld');
 	});
@@ -14,7 +14,7 @@ describe('testing capitalAfterVowel', () => {
 	});
 });
 
-describe('testing capitalAfterVowelWithRegex', () => {
+describe('#capitalAfterVowelWithRegex', () => {
 	it('"hello world" should evaluate to "heLlo WoRld"', () => {
 		expect(capitalAfterVowelWithRegex('hello world')).toBe('heLlo WoRld');
 	});
