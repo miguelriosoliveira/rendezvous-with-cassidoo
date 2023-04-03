@@ -6,7 +6,7 @@ So a program that is 44 characters long would output “forty four” and a prog
 
 import fs from 'node:fs';
 
-function numToWords(num: number): string {
+export function numToWords(num: number): string {
 	const words = [
 		'zero',
 		'one',
