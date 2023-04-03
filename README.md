@@ -65,6 +65,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [290 - scramble](src/2023/290-scramble)
 - [291 - fractionMath](src/2023/291-fractionMath)
 - [293 - rollDice](src/2023/293-rollDice)
+- [294 - charCount](src/2023/294-charCount)
 </details>
 
 ## Installing & Running
