@@ -1,6 +1,6 @@
 import { stockQueue, Stock } from './stockQueue';
 
-describe('testing stockQueue', () => {
+describe('#stockQueue', () => {
 	it('should return stock queue with 3 stocks', () => {
 		const snapshot = [
 			{ sym: 'GME', cost: 280 },

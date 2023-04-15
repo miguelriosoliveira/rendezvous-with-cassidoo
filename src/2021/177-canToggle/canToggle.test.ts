@@ -1,6 +1,6 @@
 import { canToggle, Network } from './canToggle';
 
-describe('testing canToggle', () => {
+describe('#canToggle', () => {
 	it('should return true (light is reachable)', () => {
 		const network: Network = {
 			switch: [0, 1],

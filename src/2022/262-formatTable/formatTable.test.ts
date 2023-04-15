@@ -1,6 +1,6 @@
 import { formatTable } from './formatTable';
 
-describe('testing formatTable', () => {
+describe('#formatTable', () => {
 	it('should format table', () => {
 		const table = `
 | Syntax | Description |

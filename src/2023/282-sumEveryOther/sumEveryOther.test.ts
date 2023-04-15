@@ -1,6 +1,6 @@
 import { sumEveryOther } from './sumEveryOther';
 
-describe('testing sumEveryOther', () => {
+describe('#sumEveryOther', () => {
 	it('should sum to 26', () => {
 		expect(sumEveryOther(548_915_381)).toBe(26);
 	});

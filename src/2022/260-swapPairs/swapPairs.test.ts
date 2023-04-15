@@ -1,7 +1,7 @@
 /* eslint-disable jest/max-expects */
 import { Node, swapPairsArray, swapPairsLinkedList } from './swapPairs';
 
-describe('testing swapPairs with arrays', () => {
+describe('#swapPairs with arrays', () => {
 	it('should swap pairs', () => {
 		const swapped = swapPairsArray([1, 2, 3, 4]);
 		expect(swapped).toStrictEqual([2, 1, 4, 3]);
@@ -21,7 +21,7 @@ describe('testing swapPairs with arrays', () => {
 	});
 });
 
-describe('testing swapPairs with linked lists', () => {
+describe('#swapPairs with linked lists', () => {
 	it('should swap pairs', () => {
 		// Arrange (1 -> 2 -> 3 -> 4 -> 5 -> 6)
 		const node6: Node = { value: 6, next: null };

@@ -1,6 +1,6 @@
 import { cornerHit } from './cornerHit';
 
-describe('testing cornerHit', () => {
+describe('#cornerHit', () => {
 	it('should hit the corner', () => {
 		const hit = cornerHit({
 			dimensions: [5, 5],

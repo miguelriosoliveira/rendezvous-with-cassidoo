@@ -1,6 +1,6 @@
 import { truncate } from './truncate';
 
-describe('testing truncate', () => {
+describe('#truncate', () => {
 	it('should truncate words to length of 3', () => {
 		const length = 3;
 		expect(truncate('never gonna give you up', length)).toBe('nev gon giv you up');

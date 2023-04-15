@@ -1,6 +1,6 @@
 import { find2020 } from './find2020';
 
-describe('testing find2020', () => {
+describe('#find2020', () => {
 	it('should return the position 14', () => {
 		const position2020 = find2020('2220000202220020200');
 		expect(position2020).toBe(14);

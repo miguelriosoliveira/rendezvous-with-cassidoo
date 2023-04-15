@@ -1,6 +1,6 @@
 import { combineStrings } from './combineStrings';
 
-describe('testing combineStrings', () => {
+describe('#combineStrings', () => {
 	it('should combine to a max of 5', async () => {
 		const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 		const n = 5;

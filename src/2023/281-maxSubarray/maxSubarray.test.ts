@@ -1,6 +1,6 @@
 import { maxSubarray } from './maxSubarray';
 
-describe('testing maxSubarray', () => {
+describe('#maxSubarray', () => {
 	it('should get max subarray [1, 2, 3, 6]', () => {
 		const arr = [-4, 2, -5, 1, 2, 3, 6, -5, 1];
 		const n = 4;
