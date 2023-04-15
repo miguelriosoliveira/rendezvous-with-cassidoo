@@ -66,6 +66,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [291 - fractionMath](src/2023/291-fractionMath)
 - [293 - rollDice](src/2023/293-rollDice)
 - [294 - charCount](src/2023/294-charCount)
+- [295 - starAngles](src/2023/295-starAngles)
 </details>
 
 ## Installing & Running
