@@ -67,6 +67,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [293 - rollDice](src/2023/293-rollDice)
 - [294 - charCount](src/2023/294-charCount)
 - [295 - starAngles](src/2023/295-starAngles)
+- [296 - maxPointsOnLine](src/2023/296-maxPointsOnLine)
 </details>
 
 ## Installing & Running
