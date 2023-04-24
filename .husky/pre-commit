@@ -4,3 +4,4 @@
 yarn lint
 yarn test:cov
 yarn index
+git add README.md
