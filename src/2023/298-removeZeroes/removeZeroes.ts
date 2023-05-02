@@ -14,17 +14,9 @@ Example:
 > [8]
 */
 
-export function countLeadingZeroes(numbers: number[]) {
-	let i = 0;
-	while (numbers[i] === 0) {
-		i++;
-	}
-	return i;
-}
-
 export function removeZeroes(numbers: number[]): number[] {
-	const leadingCount = countLeadingZeroes(numbers);
-	const trailingCount = countLeadingZeroes([...numbers].reverse());
-
-	return numbers.slice(leadingCount, numbers.length - trailingCount);
+	return numbers.slice(
+		numbers.findIndex(n => n !== 0),
+		numbers.findLastIndex(n => n !== 0) + 1,
+	);
 }
