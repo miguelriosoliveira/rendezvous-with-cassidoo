@@ -70,6 +70,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [296 - maxPointsOnLine](src/2023/296-maxPointsOnLine)
 - [297 - divisibleIntegers](src/2023/297-divisibleIntegers)
 - [298 - removeZeroes](src/2023/298-removeZeroes)
+- [300 - binaryPal](src/2023/300-binaryPal)
 </details>
 
 ## Installing & Running
