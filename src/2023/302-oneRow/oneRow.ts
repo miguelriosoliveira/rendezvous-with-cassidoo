@@ -51,6 +51,7 @@ export function oneRow({
 	allowedRows: allowedRows_,
 }: Props): string[] {
 	const keyboard = KEYBOARDS_MAP[keyboardType];
+	// convert [1, 2, 3] input to [0, 1, 2]
 	const allowedRows =
 		allowedRows_?.map(rowNumber => rowNumber - 1) ||
 		Array.from({ length: keyboard.length }, (_, i) => i);
@@ -58,9 +59,7 @@ export function oneRow({
 
 	return words.filter(word => {
 		const letters = word.toUpperCase().split('');
-		const result = keyboardRows.some(keyboardRow =>
-			letters.every(letter => keyboardRow.includes(letter)),
-		);
-		return result;
+		// "only words which all letters are included in a single keyboard row"
+		return keyboardRows.some(keyboardRow => letters.every(letter => keyboardRow.includes(letter)));
 	});
 }
