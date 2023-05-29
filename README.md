@@ -72,6 +72,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [298 - removeZeroes](src/2023/298-removeZeroes)
 - [300 - binaryPal](src/2023/300-binaryPal)
 - [301 - scrabbleScore](src/2023/301-scrabbleScore)
+- [302 - oneRow](src/2023/302-oneRow)
 </details>
 
 ## Installing & Running
