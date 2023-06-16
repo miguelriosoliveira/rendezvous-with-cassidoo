@@ -74,6 +74,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [301 - scrabbleScore](src/2023/301-scrabbleScore)
 - [302 - oneRow](src/2023/302-oneRow)
 - [303 - mmmPie](src/2023/303-mmmPie)
+- [304 - trimArray](src/2023/304-trimArray)
 </details>
 
 ## Installing & Running
