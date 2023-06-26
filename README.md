@@ -75,6 +75,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [302 - oneRow](src/2023/302-oneRow)
 - [303 - mmmPie](src/2023/303-mmmPie)
 - [304 - trimArray](src/2023/304-trimArray)
+- [306 - missingLetters](src/2023/306-missingLetters)
 </details>
 
 ## Installing & Running
