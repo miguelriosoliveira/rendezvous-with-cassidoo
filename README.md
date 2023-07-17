@@ -78,6 +78,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [306 - missingLetters](src/2023/306-missingLetters)
 - [307 - reversedSquares](src/2023/307-reversedSquares)
 - [308 - justifyText](src/2023/308-justifyText)
+- [309 - explodeString](src/2023/309-explodeString)
 </details>
 
 ## Installing & Running
