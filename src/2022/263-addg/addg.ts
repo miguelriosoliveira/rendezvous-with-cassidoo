@@ -21,7 +21,8 @@ addg(2)(7)()     // 9
 addg(3)(4)(0)()  // 7
 */
 
-export function addg(a?: number): unknown {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function addg(a?: number): any {
 	if (a === undefined) return a;
 	return function g(b?: number) {
 		if (b !== undefined) {
