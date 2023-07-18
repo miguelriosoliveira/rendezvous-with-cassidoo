@@ -15,10 +15,10 @@ module.exports = {
 		'plugin:prettier/recommended',
 	],
 	rules: {
-		'@typescript-eslint/restrict-plus-operands': 'off',
-		'@typescript-eslint/strict-boolean-expressions': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
-		'@typescript-eslint/restrict-template-expressions': 'off',
 		'@typescript-eslint/prefer-nullish-coalescing': 'off',
+		'@typescript-eslint/restrict-plus-operands': 'off',
+		'@typescript-eslint/restrict-template-expressions': 'off',
+		'@typescript-eslint/strict-boolean-expressions': 'off',
 	},
 };
