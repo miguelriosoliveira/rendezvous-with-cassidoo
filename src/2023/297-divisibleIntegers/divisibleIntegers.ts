@@ -18,11 +18,11 @@ function generatePermutations(digits: number[]): number[][] {
 		return [[]];
 	}
 
-	return digits.reduce((permutations, digit, index) => {
+	return digits.reduce<number[][]>((permutations, digit, index) => {
 		const otherDigits = digits.filter((_, i) => i !== index);
 		const subPermutations = generatePermutations(otherDigits);
 		return [...permutations, ...subPermutations.map(permutation => [digit, ...permutation])];
-	}, [] as number[][]);
+	}, []);
 }
 
 function makeNumberFromDigits(digits: number[]) {

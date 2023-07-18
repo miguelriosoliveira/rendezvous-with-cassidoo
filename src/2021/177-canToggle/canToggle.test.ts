@@ -1,4 +1,4 @@
-import { canToggle, Network } from './canToggle';
+import { canToggle, type Network } from './canToggle';
 
 describe('#canToggle', () => {
 	it('should return true (light is reachable)', () => {

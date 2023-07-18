@@ -11,7 +11,7 @@ $ 'looooooooool'
 ```
 */
 
-type VowelsMap = { [key: string]: number };
+type VowelsMap = Record<string, number>;
 
 const vowels: VowelsMap = {
 	a: 1,

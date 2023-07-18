@@ -21,14 +21,13 @@ export interface Stock {
 	cost: number;
 }
 
-interface StockDict {
-	[index: string]: number;
-}
+type StockDict = Record<string, number>;
 
 export function stockQueue(snapshot: Stock[]): Stock[] {
 	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
+		// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
 		delete stockDict[stock.sym];
 		stockDict[stock.sym] = stock.cost;
 	});

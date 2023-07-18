@@ -1,4 +1,4 @@
-import { deepCopy, Node } from './deepCopy';
+import { deepCopy, type Node } from './deepCopy';
 
 describe('#deepCopy', () => {
 	it('should make a copy with the same values but different reference', () => {

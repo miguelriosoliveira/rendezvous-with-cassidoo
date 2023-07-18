@@ -3,5 +3,7 @@ Print the digits 0 through 100 without using the characters 1, 2, 3, 4, 5, 6, 7,
 */
 
 export function printDigits(): void {
-	Array.from({ length: 'e'.codePointAt(0) as number }).forEach((_, i) => console.log(i));
+	Array.from({ length: 'e'.codePointAt(0) as number }).forEach((_, i) => {
+		console.log(i);
+	});
 }

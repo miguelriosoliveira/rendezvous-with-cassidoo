@@ -13,7 +13,7 @@ const MULTIPLIER = {
 
 type Interval = [number, number];
 
-const INTERVALS: { [k: number]: Interval } = {
+const INTERVALS: Record<number, Interval> = {
 	[MULTIPLIER.LOSE]: [1, 1],
 	[MULTIPLIER.KEEP]: [2, 7],
 	[MULTIPLIER.DOUBLE]: [8, 10],
@@ -40,7 +40,7 @@ function getMultiplier(number: number) {
 }
 
 export class SpinTheWheel {
-	constructor(private interval: Interval) {}
+	constructor(private readonly interval: Interval) {}
 
 	spin(bet: number): number {
 		const [min, max] = this.interval;

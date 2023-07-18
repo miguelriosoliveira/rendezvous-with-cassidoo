@@ -34,9 +34,9 @@ export function findIntersectionInLinkedLists(firstNodeA: Node, firstNodeB: Node
 	let currentNodeA = firstNodeA;
 	let currentNodeB = firstNodeB;
 
-	while (currentNodeA) {
+	while (currentNodeA != null) {
 		// while (currentNodeB && currentNodeB.value <= currentNodeA.value) {
-		while (currentNodeB) {
+		while (currentNodeB != null) {
 			if (currentNodeA.value === currentNodeB.value) {
 				return currentNodeA;
 			}

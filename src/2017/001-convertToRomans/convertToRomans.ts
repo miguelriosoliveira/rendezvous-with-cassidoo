@@ -1,6 +1,6 @@
 // Write a function that takes in a number from 1 to 1000 and returns that number in Roman Numerals.
 
-const SYMBOLS_MAP: { [key: number]: string } = {
+const SYMBOLS_MAP: Record<number, string> = {
 	1: 'I',
 	4: 'IV',
 	5: 'V',

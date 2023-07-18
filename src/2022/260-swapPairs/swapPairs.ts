@@ -33,10 +33,10 @@ export type Node = null | {
 export function swapPairsLinkedList(pairs: Node): Node {
 	// while structuredClone is not supported in TypeScript...
 	let currentNode: Node = JSON.parse(JSON.stringify(pairs));
-	if (!currentNode) {
+	if (currentNode == null) {
 		return null;
 	}
-	if (!currentNode.next) {
+	if (currentNode.next == null) {
 		throw new Error('Uneven list');
 	}
 
@@ -49,9 +49,9 @@ export function swapPairsLinkedList(pairs: Node): Node {
 	let previousNode = currentNode; // for the next swaps
 
 	currentNode = currentNode.next; // will start at the third node
-	while (currentNode) {
+	while (currentNode != null) {
 		const nextNode: Node = currentNode.next;
-		if (!nextNode) {
+		if (nextNode == null) {
 			throw new Error('Uneven list');
 		}
 

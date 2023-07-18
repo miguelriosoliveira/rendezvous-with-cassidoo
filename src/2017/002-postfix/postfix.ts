@@ -8,9 +8,7 @@ postfix('5 4 * 6 2 / +')
 ```
 */
 
-interface OperationsMap {
-	[key: string]: (a: number, b: number) => number;
-}
+type OperationsMap = Record<string, (a: number, b: number) => number>;
 
 const OPERATIONS_MAP: OperationsMap = {
 	'+': (a, b) => a + b,

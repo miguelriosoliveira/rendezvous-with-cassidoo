@@ -1,4 +1,8 @@
-import { findIntersectionInArrays, findIntersectionInLinkedLists, Node } from './findIntersection';
+import {
+	findIntersectionInArrays,
+	findIntersectionInLinkedLists,
+	type Node,
+} from './findIntersection';
 
 describe('#arrays version', () => {
 	it('should find intersection [1, 2]', () => {

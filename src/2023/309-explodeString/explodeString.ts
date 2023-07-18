@@ -10,9 +10,7 @@ Example:
 > ['//','\\','oo']
 */
 
-interface StrMap {
-	[k: string]: string;
-}
+type StrMap = Record<string, string>;
 
 export function explodeString(str: string): string[] {
 	const map = new Proxy(

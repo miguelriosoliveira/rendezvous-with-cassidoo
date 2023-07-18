@@ -28,7 +28,6 @@ describe('#fromTo', () => {
 		expect(gen()).toBe(0);
 		expect(gen()).toBe(-1);
 		expect(gen()).toBe(-2);
-		// eslint-disable-next-line jest/max-expects
 		expect(gen()).toBeUndefined();
 	});
 

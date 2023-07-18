@@ -14,7 +14,7 @@ export function repeatedGroups(numbers: number[]): number[][] {
 	return numbers.reduce<number[][]>((groups, number, i) => {
 		const lastGroup = groups.at(-1);
 		if (number === numbers[i + 1]) {
-			if (lastGroup && lastGroup[0] === number) {
+			if (lastGroup != null && lastGroup[0] === number) {
 				return [...groups.slice(0, -1), [...lastGroup, number]];
 			}
 			return [...groups, [number, number]];
