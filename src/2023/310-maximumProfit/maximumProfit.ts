@@ -11,24 +11,6 @@ Example:
 > 5 // Buy on day 2, and sell on day 5, your profit = 6-1 = 5.
 */
 
-// export function maximumProfit(prices: number[]): number {
-// 	let minPrice = Number.MAX_SAFE_INTEGER;
-// 	let minPriceIndex = -1;
-// 	prices.forEach((price, i) => {
-// 		if (price < minPrice) {
-// 			minPrice = price;
-// 			minPriceIndex = i;
-// 		}
-// 	});
-// 	let maxPriceFromMin = Number.MIN_SAFE_INTEGER;
-// 	prices.slice(minPriceIndex).forEach((price, i) => {
-// 		if (price > maxPriceFromMin) {
-// 			maxPriceFromMin = price;
-// 		}
-// 	});
-// 	return maxPriceFromMin - minPrice;
-// }
-
 export function maximumProfit(prices: number[]): number {
 	return prices
 		.map((price, i) => prices.slice(i).sort((a, b) => b - a)[0] - price)
