@@ -79,6 +79,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [307 - reversedSquares](src/2023/307-reversedSquares)
 - [308 - justifyText](src/2023/308-justifyText)
 - [309 - explodeString](src/2023/309-explodeString)
+- [310 - maximumProfit](src/2023/310-maximumProfit)
 </details>
 
 ## Installing & Running
