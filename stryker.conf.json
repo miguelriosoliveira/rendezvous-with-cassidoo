@@ -1,17 +1,8 @@
 {
-	"$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
-	"_comment": "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information",
-	"packageManager": "yarn",
-	"reporters": ["html", "clear-text", "progress", "dashboard"],
-	"commandRunner": { "command": "yarn test:cov" },
-	"timeoutMS": 1000,
-	"coverageAnalysis": "perTest",
-	"ignoreStatic": true,
-	"checkers": ["typescript"],
-	"tsconfigFile": "tsconfig.json",
-	"dashboard": {
-		"project": "github.com/miguelriosoliveira/rendezvous-with-cassidoo",
-		"version": "main",
-		"reportType": "full"
-	}
+	"testRunner": "vitest",
+	"vitest": {
+		"configFile": "vite.config.ts",
+		"dir": "src"
+	},
+	"ignoreStatic": true
 }
