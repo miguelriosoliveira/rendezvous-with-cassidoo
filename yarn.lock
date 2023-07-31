@@ -805,15 +805,6 @@
     angular-html-parser "~4.0.0"
     weapon-regex "~1.1.0"
 
-"@stryker-mutator/typescript-checker@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/typescript-checker/-/typescript-checker-7.1.1.tgz#1cba840512dec70375ae387e97ca49f1775a2800"
-  integrity sha512-BJbcFZY9HSB0EcvzMb9pHdOOEXjAaYykTQAbkE+3Zt+kAxufBRa8TLHdKCb+LB47qnOF07Diuv+ODIpr9FJ8nw==
-  dependencies:
-    "@stryker-mutator/api" "7.1.1"
-    "@stryker-mutator/util" "7.1.1"
-    semver "~7.5.0"
-
 "@stryker-mutator/util@7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-7.1.1.tgz#3e76442d77d87fa1a4d6adbbc1a0c8c631a6991b"
@@ -3294,7 +3285,7 @@ semver@^7.0.0, semver@^7.3.7, semver@^7.5.3:
   dependencies:
     lru-cache "^6.0.0"
 
-semver@^7.3.5, semver@~7.5.0:
+semver@^7.3.5:
   version "7.5.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.3.tgz#161ce8c2c6b4b3bdca6caadc9fa3317a4c4fe88e"
   integrity sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==
