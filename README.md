@@ -80,6 +80,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [308 - justifyText](src/2023/308-justifyText)
 - [309 - explodeString](src/2023/309-explodeString)
 - [310 - maximumProfit](src/2023/310-maximumProfit)
+- [311 - isAnagram](src/2023/311-isAnagram)
 </details>
 
 ## Installing & Running
