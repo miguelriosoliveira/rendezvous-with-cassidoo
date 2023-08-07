@@ -15,6 +15,7 @@ const BRANDS = ['Mastercard', 'Visa', 'American Express'] as const;
 
 type Brand = (typeof BRANDS)[number];
 
+// thanks to https://gist.github.com/alexpvieira/9629e62c6d68ff2700a8efe42ee42758
 const BrandsRegex: Record<Brand, RegExp> = {
 	Mastercard: /^5[1-5][0-9]{14}$/,
 	Visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
