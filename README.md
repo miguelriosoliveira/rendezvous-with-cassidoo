@@ -81,6 +81,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [309 - explodeString](src/2023/309-explodeString)
 - [310 - maximumProfit](src/2023/310-maximumProfit)
 - [311 - isAnagram](src/2023/311-isAnagram)
+- [312 - luhnCheck](src/2023/312-luhnCheck)
 </details>
 
 ## Installing & Running
