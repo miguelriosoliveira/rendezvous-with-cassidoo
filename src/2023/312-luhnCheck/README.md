@@ -1,6 +1,6 @@
 # luhnCheck
 
-Interview question of the [issue #312 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/science-is-organized-knowledge-wisdom-is/).
+Interview question of the [issue #312 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/it-isnt-the-mountains-ahead-to-climb-that-wear/).
 
 ## The Question
 
