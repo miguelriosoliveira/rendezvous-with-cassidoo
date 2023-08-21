@@ -4,7 +4,7 @@ Interview question of the [issue #001 of rendezvous with cassidoo](https://butto
 
 # The question
 
-Write a function that takes in a number from 1 to 1000 and returns that number in Roman Numerals.
+**Write a function that takes in a number from 1 to 1000 and returns that number in Roman Numerals.**
 
 # Installing & Running
 

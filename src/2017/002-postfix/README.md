@@ -4,7 +4,7 @@ Interview question of the [issue #002 of rendezvous with cassidoo](https://butto
 
 # The question
 
-Write a simple postfix calculator function that takes in a string expression and returns the result.
+**Write a simple postfix calculator function that takes in a string expression and returns the result.**
 
 Example usage:
 ```js

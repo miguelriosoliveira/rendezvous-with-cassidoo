@@ -18,6 +18,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 
 - [001 - convertToRomans](src/2017/001-convertToRomans)
 - [002 - postfix](src/2017/002-postfix)
+- [003 - anagramCheck](src/2017/003-anagramCheck)
 
 #### 2020
 

@@ -2,10 +2,8 @@
 Write a simple postfix calculator function that takes in a string expression and returns the result.
 
 Example usage:
-```js
 postfix('5 4 * 6 2 / +')
 > 23
-```
 */
 
 type OperationsMap = Record<string, (a: number, b: number) => number>;
