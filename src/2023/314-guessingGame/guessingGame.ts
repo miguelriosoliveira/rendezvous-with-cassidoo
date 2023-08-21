@@ -32,21 +32,26 @@ function getRandomInt(min: number, max: number): number {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+type Hint = '>' | '<' | '=';
+
 interface Response {
 	success: boolean;
-	hint: '>' | '<' | '=';
+	hint: Hint;
 	guessCount: number;
 }
 
 export function guessingGame(randomFunction = getRandomInt): (guess: number) => Response {
 	const theNumber = randomFunction(0, 100);
-	let guessCount = 1;
+	let guessCount = 0;
 
 	return (guess: number) => {
-		if (guess === theNumber) {
-			return { success: true, hint: '=', guessCount };
-		}
+		let hint: Hint = '=';
 		guessCount++;
-		return { success: false, hint: guess > theNumber ? '<' : '>', guessCount };
+		if (guess > theNumber) {
+			hint = '<';
+		} else if (guess < theNumber) {
+			hint = '>';
+		}
+		return { success: hint === '=', hint, guessCount };
 	};
 }

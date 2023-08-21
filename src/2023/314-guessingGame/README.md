@@ -1,6 +1,6 @@
-# faultyKeeb
+# guessingGame
 
-Interview question of the [issue #313 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/the-road-to-success-is-always-under-construction/).
+Interview question of the [issue #314 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/not-everything-that-is-faced-can-be-changed-but-1047/).
 
 ## The Question
 
