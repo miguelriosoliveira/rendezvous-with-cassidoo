@@ -1,6 +1,6 @@
 import { explodeString } from './explodeString';
 
-describe('explodeString', () => {
+describe('#explodeString', () => {
 	it('should return an array of groups of non-space equal characters, sorted', () => {
 		expect(explodeString('Ahh, abracadabra!')).toStrictEqual([
 			'!',

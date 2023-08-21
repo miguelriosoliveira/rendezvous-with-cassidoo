@@ -1,6 +1,6 @@
 import { reversedSquaresConvertingTypes, reversedSquaresUsingMath } from './reversedSquares';
 
-describe('reversedSquares', () => {
+describe('#reversedSquares', () => {
 	describe('converting types', () => {
 		it('returns true for a perfect square whose reverse is also a perfect square', () => {
 			expect(reversedSquaresConvertingTypes(9)).toBe(true);

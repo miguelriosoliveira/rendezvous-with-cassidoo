@@ -83,6 +83,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [311 - isAnagram](src/2023/311-isAnagram)
 - [312 - luhnCheck](src/2023/312-luhnCheck)
 - [313 - faultyKeeb](src/2023/313-faultyKeeb)
+- [314 - guessingGame](src/2023/314-guessingGame)
 </details>
 
 ## Installing & Running

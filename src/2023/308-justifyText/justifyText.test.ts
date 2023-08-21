@@ -1,6 +1,6 @@
 import { justifyText } from './justifyText';
 
-describe('justifyText', () => {
+describe('#justifyText', () => {
 	it('should justify with 16 of max width', () => {
 		const strings = ['This', 'is', 'an', 'example', 'of', 'text', 'justification.'];
 		const maxWidth = 16;

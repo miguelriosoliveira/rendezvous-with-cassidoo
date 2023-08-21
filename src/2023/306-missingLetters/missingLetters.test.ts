@@ -1,6 +1,6 @@
 import { missingLetters } from './missingLetters';
 
-describe('missingLetters', () => {
+describe('#missingLetters', () => {
 	it("should return ['e']", () => {
 		expect(missingLetters(['a', 'b', 'c', 'd', 'f'])).toEqual(['e']);
 	});

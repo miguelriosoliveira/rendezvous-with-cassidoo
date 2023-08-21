@@ -1,6 +1,6 @@
 import { trimArray } from './trimArray';
 
-describe('trimArray', () => {
+describe('#trimArray', () => {
 	it('should remove elements from the front and back of the array', () => {
 		expect(trimArray([1, 2, 3, 4, 5, 6], 2, 1)).toStrictEqual([3, 4, 5]);
 	});

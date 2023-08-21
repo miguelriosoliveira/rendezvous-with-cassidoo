@@ -1,6 +1,6 @@
 import { mmmPie } from './mmmPie';
 
-describe('mmmPie', () => {
+describe('#mmmPie', () => {
 	it('should return 2 pies needed', () => {
 		const people = [
 			{ name: 'Joe', num: 9 },

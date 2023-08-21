@@ -1,6 +1,6 @@
 import { maximumProfit } from './maximumProfit';
 
-describe('maximumProfit', () => {
+describe('#maximumProfit', () => {
 	it('should return 5 for [7, 1, 5, 3, 6, 4]', () => {
 		expect(maximumProfit([7, 1, 5, 3, 6, 4])).toBe(5);
 	});
