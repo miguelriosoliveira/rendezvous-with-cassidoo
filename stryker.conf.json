@@ -1,7 +1,7 @@
 {
 	"testRunner": "vitest",
 	"vitest": {
-		"configFile": "vite.config.ts",
+		"configFile": "vitest.config.ts",
 		"dir": "src"
 	},
 	"ignoreStatic": true
