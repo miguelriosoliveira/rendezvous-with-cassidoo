@@ -1,6 +1,6 @@
 import { anagramCheck } from './anagramCheck';
 
-describe('#anagrams', () => {
+describe('#anagramCheck', () => {
 	it('should return true for valid anagrams', () => {
 		expect(anagramCheck('listen', 'silent')).toBe(true);
 		expect(anagramCheck('debit card', 'bad credit')).toBe(true);
