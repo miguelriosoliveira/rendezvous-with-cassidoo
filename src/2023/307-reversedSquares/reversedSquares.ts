@@ -13,28 +13,28 @@ Example:
 > false
 */
 
+// Check if sqrt is complete number i.e. integer
+// https://stackoverflow.com/a/49881377/4916416
+function isSqrtComplete(n: number) {
+	return Math.sqrt(n) % 1 === 0;
+}
+
 export function reversedSquaresConvertingTypes(n: number): boolean {
-	if (n < 0) {
-		return false;
-	}
 	const reversed = Number(n.toString().split('').reverse().join(''));
-	// Check if sqrt is complete number i.e. integer
-	// https://stackoverflow.com/a/49881377/4916416
-	return Math.sqrt(n) % 1 === 0 && Math.sqrt(reversed) % 1 === 0;
+	return isSqrtComplete(n) && isSqrtComplete(reversed);
 }
 
 export function reversedSquaresUsingMath(n: number): boolean {
 	if (n < 0) {
 		return false;
 	}
-	let nCopy = n;
+
 	let reversed = 0;
-	while (nCopy) {
+	while (n) {
 		reversed *= 10;
-		reversed += nCopy % 10;
-		nCopy = Math.floor(nCopy / 10);
+		reversed += n % 10;
+		n = Math.floor(n / 10);
 	}
-	// Check if sqrt is complete number i.e. integer
-	// https://stackoverflow.com/a/49881377/4916416
-	return Math.sqrt(n) % 1 === 0 && Math.sqrt(reversed) % 1 === 0;
+
+	return isSqrtComplete(n) && isSqrtComplete(reversed);
 }
