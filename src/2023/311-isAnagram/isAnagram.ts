@@ -11,9 +11,7 @@ Example:
 > true
 */
 
-function sortLetters(str: string): string {
-	return str.split('').sort().join('');
-}
+import { sortLetters } from './sortLetters';
 
 export function isAnagram(s: string, t: string): boolean {
 	return sortLetters(s) === sortLetters(t);
