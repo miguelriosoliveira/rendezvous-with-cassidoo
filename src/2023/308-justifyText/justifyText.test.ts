@@ -82,6 +82,26 @@ describe('#justifyText', () => {
 		]);
 	});
 
+	it('should not wrap exact-size word', () => {
+		const strings = [
+			'These',
+			'are',
+			'some',
+			'spiritualization',
+			'examples',
+			'of',
+			'text',
+			'justification.',
+		];
+		const maxWidth = 16;
+		expect(justifyText(strings, maxWidth)).toStrictEqual([
+			'These  are  some',
+			'spiritualization',
+			'examples of text',
+			'justification.  ',
+		]);
+	});
+
 	it('should justify larger width', () => {
 		const strings = [
 			'These',
