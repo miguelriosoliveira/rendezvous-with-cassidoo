@@ -9,28 +9,14 @@ Example:
 > true // 945000 is divisible by 3
 */
 
+import { generatePermutations } from './generatePermutations';
+
 function getDigitsFromNumbersArray(arr: number[]) {
-	return Array.from(new Set(arr.flatMap(num => num.toString().split('').map(Number))));
-}
-
-function generatePermutations(digits: number[]): number[][] {
-	if (digits.length === 0) {
-		return [[]];
-	}
-
-	return digits.reduce<number[][]>((permutations, digit, index) => {
-		const otherDigits = digits.filter((_, i) => i !== index);
-		const subPermutations = generatePermutations(otherDigits);
-		return [...permutations, ...subPermutations.map(permutation => [digit, ...permutation])];
-	}, []);
-}
-
-function makeNumberFromDigits(digits: number[]) {
-	return Number(digits.join(''));
+	return Array.from(arr.flatMap(num => num.toString().split('').map(Number)));
 }
 
 export function divisibleIntegers(n: number, arr: number[]): boolean {
-	const digits = getDigitsFromNumbersArray(arr).sort((a, b) => a - b);
-	const permutations = generatePermutations(digits).map(makeNumberFromDigits);
+	const digits = getDigitsFromNumbersArray(arr);
+	const permutations = generatePermutations(digits);
 	return permutations.some(permutation => permutation % n === 0);
 }
