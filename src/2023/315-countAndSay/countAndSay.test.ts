@@ -20,4 +20,9 @@ describe('#countAndSay', () => {
 		const result = countAndSay(5);
 		expect(result).toBe('one 5');
 	});
+
+	it('should generate the correct "count and say" string for input 42', () => {
+		const result = countAndSay(42);
+		expect(result).toBe('one 4, then one 2');
+	});
 });

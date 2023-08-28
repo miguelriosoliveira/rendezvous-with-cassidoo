@@ -33,20 +33,20 @@ function getNumberName(number: number): string {
 }
 
 export function countAndSay(sequence: number): string {
-	const numberMap: Record<string, number> = {};
+	const numberMap = new Map();
 
 	sequence
 		.toString()
 		.split('')
 		.forEach(numStr => {
-			if (numberMap[numStr]) {
-				numberMap[numStr]++;
-			} else {
-				numberMap[numStr] = 1;
-			}
+			const count = numberMap.get(numStr) || 0;
+			numberMap.set(numStr, count + 1);
 		});
 
-	return Object.entries(numberMap)
-		.map(([numStr, count]) => `${getNumberName(count)} ${numStr}${count > 1 ? 's' : ''}`)
-		.join(', then ');
+	const result: string[] = [];
+	numberMap.forEach((count, numStr) => {
+		result.push(`${getNumberName(count)} ${numStr}${count > 1 ? 's' : ''}`);
+	});
+
+	return result.join(', then ');
 }
