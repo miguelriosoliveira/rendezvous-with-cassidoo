@@ -4,5 +4,11 @@
 		"configFile": "vitest.config.ts",
 		"dir": "src"
 	},
-	"ignoreStatic": true
+	"ignoreStatic": true,
+	"reporters": ["html", "clear-text", "progress", "dashboard"],
+	"dashboard": {
+		"project": "github.com/miguelriosoliveira/rendezvous-with-cassidoo",
+		"version": "main",
+		"reportType": "full"
+	}
 }

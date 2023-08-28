@@ -11,26 +11,24 @@ Example:
 */
 
 // Given that Number.MAX_SAFE_INTEGER is 9007199254740991 (16 characters maximum)
-function getNumberName(number: number): string {
-	const names = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-	const teenNames = [
-		'ten',
-		'eleven',
-		'twelve',
-		'thirteen',
-		'fourteen',
-		'fifteen',
-		'sixteen',
-		'seventeen',
-		'eighteen',
-		'nineteen',
-	];
-
-	if (number < 10) {
-		return names[number];
-	}
-	return teenNames[number - 10];
-}
+const NUMBER_NAMES = [
+	'one',
+	'two',
+	'three',
+	'four',
+	'five',
+	'six',
+	'seven',
+	'eight',
+	'nine',
+	'ten',
+	'eleven',
+	'twelve',
+	'thirteen',
+	'fourteen',
+	'fifteen',
+	'sixteen',
+];
 
 export function countAndSay(sequence: number): string {
 	const numberMap = new Map();
@@ -45,7 +43,7 @@ export function countAndSay(sequence: number): string {
 
 	const result: string[] = [];
 	numberMap.forEach((count, numStr) => {
-		result.push(`${getNumberName(count)} ${numStr}${count > 1 ? 's' : ''}`);
+		result.push(`${NUMBER_NAMES[count - 1]} ${numStr}${count > 1 ? 's' : ''}`);
 	});
 
 	return result.join(', then ');
