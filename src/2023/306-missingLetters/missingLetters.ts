@@ -19,11 +19,7 @@ export function missingLetters(letters: string[]): string[] {
 	return letters
 		.map(letter => letter.charCodeAt(0))
 		.reduce<number[]>((acc, charCode, index, array) => {
-			const nextLetterCode = array[index + 1];
-			if (nextLetterCode && nextLetterCode !== charCode + 1) {
-				return [...acc, ...range(charCode, nextLetterCode)];
-			}
-			return acc;
+			return acc.concat(range(charCode, array[index + 1]));
 		}, [])
 		.map(charCode => String.fromCharCode(charCode));
 }
