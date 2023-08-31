@@ -2,7 +2,7 @@ import { starAngles } from './starAngles';
 
 describe('#starAngles', () => {
 	it('should throw error for a less than 5 pointed star', () => {
-		expect(() => starAngles(4)).toThrow();
+		expect(() => starAngles(4)).toThrow("stars with less than 5 points don't exist");
 	});
 
 	it('should return 36 degrees for a 5 pointed star', () => {
