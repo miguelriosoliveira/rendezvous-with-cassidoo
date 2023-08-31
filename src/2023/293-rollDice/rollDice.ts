@@ -13,13 +13,11 @@ Example:
 > 21
 */
 
-function randomInt(min: number, max: number): number {
-	return Math.floor(min + Math.random() * (max - min));
-}
+import { getRandomInt } from './getRandomInt';
 
 function rollSingleDice(diceNotation: string) {
 	const [diceCount, sidesCount] = diceNotation.split('d').map(Number);
-	return randomInt(diceCount, diceCount * sidesCount);
+	return getRandomInt(diceCount, diceCount * sidesCount);
 }
 
 export function rollDice(diceNotation: string): number {
