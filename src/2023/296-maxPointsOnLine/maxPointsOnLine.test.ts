@@ -17,6 +17,16 @@ describe('#maxPointsOnLine', () => {
 	it('should return 3 points', () => {
 		expect(
 			maxPointsOnLine([
+				[1, 1],
+				[2, 2],
+				[3, 3],
+			]),
+		).toBe(3);
+	});
+
+	it('should return 8 points', () => {
+		expect(
+			maxPointsOnLine([
 				[2, 4],
 				[-3, -1],
 				[1, 1],

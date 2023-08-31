@@ -12,16 +12,12 @@ type Point = [number, number];
 type SlopeCountMap = Record<string, number>;
 
 function getSlope([x1, y1]: Point, [x2, y2]: Point): number {
-	if (x1 === x2) {
-		return Number.POSITIVE_INFINITY;
-	}
 	return (y2 - y1) / (x2 - x1);
 }
 
 export function maxPointsOnLine(points: Point[]): number {
 	const collinearCounts = points.map((p1, i) => {
 		const slopeCountMap = points
-			.filter((_, j) => j !== i)
 			.map(p2 => getSlope(p1, p2))
 			.reduce<SlopeCountMap>((countMap, slope) => {
 				const slopeCount = countMap[slope] || 1;
