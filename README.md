@@ -20,6 +20,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [002 - postfix](src/2017/002-postfix)
 - [003 - anagramCheck](src/2017/003-anagramCheck)
 - [005 - queueWithStacks](src/2017/005-queueWithStacks)
+- [006 - sortStacks](src/2017/006-sortStacks)
 
 #### 2020
 
