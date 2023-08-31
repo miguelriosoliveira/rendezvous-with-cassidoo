@@ -10,15 +10,26 @@ Examples:
 [[1, 1], [0, 0], [4, 4, 4], [9, 9]]
 */
 
+function countRepeated(numbers: number[]): number {
+	let i = 1;
+	while (numbers[i] === numbers[0]) {
+		i++;
+	}
+	return i;
+}
+
 export function repeatedGroups(numbers: number[]): number[][] {
-	return numbers.reduce<number[][]>((groups, number, i) => {
-		const lastGroup = groups.at(-1);
-		if (number === numbers[i + 1]) {
-			if (lastGroup != null && lastGroup[0] === number) {
-				return [...groups.slice(0, -1), [...lastGroup, number]];
-			}
-			return [...groups, [number, number]];
+	const groups: number[][] = [];
+
+	let i = 0;
+	while (i < numbers.length) {
+		const count = countRepeated(numbers.slice(i));
+		if (count > 1) {
+			const group = Array.from({ length: count }, () => numbers[i]);
+			groups.push(group);
 		}
-		return groups;
-	}, []);
+		i += count;
+	}
+
+	return groups;
 }
