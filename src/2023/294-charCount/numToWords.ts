@@ -43,5 +43,13 @@ export function numToWords(num: number): string {
 		return `${words[Math.floor(num / 100)]} hundred ${numToWords(remainder)}`;
 	}
 
+	if (num < 10_000) {
+		const remainder = num % 1000;
+		if (remainder === 0) {
+			return `${words[Math.floor(num / 1000)]} thousand`;
+		}
+		return `${words[Math.floor(num / 1000)]} thousand ${numToWords(remainder)}`;
+	}
+
 	throw new Error('Number too large');
 }

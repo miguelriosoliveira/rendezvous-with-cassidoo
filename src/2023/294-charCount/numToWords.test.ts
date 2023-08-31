@@ -23,9 +23,11 @@ describe('#numToWords', () => {
 		expect(numToWords(99)).toBe('ninety nine');
 		expect(numToWords(100)).toBe('one hundred');
 		expect(numToWords(554)).toBe('five hundred fifty four');
+		expect(numToWords(1000)).toBe('one thousand');
+		expect(numToWords(1001)).toBe('one thousand one');
 	});
 
-	it('should not be able to convert a number larger than 999', () => {
-		expect(() => numToWords(1000)).toThrow('Number too large');
+	it('should not be able to convert a too large number', () => {
+		expect(() => numToWords(10_000)).toThrow('Number too large');
 	});
 });
