@@ -17,4 +17,4 @@ If you want a more visual example, [here’s a diagram](https://i.imgur.com/sdSk
 
 # Installing & Running
 
-Just `yarn` to install all dependencies and then `yarn test` to run the tests!
+Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!

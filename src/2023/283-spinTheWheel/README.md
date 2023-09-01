@@ -9,4 +9,4 @@ You can choose how the user bets, and what data structures you might want to use
 
 ## Installing & Running
 
-Just `yarn` to install all dependencies and then `yarn test` to run the tests!
+Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!

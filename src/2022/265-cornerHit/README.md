@@ -22,4 +22,4 @@ let screenSize = [100,100]
 
 ## Installing & Running
 
-Just `yarn` to install all dependencies and then `yarn test` to run the tests!
+Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!
