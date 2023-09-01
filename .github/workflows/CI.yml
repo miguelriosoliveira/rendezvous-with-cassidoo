@@ -43,6 +43,7 @@ jobs:
 
   run-mutations:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Run mutations
         run: yarn test:mutation
