@@ -1027,7 +1027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^6.4.0":
+"@typescript-eslint/parser@npm:^6.4.0, @typescript-eslint/parser@npm:^6.5.0":
   version: 6.5.0
   resolution: "@typescript-eslint/parser@npm:6.5.0"
   dependencies:
@@ -4468,6 +4468,7 @@ __metadata:
     "@stryker-mutator/vitest-runner": ^7.1.1
     "@types/node": ^20.5.7
     "@typescript-eslint/eslint-plugin": ^6.5.0
+    "@typescript-eslint/parser": ^6.5.0
     "@vitest/coverage-v8": ^0.34.3
     dotenv-cli: ^7.3.0
     eslint: ^8.48.0
