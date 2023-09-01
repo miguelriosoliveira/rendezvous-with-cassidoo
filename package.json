@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
-	"packageManager": "yarn@3.6.3",
 	"scripts": {
 		"prepare": "husky install",
 		"lint": "eslint --fix src/ --ext .ts",
