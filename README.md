@@ -88,6 +88,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [313 - faultyKeeb](src/2023/313-faultyKeeb)
 - [314 - guessingGame](src/2023/314-guessingGame)
 - [315 - countAndSay](src/2023/315-countAndSay)
+- [316 - minSubs](src/2023/316-minSubs)
 </details>
 
 ## Installing & Running
