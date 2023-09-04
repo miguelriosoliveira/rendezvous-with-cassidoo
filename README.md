@@ -21,6 +21,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [003 - anagramCheck](src/2017/003-anagramCheck)
 - [005 - queueWithStacks](src/2017/005-queueWithStacks)
 - [006 - sortStacks](src/2017/006-sortStacks)
+- [007 - firstDuplicate](src/2017/007-firstDuplicate)
 
 #### 2020
 
