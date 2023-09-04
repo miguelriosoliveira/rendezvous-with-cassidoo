@@ -22,6 +22,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [005 - queueWithStacks](src/2017/005-queueWithStacks)
 - [006 - sortStacks](src/2017/006-sortStacks)
 - [007 - firstDuplicate](src/2017/007-firstDuplicate)
+- [008 - rotateArray](src/2017/008-rotateArray)
 
 #### 2020
 
