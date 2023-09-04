@@ -17,18 +17,12 @@ function sumArray(numbers: number[]): number {
 	return numbers.reduce((sum, num) => sum + num, 0);
 }
 
+type SliceAndSum = [number[], number];
+
 export function minSubs(integers: number[], k: number): number[] {
-	let result: number[] = [];
-
-	let minSum = sumArray(integers);
-	integers.slice(0, integers.length - k).forEach((num, i) => {
-		const slice = integers.slice(i, i + k);
-		const sum = sumArray(slice);
-		if (sum < minSum) {
-			minSum = sum;
-			result = slice;
-		}
-	});
-
-	return result;
+	return integers
+		.slice(0, integers.length - k)
+		.map((num, i) => integers.slice(i, i + k))
+		.map(slice => [slice, sumArray(slice)] as SliceAndSum)
+		.sort(([, sum1], [, sum2]) => sum1 - sum2)[0][0];
 }
