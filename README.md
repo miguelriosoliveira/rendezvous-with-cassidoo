@@ -91,6 +91,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [314 - guessingGame](src/2023/314-guessingGame)
 - [315 - countAndSay](src/2023/315-countAndSay)
 - [316 - minSubs](src/2023/316-minSubs)
+- [318 - buildStaircase](src/2023/318-buildStaircase)
 </details>
 
 ## Installing & Running
