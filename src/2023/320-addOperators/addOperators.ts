@@ -58,10 +58,6 @@ function backtrack(
 
 export function addOperators(source: number, target: number): string[] {
 	const results: string[] = [];
-
-	if (source > 0) {
-		backtrack(source.toString(), source, 0, source, source, target, results);
-	}
-
+	backtrack(source.toString(), source, 0, source, source, target, results);
 	return results;
 }

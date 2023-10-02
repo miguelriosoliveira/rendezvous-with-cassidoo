@@ -11,6 +11,11 @@ describe('#addOperators', () => {
 		expect(result).toStrictEqual([]);
 	});
 
+	it("should return ['-1+2*3'] for source 1123 and target 6", () => {
+		const result = addOperators(-123, 5);
+		expect(result).toStrictEqual(['-1+2*3']);
+	});
+
 	it("should return ['5*5'] for source 55 and target 25", () => {
 		const result = addOperators(55, 25);
 		expect(result.sort()).toStrictEqual(['5*5'].sort());
