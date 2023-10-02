@@ -94,6 +94,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [317 - separateAndSort](src/2023/317-separateAndSort)
 - [318 - buildStaircase](src/2023/318-buildStaircase)
 - [319 - typeMatchup](src/2023/319-typeMatchup)
+- [320 - addOperators](src/2023/320-addOperators)
 </details>
 
 ## Installing & Running
