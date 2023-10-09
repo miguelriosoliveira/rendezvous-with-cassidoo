@@ -95,6 +95,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [318 - buildStaircase](src/2023/318-buildStaircase)
 - [319 - typeMatchup](src/2023/319-typeMatchup)
 - [320 - addOperators](src/2023/320-addOperators)
+- [321 - parseNumber](src/2023/321-parseNumber)
 </details>
 
 ## Installing & Running
