@@ -96,6 +96,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [319 - typeMatchup](src/2023/319-typeMatchup)
 - [320 - addOperators](src/2023/320-addOperators)
 - [321 - parseNumber](src/2023/321-parseNumber)
+- [323 - kPal](src/2023/323-kPal)
 </details>
 
 ## Installing & Running
