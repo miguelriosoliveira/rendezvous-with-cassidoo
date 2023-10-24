@@ -5,13 +5,15 @@ describe('#kPal', () => {
 		expect(kPal('abcweca', 2)).toBe(true);
 		expect(kPal('abcdeedcba', 3)).toBe(true);
 		expect(kPal('racecar', 0)).toBe(true);
-		expect(kPal('rracecar', 1)).toBe(true);
+		expect(kPal('racecar1', 1)).toBe(true);
+		expect(kPal('racecar12', 2)).toBe(true);
+		expect(kPal('racecar123', 3)).toBe(true);
+		expect(kPal('hello', 10)).toBe(true);
 	});
 
 	it('should return false for strings that cannot be made palindrome by deleting at most k characters', () => {
 		expect(kPal('acxcb', 1)).toBe(false);
 		expect(kPal('abcdefg', 2)).toBe(false);
-		expect(kPal('hello', 10)).toBe(false);
 	});
 
 	it('should handle empty strings', () => {
