@@ -98,6 +98,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [321 - parseNumber](src/2023/321-parseNumber)
 - [322 - isIsomorphic](src/2023/322-isIsomorphic)
 - [323 - kPal](src/2023/323-kPal)
+- [324 - lexoNext](src/2023/324-lexoNext)
 </details>
 
 ## Installing & Running
