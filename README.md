@@ -100,6 +100,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [323 - kPal](src/2023/323-kPal)
 - [324 - lexoNext](src/2023/324-lexoNext)
 - [325 - scoreWordGame](src/2023/325-scoreWordGame)
+- [326 - doTasks](src/2023/326-doTasks)
 </details>
 
 ## Installing & Running
