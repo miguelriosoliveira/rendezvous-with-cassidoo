@@ -101,6 +101,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [324 - lexoNext](src/2023/324-lexoNext)
 - [325 - scoreWordGame](src/2023/325-scoreWordGame)
 - [326 - doTasks](src/2023/326-doTasks)
+- [327 - betweenNums](src/2023/327-betweenNums)
 </details>
 
 ## Installing & Running
