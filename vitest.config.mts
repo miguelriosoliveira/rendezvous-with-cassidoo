@@ -5,9 +5,11 @@ export default defineConfig({
 	test: {
 		globals: true,
 		clearMocks: true,
+		dir: 'src/',
 		coverage: {
 			reporter: ['text', 'json', 'html', 'lcov'],
+			include: ['src/'],
+			exclude: ['src/2023/314-guessingGame/game.ts'],
 		},
-		dir: 'src/',
 	},
 });

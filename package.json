@@ -17,7 +17,6 @@
 		"@stryker-mutator/core": "^8.0.0",
 		"@stryker-mutator/typescript-checker": "^8.0.0",
 		"@stryker-mutator/vitest-runner": "^8.0.0",
-		"@types/node": "^20.10.3",
 		"@typescript-eslint/eslint-plugin": "^6.13.2",
 		"@typescript-eslint/parser": "^6.13.2",
 		"@vitest/coverage-v8": "^1.0.1",
@@ -30,9 +29,7 @@
 		"eslint-plugin-promise": "^6.1.1",
 		"husky": "^8.0.3",
 		"prettier": "^3.1.0",
-		"tsx": "^4.6.2",
 		"typescript": "^5.3.2",
-		"vite": "^5.0.5",
 		"vitest": "^1.0.1"
 	}
 }
