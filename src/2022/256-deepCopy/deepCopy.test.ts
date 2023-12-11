@@ -16,7 +16,7 @@ describe('#deepCopy', () => {
 		node1.random = node3;
 		node3.random = node2;
 
-		const copy = deepCopy(node1) as Node;
+		const copy = deepCopy(node1)!;
 
 		expect(copy).toStrictEqual(node1);
 		expect(copy.next).toStrictEqual(node2);

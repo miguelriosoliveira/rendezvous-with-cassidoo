@@ -26,11 +26,11 @@ export function postfix(expression: string): number {
 			return;
 		}
 
-		const b = stack.pop() as number;
-		const a = stack.pop() as number;
+		const b = stack.pop()!;
+		const a = stack.pop()!;
 		const result = operation(a, b);
 		stack.push(result);
 	});
 
-	return stack.pop() as number;
+	return stack.pop()!;
 }

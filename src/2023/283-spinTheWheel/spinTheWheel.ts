@@ -27,10 +27,10 @@ function getMultiplier(number: number) {
 	const multiplier = isInInterval(number, INTERVALS[MULTIPLIER.LOSE])
 		? MULTIPLIER.LOSE
 		: isInInterval(number, INTERVALS[MULTIPLIER.KEEP])
-		  ? MULTIPLIER.KEEP
-		  : isInInterval(number, INTERVALS[MULTIPLIER.DOUBLE])
-		    ? MULTIPLIER.DOUBLE
-		    : -1;
+			? MULTIPLIER.KEEP
+			: isInInterval(number, INTERVALS[MULTIPLIER.DOUBLE])
+				? MULTIPLIER.DOUBLE
+				: -1;
 
 	if (multiplier < 0) {
 		throw new Error('invalid interval');

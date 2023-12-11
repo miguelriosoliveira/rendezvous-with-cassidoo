@@ -16,6 +16,7 @@ module.exports = {
 	],
 	rules: {
 		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/no-non-null-assertion': 'off',
 		'@typescript-eslint/prefer-nullish-coalescing': 'off',
 		'@typescript-eslint/restrict-plus-operands': 'off',
 		'@typescript-eslint/restrict-template-expressions': 'off',
