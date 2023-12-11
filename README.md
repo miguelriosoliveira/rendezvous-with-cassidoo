@@ -103,6 +103,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [326 - doTasks](src/2023/326-doTasks)
 - [327 - betweenNums](src/2023/327-betweenNums)
 - [329 - rotatedNum](src/2023/329-rotatedNum)
+- [330 - majority](src/2023/330-majority)
 </details>
 
 ## Installing & Running
