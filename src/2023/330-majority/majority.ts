@@ -55,7 +55,7 @@ export function majority(arr: number[]): NumberStr | Parity | 'No majority' {
 		},
 	);
 
-	const majorityNumbers = getMajority<NumberStr>(numberCountMap);
+	const majorityNumbers = getMajority(numberCountMap);
 	if (majorityNumbers.length === 1) {
 		return majorityNumbers[0];
 	}
