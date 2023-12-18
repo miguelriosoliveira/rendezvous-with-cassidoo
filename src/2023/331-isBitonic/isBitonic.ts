@@ -24,7 +24,7 @@ export function isBitonic(arr: number[]): { isBitonic: boolean; peak: number | n
 	const peakIndex = arr.findIndex(checkPeak);
 	const nextPeak = arr.slice(peakIndex + 1).find(checkPeak);
 
-	const hasSinglePeak = !nextPeak && peakIndex >= 0;
+	const hasSinglePeak = !nextPeak && peakIndex >= 1;
 	const peak = hasSinglePeak ? arr[peakIndex] : null;
 	return { isBitonic: !!peak, peak };
 }
