@@ -105,6 +105,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [329 - rotatedNum](src/2023/329-rotatedNum)
 - [330 - majority](src/2023/330-majority)
 - [331 - isBitonic](src/2023/331-isBitonic)
+- [332 - returnGift](src/2023/332-returnGift)
 </details>
 
 ## Installing & Running
