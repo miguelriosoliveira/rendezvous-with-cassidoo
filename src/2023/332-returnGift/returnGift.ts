@@ -10,10 +10,6 @@ Example:
 > "Mar 23, 2024"
 */
 
-function addDays(date: Date, days: number): void {
-	date.setDate(date.getDate() + days);
-}
-
 export function returnGift(boughtDateStr: string): string {
 	// date string validation
 	if (Number.isNaN(Date.parse(boughtDateStr))) {
@@ -24,11 +20,8 @@ export function returnGift(boughtDateStr: string): string {
 	const returnDate = new Date(boughtDate);
 
 	// 11 is December, since 0 is January
-	if (boughtDate.getMonth() === 11) {
-		addDays(returnDate, 90);
-	} else {
-		addDays(returnDate, 30);
-	}
+	const daysToAdd = boughtDate.getMonth() === 11 ? 90 : 30;
+	returnDate.setDate(returnDate.getDate() + daysToAdd);
 
 	return returnDate.toLocaleDateString('en', {
 		day: '2-digit',
