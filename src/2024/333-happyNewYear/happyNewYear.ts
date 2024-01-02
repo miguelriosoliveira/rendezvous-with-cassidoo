@@ -36,6 +36,6 @@ export function happyNewYear(): void {
 			charCodeMap.exclamation,
 		]
 			.map(code => String.fromCharCode(code))
-			.join(''),
+			.join(String()),
 	);
 }
