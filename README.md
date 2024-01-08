@@ -110,6 +110,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 #### 2024
 
 - [333 - happyNewYear](src/2024/333-happyNewYear)
+- [334 - letters](src/2024/334-letters)
 </details>
 
 ## Installing & Running
