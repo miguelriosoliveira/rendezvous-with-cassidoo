@@ -13,13 +13,14 @@ Example:
 
 // thanks to https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-136.php
 function getPermutations(str: string): string[] {
-	return str
-		.split('')
-		.reduce<string[]>(
-			(acc, letter, i) =>
-				acc.concat(getPermutations(str.slice(0, i) + str.slice(i + 1)).map(val => letter + val)),
-			[str],
-		);
+	return str.split('').reduce<string[]>(
+		(acc, letter, i) => {
+			return acc.concat(
+				getPermutations(str.slice(0, i) + str.slice(i + 1)).map(val => letter + val),
+			);
+		},
+		[str],
+	);
 }
 
 export function lexoNext(n: number): number {
