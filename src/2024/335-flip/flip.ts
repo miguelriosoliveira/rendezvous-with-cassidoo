@@ -24,29 +24,9 @@ let array = [
 ]
 */
 
-type Matrix = number[][];
-
-function flipHorizontally(matrix: Matrix): Matrix {
+export function flip(matrix: number[][], direction: 'horizontal' | 'vertical'): number[][] {
+	if (direction === 'vertical') {
+		return matrix.toReversed();
+	}
 	return matrix.map(row => row.toReversed());
-}
-
-function transpose(matrix: Matrix) {
-	const transposed: Matrix = [];
-	for (let i = 0; i < matrix.length; i++) {
-		const column: number[] = [];
-
-		for (let j = 0; j < matrix[i].length; j++) {
-			column.push(matrix[j][i]);
-		}
-
-		transposed.push(column);
-	}
-	return transposed;
-}
-
-export function flip(matrix: Matrix, direction: 'horizontal' | 'vertical'): Matrix {
-	if (direction === 'horizontal') {
-		return flipHorizontally(matrix);
-	}
-	return transpose(flipHorizontally(transpose(matrix)));
 }
