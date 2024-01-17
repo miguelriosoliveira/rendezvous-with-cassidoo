@@ -26,7 +26,7 @@ let array = [
 
 export function flip(matrix: number[][], direction: 'horizontal' | 'vertical'): number[][] {
 	if (direction === 'vertical') {
-		return matrix.toReversed();
+		return matrix.reverse();
 	}
-	return matrix.map(row => row.toReversed());
+	return matrix.map(row => row.reverse());
 }
