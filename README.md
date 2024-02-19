@@ -114,6 +114,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [335 - flip](src/2024/335-flip)
 - [337 - daysBetween](src/2024/337-daysBetween)
 - [339 - fromTo](src/2024/339-fromTo)
+- [340 - wordLengthProduct](src/2024/340-wordLengthProduct)
 </details>
 
 ## Installing & Running
