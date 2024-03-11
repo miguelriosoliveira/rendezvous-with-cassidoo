@@ -9,11 +9,8 @@ Example:
 */
 
 export function maxGap(arr: number[]): number {
-	if (arr.length < 2) {
-		return 0;
-	}
-
 	return Math.max(
+		0, // minimum value (if less than 2 elements, the following computation gives '-Infinity')
 		...arr
 			.toSorted((a, b) => a - b)
 			.map((number, i, array) => array[i + 1] - number)
