@@ -116,6 +116,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [339 - fromTo](src/2024/339-fromTo)
 - [340 - wordLengthProduct](src/2024/340-wordLengthProduct)
 - [341 - removeDigit](src/2024/341-removeDigit)
+- [343 - maxGap](src/2024/343-maxGap)
 </details>
 
 ## Installing & Running
