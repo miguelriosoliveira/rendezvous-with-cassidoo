@@ -12,7 +12,7 @@ export function maxGap(arr: number[]): number {
 	return Math.max(
 		0, // minimum value (if less than 2 elements, the following computation gives '-Infinity')
 		...arr
-			.toSorted((a, b) => a - b)
+			.sort((a, b) => a - b)
 			.map((number, i, array) => array[i + 1] - number)
 			.filter(number => !Number.isNaN(number)),
 	);
