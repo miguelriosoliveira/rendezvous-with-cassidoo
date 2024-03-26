@@ -9,11 +9,7 @@ module.exports = {
 		project: true,
 		tsconfigRootDir: __dirname,
 	},
-	extends: [
-		'standard-with-typescript',
-		'plugin:@typescript-eslint/recommended',
-		'plugin:prettier/recommended',
-	],
+	extends: ['love', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
 	rules: {
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'off',
