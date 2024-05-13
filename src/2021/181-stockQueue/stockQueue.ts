@@ -27,7 +27,6 @@ export function stockQueue(snapshot: Stock[]): Stock[] {
 	const stockDict: StockDict = {};
 
 	snapshot.forEach(stock => {
-		// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
 		delete stockDict[stock.sym];
 		stockDict[stock.sym] = stock.cost;
 	});

@@ -12,7 +12,6 @@ Example:
 
 // https://stackoverflow.com/a/16155417/4916416
 function dec2bin(dec: number): string {
-	// eslint-disable-next-line no-bitwise
 	return (dec >>> 0).toString(2);
 }
 
