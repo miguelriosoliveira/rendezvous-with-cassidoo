@@ -1,6 +1,6 @@
-# maxGap
+# maxProduct
 
-Interview question of the [issue #343 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/if-you-dont-go-towards-the-thing-you-fear-you/).
+Interview question of the [issue #352 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/an-honest-man-is-always-a-child-socrates/).
 
 ## The Question
 
