@@ -11,20 +11,20 @@
 		"index": "sh generate-index.sh"
 	},
 	"dependencies": {
-		"dotenv-cli": "^7.4.1"
+		"dotenv-cli": "^7.4.2"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.2.0",
+		"@eslint/js": "^9.5.0",
 		"@stryker-mutator/core": "^8.2.6",
 		"@stryker-mutator/typescript-checker": "^8.2.6",
 		"@stryker-mutator/vitest-runner": "^8.2.6",
-		"@types/node": "^20.12.8",
-		"@vitest/coverage-v8": "^1.5.3",
-		"eslint": "^9.2.0",
-		"globals": "^15.2.0",
+		"@types/node": "^20.14.2",
+		"@vitest/coverage-v8": "^1.6.0",
+		"eslint": "^9.5.0",
+		"globals": "^15.6.0",
 		"husky": "^9.0.11",
 		"typescript": "^5.4.5",
-		"typescript-eslint": "^7.9.0",
-		"vitest": "^1.5.3"
+		"typescript-eslint": "^7.13.0",
+		"vitest": "^1.6.0"
 	}
 }
