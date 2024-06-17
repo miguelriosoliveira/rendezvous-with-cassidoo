@@ -119,6 +119,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [343 - maxGap](src/2024/343-maxGap)
 - [352 - maxProduct](src/2024/352-maxProduct)
 - [355 - onlyEvens](src/2024/355-onlyEvens)
+- [357 - sortNames](src/2024/357-sortNames)
 </details>
 
 ## Installing & Running
