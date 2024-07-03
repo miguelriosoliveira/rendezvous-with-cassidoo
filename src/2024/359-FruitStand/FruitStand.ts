@@ -4,7 +4,7 @@ prices, update them, and calculate the total value of all the fruits in the stan
 Implement the following methods:
 	- addFruit(name, quantity, price)
 	- updateQuantity(name, quantity)
-	- totalValue()!
+	- totalValue()
 
 Example usage:
 
