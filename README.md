@@ -121,6 +121,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [355 - onlyEvens](src/2024/355-onlyEvens)
 - [357 - sortNames](src/2024/357-sortNames)
 - [359 - FruitStand](src/2024/359-FruitStand)
+- [360 - canPlantFlowers](src/2024/360-canPlantFlowers)
 </details>
 
 ## Installing & Running
