@@ -15,16 +15,16 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.8.0",
-		"@stryker-mutator/core": "^8.2.6",
-		"@stryker-mutator/typescript-checker": "^8.2.6",
-		"@stryker-mutator/vitest-runner": "^8.2.6",
-		"@types/node": "^22.0.0",
-		"@vitest/coverage-v8": "^2.0.4",
+		"@stryker-mutator/core": "^8.4.0",
+		"@stryker-mutator/typescript-checker": "^8.4.0",
+		"@stryker-mutator/vitest-runner": "^8.4.0",
+		"@types/node": "^22.1.0",
+		"@vitest/coverage-v8": "^2.0.5",
 		"eslint": "^9.8.0",
-		"globals": "^15.8.0",
+		"globals": "^15.9.0",
 		"husky": "^9.1.4",
 		"typescript": "^5.5.4",
-		"typescript-eslint": "^7.17.0",
-		"vitest": "^2.0.4"
+		"typescript-eslint": "^8.0.1",
+		"vitest": "^2.0.5"
 	}
 }
