@@ -18,13 +18,13 @@
 		"@stryker-mutator/core": "^8.5.0",
 		"@stryker-mutator/typescript-checker": "^8.5.0",
 		"@stryker-mutator/vitest-runner": "^8.5.0",
-		"@types/node": "^22.2.0",
+		"@types/node": "^22.3.0",
 		"@vitest/coverage-v8": "^2.0.5",
 		"eslint": "^9.9.0",
 		"globals": "^15.9.0",
 		"husky": "^9.1.4",
 		"typescript": "^5.5.4",
-		"typescript-eslint": "^8.0.1",
+		"typescript-eslint": "^8.1.0",
 		"vitest": "^2.0.5"
 	}
 }
