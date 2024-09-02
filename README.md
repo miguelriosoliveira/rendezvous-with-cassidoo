@@ -123,6 +123,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [359 - FruitStand](src/2024/359-FruitStand)
 - [360 - canPlantFlowers](src/2024/360-canPlantFlowers)
 - [361 - increasingSubsequence](src/2024/361-increasingSubsequence)
+- [368 - maxPairs](src/2024/368-maxPairs)
 </details>
 
 ## Installing & Running
