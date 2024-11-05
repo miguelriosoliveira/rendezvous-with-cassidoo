@@ -124,6 +124,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [360 - canPlantFlowers](src/2024/360-canPlantFlowers)
 - [361 - increasingSubsequence](src/2024/361-increasingSubsequence)
 - [368 - maxPairs](src/2024/368-maxPairs)
+- [377 - groupAnagrams](src/2024/377-groupAnagrams)
 </details>
 
 ## Installing & Running
