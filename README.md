@@ -125,6 +125,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [361 - increasingSubsequence](src/2024/361-increasingSubsequence)
 - [368 - maxPairs](src/2024/368-maxPairs)
 - [377 - groupAnagrams](src/2024/377-groupAnagrams)
+- [378 - seeBuildingsLeft](src/2024/378-seeBuildingsLeft)
 </details>
 
 ## Installing & Running
