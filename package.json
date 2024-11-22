@@ -11,21 +11,21 @@
 		"index": "sh generate-index.sh"
 	},
 	"dependencies": {
-		"dotenv-cli": "^7.4.2"
+		"dotenv-cli": "^7.4.4"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.15.0",
 		"@stryker-mutator/core": "^8.6.0",
 		"@stryker-mutator/typescript-checker": "^8.6.0",
 		"@stryker-mutator/vitest-runner": "^8.6.0",
-		"@types/node": "^22.9.0",
+		"@types/node": "^22.9.1",
 		"@vitest/coverage-v8": "^2.1.5",
 		"axios": "^1.7.7",
-		"eslint": "^9.14.0",
+		"eslint": "^9.15.0",
 		"globals": "^15.12.0",
-		"husky": "^9.1.6",
+		"husky": "^9.1.7",
 		"typescript": "^5.6.3",
-		"typescript-eslint": "^8.14.0",
+		"typescript-eslint": "^8.15.0",
 		"vitest": "^2.1.5"
 	}
 }
