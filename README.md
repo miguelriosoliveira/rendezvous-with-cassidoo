@@ -126,6 +126,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [368 - maxPairs](src/2024/368-maxPairs)
 - [377 - groupAnagrams](src/2024/377-groupAnagrams)
 - [378 - seeBuildingsLeft](src/2024/378-seeBuildingsLeft)
+- [381 - rollCall](src/2024/381-rollCall)
 </details>
 
 ## Installing & Running
