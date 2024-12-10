@@ -14,18 +14,18 @@
 		"dotenv-cli": "^7.4.4"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.15.0",
-		"@stryker-mutator/core": "^8.6.0",
-		"@stryker-mutator/typescript-checker": "^8.6.0",
-		"@stryker-mutator/vitest-runner": "^8.6.0",
-		"@types/node": "^22.10.0",
-		"@vitest/coverage-v8": "^2.1.6",
-		"axios": "^1.7.8",
-		"eslint": "^9.15.0",
-		"globals": "^15.12.0",
+		"@eslint/js": "^9.16.0",
+		"@stryker-mutator/core": "^8.7.0",
+		"@stryker-mutator/typescript-checker": "^8.7.0",
+		"@stryker-mutator/vitest-runner": "^8.7.0",
+		"@types/node": "^22.10.1",
+		"@vitest/coverage-v8": "^2.1.8",
+		"axios": "^1.7.9",
+		"eslint": "^9.16.0",
+		"globals": "^15.13.0",
 		"husky": "^9.1.7",
 		"typescript": "^5.7.2",
-		"typescript-eslint": "^8.16.0",
-		"vitest": "^2.1.6"
+		"typescript-eslint": "^8.18.0",
+		"vitest": "^2.1.8"
 	}
 }
