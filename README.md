@@ -127,6 +127,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [377 - groupAnagrams](src/2024/377-groupAnagrams)
 - [378 - seeBuildingsLeft](src/2024/378-seeBuildingsLeft)
 - [381 - rollCall](src/2024/381-rollCall)
+- [385 - newYearsDay](src/2024/385-newYearsDay)
 </details>
 
 ## Installing & Running
