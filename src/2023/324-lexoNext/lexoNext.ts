@@ -11,25 +11,23 @@ Example:
 > 314195
 */
 
-// thanks to https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-136.php
-function getPermutations(str: string): string[] {
-	return str.split('').reduce<string[]>(
-		(acc, letter, i) => {
-			return acc.concat(
-				getPermutations(str.slice(0, i) + str.slice(i + 1)).map(val => letter + val),
-			);
-		},
-		[str],
-	);
-}
+export function lexoNext(num: number): number {
+	const digits = String(num).split('').map(Number);
 
-export function lexoNext(n: number): number {
-	const permutations = Array.from(new Set(getPermutations(n.toString()))); // remove repeated values
-	return (
-		permutations
-			.map(Number)
-			.filter(num => num > n)
-			.sort((a, b) => a - b)
-			.at(0) || n
+	// Step 1: Find the rightmost digit that is smaller than the digit next to it
+	const i = digits.findLastIndex((digit, i, arr) => digit < arr[i + 1]);
+
+	// Step 2: Find the digit to the right of 'i' that is larger than digits[i]
+	const j = i + digits.slice(i).findLastIndex(digit => digit > digits[i]);
+
+	// Step 3: Swap digits[i] and digits[j]
+	[digits[i], digits[j]] = [digits[j], digits[i]];
+
+	// Step 4: Reverse the sequence to the right of 'i' to get the smallest permutation
+	return Number(
+		digits
+			.slice(0, i + 1)
+			.concat(digits.slice(i + 1).reverse())
+			.join(''),
 	);
 }
