@@ -128,6 +128,10 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [378 - seeBuildingsLeft](src/2024/378-seeBuildingsLeft)
 - [381 - rollCall](src/2024/381-rollCall)
 - [385 - newYearsDay](src/2024/385-newYearsDay)
+
+#### 2025
+
+- [392 - findShieldBreak](src/2025/392-findShieldBreak)
 </details>
 
 ## Installing & Running
