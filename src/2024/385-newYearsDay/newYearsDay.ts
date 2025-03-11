@@ -11,5 +11,8 @@ Example:
 */
 
 export function newYearsDay(year: number): string {
-	return new Date(year.toString()).toLocaleDateString('en-us', { weekday: 'long' });
+	return new Date(year.toString()).toLocaleDateString('en-US', {
+		weekday: 'long',
+		timeZone: 'UTC',
+	});
 }
