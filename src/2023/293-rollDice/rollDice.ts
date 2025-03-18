@@ -13,7 +13,7 @@ Example:
 > 21
 */
 
-import { getRandomInt } from './getRandomInt';
+import { getRandomInt } from '../../utils/getRandomInt';
 
 function rollSingleDice(diceNotation: string) {
 	const [diceCount, sidesCount] = diceNotation.split('d').map(Number);

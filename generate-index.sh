@@ -2,6 +2,10 @@ new_index="<details>\n\t<summary>Click to expand!</summary>"
 
 for year_dir in src/*; do
 	year=$(echo $year_dir | cut -d"/" -f2)
+	# skips if not a number
+	if ! [[ $year =~ ^[0-9]+$ ]]; then
+		break
+	fi
 	new_index="${new_index}\n\n#### $year\n"
 	for dir in $year_dir/*; do
 		question=$(echo $dir | cut -d"/" -f3)

@@ -17,7 +17,7 @@ higher
 Correct! You won in 5 guesses!
 */
 
-import { getRandomInt } from './getRandomInt';
+import { getRandomInt } from '../../utils/getRandomInt';
 
 type Hint = '>' | '<' | '=';
 
