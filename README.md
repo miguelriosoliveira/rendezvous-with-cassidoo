@@ -132,6 +132,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 #### 2025
 
 - [392 - findShieldBreak](src/2025/392-findShieldBreak)
+- [397 - findLongestStreak](src/2025/397-findLongestStreak)
 </details>
 
 ## Installing & Running
