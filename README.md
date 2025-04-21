@@ -134,6 +134,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [392 - findShieldBreak](src/2025/392-findShieldBreak)
 - [397 - findLongestStreak](src/2025/397-findLongestStreak)
 - [398 - findLongestTimeGap](src/2025/398-findLongestTimeGap)
+- [401 - calculateIngredients](src/2025/401-calculateIngredients)
 </details>
 
 ## Installing & Running
