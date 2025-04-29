@@ -12,24 +12,6 @@ Examples:
 > ["a", "2", "b", "2", "c", "3"]
 */
 
-// export function compress(chars: string[]): string[] {
-// 	const charCountMap: Map<string, number> = new Map();
-
-// 	chars.forEach(char => {
-// 		const currentCount = charCountMap.get(char) || 0;
-// 		return charCountMap.set(char, currentCount + 1);
-// 	});
-
-// 	const compressed = charCountMap
-// 		.entries()
-// 		.toArray()
-// 		.flatMap(([char, count]) => (count > 1 ? [char, String(count)] : char));
-
-// 	console.log({ charCountMap, compressed });
-
-// 	return compressed;
-// }
-
 type CharGroup = {
 	char: string;
 	count: number;
