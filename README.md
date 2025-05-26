@@ -136,6 +136,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [398 - findLongestTimeGap](src/2025/398-findLongestTimeGap)
 - [401 - calculateIngredients](src/2025/401-calculateIngredients)
 - [402 - compress](src/2025/402-compress)
+- [406 - oddSum](src/2025/406-oddSum)
 </details>
 
 ## Installing & Running
