@@ -137,6 +137,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [401 - calculateIngredients](src/2025/401-calculateIngredients)
 - [402 - compress](src/2025/402-compress)
 - [406 - oddSum](src/2025/406-oddSum)
+- [407 - nestArray](src/2025/407-nestArray)
 </details>
 
 ## Installing & Running
