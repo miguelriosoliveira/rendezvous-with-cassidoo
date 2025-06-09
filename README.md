@@ -138,6 +138,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [402 - compress](src/2025/402-compress)
 - [406 - oddSum](src/2025/406-oddSum)
 - [407 - nestArray](src/2025/407-nestArray)
+- [408 - isValidTrafficSequence](src/2025/408-isValidTrafficSequence)
 </details>
 
 ## Installing & Running
