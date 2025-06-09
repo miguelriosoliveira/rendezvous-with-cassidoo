@@ -18,12 +18,12 @@ Example:
 
 type TrafficLight = 'green' | 'yellow' | 'red';
 
-const stateMachine1: Record<TrafficLight, TrafficLight> = {
+const STATE_MACHINE: Record<TrafficLight, TrafficLight> = {
 	green: 'yellow',
 	yellow: 'red',
 	red: 'green',
 };
 
 export function isValidTrafficSequence(lights: TrafficLight[]): boolean {
-	return lights.slice(0, -1).every((light, i) => lights[i + 1] === stateMachine1[light]);
+	return lights.slice(0, -1).every((light, i) => lights[i + 1] === STATE_MACHINE[light]);
 }
