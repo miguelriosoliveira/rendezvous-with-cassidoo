@@ -140,6 +140,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [407 - nestArray](src/2025/407-nestArray)
 - [408 - isValidTrafficSequence](src/2025/408-isValidTrafficSequence)
 - [409 - sortMonarchs](src/2025/409-sortMonarchs)
+- [416 - minMonsterDistance](src/2025/416-minMonsterDistance)
 </details>
 
 ## Installing & Running
