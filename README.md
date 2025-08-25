@@ -142,6 +142,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [409 - sortMonarchs](src/2025/409-sortMonarchs)
 - [416 - minMonsterDistance](src/2025/416-minMonsterDistance)
 - [418 - createLaundryItem](src/2025/418-createLaundryItem)
+- [419 - orderSummary](src/2025/419-orderSummary)
 </details>
 
 ## Installing & Running
