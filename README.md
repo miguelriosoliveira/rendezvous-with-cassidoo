@@ -143,6 +143,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [416 - minMonsterDistance](src/2025/416-minMonsterDistance)
 - [418 - createLaundryItem](src/2025/418-createLaundryItem)
 - [419 - orderSummary](src/2025/419-orderSummary)
+- [421 - sumNeighbors](src/2025/421-sumNeighbors)
 </details>
 
 ## Installing & Running
