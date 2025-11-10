@@ -144,6 +144,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [418 - createLaundryItem](src/2025/418-createLaundryItem)
 - [419 - orderSummary](src/2025/419-orderSummary)
 - [421 - sumNeighbors](src/2025/421-sumNeighbors)
+- [430 - merge](src/2025/430-merge)
 </details>
 
 ## Installing & Running
