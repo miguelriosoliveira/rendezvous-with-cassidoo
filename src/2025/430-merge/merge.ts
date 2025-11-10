@@ -1,3 +1,5 @@
+import { shiftRight } from './shiftRight';
+
 /*
 You are given two sorted arrays, a and b, where a has a large enough size buffer at the end to hold
 b (which can be spaces, zeroes, or nulls).
@@ -12,8 +14,19 @@ let b = [2, 4, 6];
 > [1, 2, 3, 4, 5, 6]
 */
 
-export function merge(a: number[], b: number[]): number[] {
-	const firstEmptyPos = a.length - b.length;
-	b.forEach((bNumber, bIndex) => (a[firstEmptyPos + bIndex] = bNumber));
-	return a.sort((el1, el2) => el1 - el2);
+export type BufferArray = Array<number | null>;
+
+export function merge(a: BufferArray, b: number[]): number[] {
+	let indexB = 0;
+
+	a.forEach((currentA, indexA) => {
+		const currentB = b[indexB];
+		if (currentA === null || currentB < currentA) {
+			shiftRight(a, indexA);
+			a[indexA] = currentB;
+			indexB++;
+		}
+	});
+
+	return a as number[];
 }
