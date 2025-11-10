@@ -1,4 +1,4 @@
-import { shiftRight } from './shiftRight';
+import { shiftRight } from '../../utils/shiftRight';
 
 /*
 You are given two sorted arrays, a and b, where a has a large enough size buffer at the end to hold

@@ -1,5 +1,5 @@
 import { merge } from './merge';
-import * as ShiftRight from './shiftRight';
+import * as ShiftRight from '../../utils/shiftRight';
 
 describe('#merge', () => {
 	it('should merge two sorted arrays correctly', () => {
