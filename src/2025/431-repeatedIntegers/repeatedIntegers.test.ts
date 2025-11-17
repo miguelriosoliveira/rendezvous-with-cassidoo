@@ -5,6 +5,10 @@ describe('#repeatedIntegers', () => {
 		expect(repeatedIntegers(4)).toStrictEqual([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]);
 	});
 
+	it('should return an empty array for n<0', () => {
+		expect(repeatedIntegers(-1)).toStrictEqual([]);
+	});
+
 	it('should return an empty array for n=0', () => {
 		expect(repeatedIntegers(0)).toStrictEqual([]);
 	});
