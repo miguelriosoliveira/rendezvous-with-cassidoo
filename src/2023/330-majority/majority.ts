@@ -31,29 +31,15 @@ function getMajority<T extends string | number | symbol>(countMap: Record<T, num
 }
 
 export function majority(arr: number[]): NumberStr | Parity | 'No majority' {
-	const { numberCountMap, parityMap } = arr.reduce<{
-		numberCountMap: Record<NumberStr, number>;
-		parityMap: Record<Parity, number>;
-	}>(
-		(acc, number) => {
-			const numberKey: NumberStr = `${number}`;
-			const parityKey: Parity = number % 2 === 0 ? 'Majority evens' : 'Majority odds';
-			return {
-				numberCountMap: {
-					...acc.numberCountMap,
-					[numberKey]: (acc.numberCountMap[numberKey] || 0) + 1,
-				},
-				parityMap: {
-					...acc.parityMap,
-					[parityKey]: acc.parityMap[parityKey] + 1,
-				},
-			};
-		},
-		{
-			numberCountMap: {},
-			parityMap: { 'Majority evens': 0, 'Majority odds': 0 },
-		},
-	);
+	const numberCountMap: Record<NumberStr, number> = {};
+	const parityMap: Record<Parity, number> = { 'Majority evens': 0, 'Majority odds': 0 };
+
+	for (const number of arr) {
+		const numberKey: NumberStr = `${number}`;
+		const parityKey: Parity = number % 2 === 0 ? 'Majority evens' : 'Majority odds';
+		numberCountMap[numberKey] = (numberCountMap[numberKey] || 0) + 1;
+		parityMap[parityKey]++;
+	}
 
 	const majorityNumbers = getMajority(numberCountMap);
 	if (majorityNumbers.length === 1) {

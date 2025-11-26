@@ -14,8 +14,21 @@ Example:
 */
 
 export function maxSubarray(arr: number[], n: number): number[] {
-	return arr
-		.map((_, i) => arr.slice(i, i + n))
-		.map(subarray => ({ subarray, sum: subarray.reduce((sum, num) => sum + num, 0) }))
-		.sort((a, b) => b.sum - a.sum)[0].subarray;
+	if (n >= arr.length) {
+		return arr;
+	}
+
+	let currentSum = arr.slice(0, n).reduce((sum, num) => sum + num, 0);
+	let maxSum = currentSum;
+	let maxIndex = 0;
+
+	for (let i = 1; i <= arr.length - n; i++) {
+		currentSum = currentSum - arr[i - 1] + arr[i + n - 1];
+		if (currentSum > maxSum) {
+			maxSum = currentSum;
+			maxIndex = i;
+		}
+	}
+
+	return arr.slice(maxIndex, maxIndex + n);
 }
