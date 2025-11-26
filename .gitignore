@@ -132,3 +132,4 @@ dist
 # stryker temp files
 .stryker-tmp
 reports/
+package-lock.json
