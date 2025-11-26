@@ -14,6 +14,10 @@ Example:
 */
 
 export function maxSubarray(arr: number[], n: number): number[] {
+	if (n <= 0) {
+		return [];
+	}
+
 	if (n >= arr.length) {
 		return arr;
 	}
