@@ -146,6 +146,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [421 - sumNeighbors](src/2025/421-sumNeighbors)
 - [430 - merge](src/2025/430-merge)
 - [431 - repeatedIntegers](src/2025/431-repeatedIntegers)
+- [433 - sortHtmlColors](src/2025/433-sortHtmlColors)
 </details>
 
 ## Installing & Running
