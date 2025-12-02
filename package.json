@@ -16,7 +16,6 @@
 	"devDependencies": {
 		"@eslint/js": "^9.39.1",
 		"@stryker-mutator/core": "^9.4.0",
-		"@stryker-mutator/typescript-checker": "^9.4.0",
 		"@stryker-mutator/vitest-runner": "^9.4.0",
 		"@types/node": "^24.10.1",
 		"@vitest/coverage-v8": "^4.0.14",

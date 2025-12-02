@@ -18,9 +18,6 @@ importers:
       '@stryker-mutator/core':
         specifier: ^9.4.0
         version: 9.4.0(@types/node@24.10.1)
-      '@stryker-mutator/typescript-checker':
-        specifier: ^9.4.0
-        version: 9.4.0(@stryker-mutator/core@9.4.0(@types/node@24.10.1))(typescript@5.9.3)
       '@stryker-mutator/vitest-runner':
         specifier: ^9.4.0
         version: 9.4.0(@stryker-mutator/core@9.4.0(@types/node@24.10.1))(vitest@4.0.14(@types/node@24.10.1))
@@ -713,13 +710,6 @@ packages:
   '@stryker-mutator/instrumenter@9.4.0':
     resolution: {integrity: sha512-6ww7PWmflfWI2LdUZmm2tkHKtiehuEPH1FsPcrlF8X/5JWvkWAyLRbUkTnK4z7X/K7KWlbRmJwjMImeQLSLdRw==}
     engines: {node: '>=20.0.0'}
-
-  '@stryker-mutator/typescript-checker@9.4.0':
-    resolution: {integrity: sha512-GjkqOCnuEo0RhVILqHv0IbLpsKRc/b3OARfUhuOcdCjtuuyKYiYAY3/jRgd5uiZt5jFScW0oaQ1RClWGrjT7YA==}
-    engines: {node: '>=20.0.0'}
-    peerDependencies:
-      '@stryker-mutator/core': 9.4.0
-      typescript: '>=3.6'
 
   '@stryker-mutator/util@9.4.0':
     resolution: {integrity: sha512-xtL8hCY/3LvorlaM19bdbTvTL822Bh1S7L4s9z0wO4XvzU9ZXv5GsLeMVnkcOxRWJ1VLWO97U87eM12HZXyzag==}
@@ -2344,14 +2334,6 @@ snapshots:
       weapon-regex: 1.3.2
     transitivePeerDependencies:
       - supports-color
-
-  '@stryker-mutator/typescript-checker@9.4.0(@stryker-mutator/core@9.4.0(@types/node@24.10.1))(typescript@5.9.3)':
-    dependencies:
-      '@stryker-mutator/api': 9.4.0
-      '@stryker-mutator/core': 9.4.0(@types/node@24.10.1)
-      '@stryker-mutator/util': 9.4.0
-      semver: 7.7.2
-      typescript: 5.9.3
 
   '@stryker-mutator/util@9.4.0': {}
 

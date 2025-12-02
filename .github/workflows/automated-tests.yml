@@ -42,6 +42,14 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Restore Stryker incremental cache
+        uses: actions/cache@v4
+        with:
+          path: reports
+          key: stryker-incremental-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            stryker-incremental-${{ runner.os }}-
+
       - name: Run mutations
         run: pnpm test:mutation
         env:
