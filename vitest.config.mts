@@ -5,6 +5,7 @@ export default defineConfig({
 		globals: true,
 		clearMocks: true,
 		dir: 'src/',
+		isolate: false,
 		coverage: {
 			reporter: ['text', 'json', 'html', 'lcov'],
 			include: ['src/'],
