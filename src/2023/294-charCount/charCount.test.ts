@@ -16,4 +16,10 @@ describe('#charCount', () => {
 		const result2 = charCount();
 		expect(result1).toBe(result2);
 	});
+
+	it('should return words containing expected terms', () => {
+		const result = charCount();
+		// The file should contain text like "import", "function", "return", etc.
+		expect(result).toMatch(/(hundred|thousand|million)/);
+	});
 });
