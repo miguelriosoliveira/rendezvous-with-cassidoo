@@ -12,7 +12,13 @@ Example:
 */
 
 export function maximumProfit(prices: number[]): number {
-	return prices
-		.map((price, i) => prices.slice(i).sort((a, b) => b - a)[0] - price)
-		.sort((a, b) => b - a)[0];
+	let minPrice = Infinity;
+	let maxProfit = 0;
+
+	for (const price of prices) {
+		minPrice = Math.min(minPrice, price);
+		maxProfit = Math.max(maxProfit, price - minPrice);
+	}
+
+	return maxProfit;
 }

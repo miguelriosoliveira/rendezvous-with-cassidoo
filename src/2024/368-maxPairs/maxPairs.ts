@@ -20,15 +20,16 @@ type ShoeSide = 'L' | 'R';
 type Shoe = `${ShoeSide}-${number}`;
 
 export function maxPairs(shoes: Shoe[]): number {
-	const shoesMap = shoes
-		.map(shoe => shoe.split('-') as [ShoeSide, string])
-		.reduce<Record<number, ShoeSide[]>>((map, [side, sizeStr]) => {
-			const size = Number(sizeStr);
-			if (!map[size]) {
-				map[size] = [];
-			}
-			return { ...map, [size]: [...map[size], side] };
-		}, {});
+	const shoesMap: Record<number, ShoeSide[]> = {};
+
+	for (const shoe of shoes) {
+		const [side, sizeStr] = shoe.split('-') as [ShoeSide, string];
+		const size = Number(sizeStr);
+		if (!shoesMap[size]) {
+			shoesMap[size] = [];
+		}
+		shoesMap[size].push(side);
+	}
 
 	return Object.values(shoesMap).reduce((sum, sides) => {
 		// Stryker disable next-line all
