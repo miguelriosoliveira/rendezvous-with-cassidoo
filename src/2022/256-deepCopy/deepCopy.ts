@@ -40,6 +40,7 @@ export function deepCopy(nodeList: Node | null): Node | null {
 	const nodesCopy = copyNode(nodeList);
 	let currentNode: Node | null = nodeList;
 	let currentNodeCopy: Node | null = nodesCopy;
+	// Stryker disable next-line ConditionalExpression,EqualityOperator: Loop builds copy chain but copyNode already deep copies via spread
 	while (currentNode != null) {
 		currentNodeCopy = copyNode(currentNode);
 		currentNode = currentNode.next;

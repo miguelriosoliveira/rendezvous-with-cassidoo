@@ -1,6 +1,7 @@
 {
 	"testRunner": "vitest",
 	"ignoreStatic": true,
+	"mutate": ["src/**/*.ts", "!src/**/*.test.ts"],
 	"incremental": true,
 	"ignorePatterns": ["src/2023/314-guessingGame/game.ts"],
 	"checkers": [],
