@@ -20,4 +20,9 @@ describe('#postfix', () => {
 		const result = postfix('5 4 6 2 / + * 3 -');
 		expect(result).toBe(32);
 	});
+
+	it('should handle single number', () => {
+		const result = postfix('42');
+		expect(result).toBe(42);
+	});
 });

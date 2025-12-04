@@ -20,4 +20,9 @@ describe('#findLongestTimeGap', () => {
 	it('should return 0 for an empty array', () => {
 		expect(findLongestTimeGap([])).toBe(0);
 	});
+
+	it('should correctly calculate gaps between consecutive pairs', () => {
+		expect(findLongestTimeGap(['08:00', '08:30', '09:00'])).toBe(30);
+		expect(findLongestTimeGap(['10:00', '10:15', '11:00'])).toBe(45);
+	});
 });

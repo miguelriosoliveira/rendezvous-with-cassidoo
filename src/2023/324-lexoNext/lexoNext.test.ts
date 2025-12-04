@@ -16,4 +16,9 @@ describe('#lexoNext', () => {
 	it('should handle single-digit numbers', () => {
 		expect(lexoNext(5)).toBe(5);
 	});
+
+	it('should handle edge case with repeated digits at the end', () => {
+		expect(lexoNext(1234555)).toBe(1235455);
+		expect(lexoNext(1233)).toBe(1323);
+	});
 });
