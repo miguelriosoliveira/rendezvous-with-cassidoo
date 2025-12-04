@@ -8,6 +8,6 @@ import fs from 'node:fs';
 import { numToWords } from './numToWords';
 
 export function charCount(): string {
-	const file = fs.readFileSync(__filename, 'utf8');
+	const file = fs.readFileSync(__filename);
 	return numToWords(file.length);
 }

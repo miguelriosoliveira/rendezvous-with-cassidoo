@@ -35,6 +35,15 @@ describe('#typeMatchup', () => {
 	});
 
 	it('returns an error message for an invalid type "cassidy"', async () => {
+		fetchSpy.mockResolvedValueOnce({
+			json: async () => ({
+				results: [
+					{ name: 'normal', url: 'https://pokeapi.co/api/v2/type/1/' },
+					{ name: 'fighting', url: 'https://pokeapi.co/api/v2/type/2/' },
+				],
+			}),
+		} as Response);
+
 		const result = await typeMatchup('cassidy');
 		expect(result).toBe('This is not a valid Pokémon type.');
 	});
@@ -57,5 +66,26 @@ describe('#typeMatchup', () => {
 
 		const result = await typeMatchup('normal');
 		expect(result).toBe('Weak against fighting. Strong against nothing.');
+	});
+
+	it('calls the correct API URL', async () => {
+		fetchSpy
+			.mockResolvedValueOnce({
+				json: async () => ({
+					results: [{ name: 'fire', url: 'https://pokeapi.co/api/v2/type/10/' }],
+				}),
+			} as Response)
+			.mockResolvedValueOnce({
+				json: async () => ({
+					damage_relations: {
+						double_damage_from: [{ name: 'water' }],
+						double_damage_to: [{ name: 'grass' }],
+					},
+				}),
+			} as Response);
+
+		await typeMatchup('fire');
+		expect(fetchSpy).toHaveBeenCalledWith('https://pokeapi.co/api/v2/type');
+		expect(fetchSpy).toHaveBeenCalledWith('https://pokeapi.co/api/v2/type/10/');
 	});
 });

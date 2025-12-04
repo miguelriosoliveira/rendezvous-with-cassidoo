@@ -2,22 +2,26 @@ import { postfix } from './postfix';
 
 describe('#postfix', () => {
 	it('should result in 23', () => {
-		const result = postfix('5 4 * 6 2 / +');
-		expect(result).toBe(23);
+		expect(postfix('5 4 * 6 2 / +')).toBe(23);
 	});
 
 	it('should result in 25', () => {
-		const result = postfix('5 4 6 + * 2 /');
-		expect(result).toBe(25);
+		expect(postfix('5 4 6 + * 2 /')).toBe(25);
 	});
 
 	it('should result in 35', () => {
-		const result = postfix('5 4 6 2 / + *');
-		expect(result).toBe(35);
+		expect(postfix('5 4 6 2 / + *')).toBe(35);
 	});
 
 	it('should result in 32', () => {
-		const result = postfix('5 4 6 2 / + * 3 -');
-		expect(result).toBe(32);
+		expect(postfix('5 4 6 2 / + * 3 -')).toBe(32);
+	});
+
+	it('should handle single number', () => {
+		expect(postfix('42')).toBe(42);
+	});
+
+	it('should handle unbalanced expression with extra operator', () => {
+		expect(postfix('+')).toBeNaN();
 	});
 });

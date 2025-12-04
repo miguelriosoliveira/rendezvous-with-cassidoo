@@ -28,4 +28,25 @@ describe('#deepCopy', () => {
 		const copy = deepCopy(null);
 		expect(copy).toBeNull();
 	});
+
+	it('should handle single node with null random', () => {
+		const node: Node = { val: 5, next: null, random: null };
+		const copy = deepCopy(node)!;
+		expect(copy).toStrictEqual(node);
+		expect(copy.next).toBeNull();
+		expect(copy.random).toBeNull();
+	});
+
+	it('should handle nodes where some have null next or random', () => {
+		const node1: Node = { val: 1, next: null, random: null };
+		const node2: Node = { val: 2, next: null, random: null };
+		node1.next = node2;
+		node1.random = null;
+		node2.next = null;
+		node2.random = null;
+
+		const copy = deepCopy(node1)!;
+		expect(copy.val).toBe(1);
+		expect(copy.random).toBeNull();
+	});
 });
