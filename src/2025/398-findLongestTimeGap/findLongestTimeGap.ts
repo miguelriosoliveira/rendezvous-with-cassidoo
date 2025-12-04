@@ -34,13 +34,15 @@ type Minute = Pad<(typeof minutes)[number]>;
 type Timestamp = `${Hour}:${Minute}`;
 
 export function findLongestTimeGap(timestamps: Timestamp[]): number {
+	const sortedDates = timestamps
+		.map(timestamp => timestamp.split(':').map(Number))
+		.map(([hours, minutes]) => new Date().setUTCHours(hours, minutes, 0, 0))
+		.sort((a, b) => a - b);
+
 	return (
 		Math.max(
 			0,
-			...timestamps
-				.map(timestamp => timestamp.split(':').map(Number))
-				.map(([hours, minutes]) => new Date().setUTCHours(hours, minutes, 0, 0))
-				.map((date, i, dates) => Math.abs(date - dates[i + 1]) || 0),
+			...sortedDates.map((date, i, dates) => (dates[i + 1] ? dates[i + 1] - date : 0)),
 		) /
 		1000 /
 		60

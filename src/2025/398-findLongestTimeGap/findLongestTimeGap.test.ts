@@ -10,7 +10,7 @@ describe('#findLongestTimeGap', () => {
 	});
 
 	it('should return the longest gap for unsorted timestamps', () => {
-		expect(findLongestTimeGap(['14:00', '09:00', '15:00', '10:30'])).toBe(360);
+		expect(findLongestTimeGap(['14:00', '09:00', '15:00', '10:30'])).toBe(210);
 	});
 
 	it('should handle duplicate timestamps correctly', () => {
