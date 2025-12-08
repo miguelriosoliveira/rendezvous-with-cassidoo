@@ -19,11 +19,7 @@ type Rank = (typeof RANKS)[number];
 type Card = `${Rank}${Suit}`;
 
 export class Deck {
-	cards: Card[];
-
-	constructor() {
-		this.cards = SUITS.flatMap<Card>(suit => RANKS.map<Card>(rank => `${rank}${suit}`));
-	}
+	cards = SUITS.flatMap<Card>(suit => RANKS.map<Card>(rank => `${rank}${suit}`));
 
 	draw(n: number): Card[] {
 		return this.cards.splice(0, n);
