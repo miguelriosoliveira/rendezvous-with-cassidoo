@@ -147,6 +147,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [430 - merge](src/2025/430-merge)
 - [431 - repeatedIntegers](src/2025/431-repeatedIntegers)
 - [433 - sortHtmlColors](src/2025/433-sortHtmlColors)
+- [434 - deck](src/2025/434-deck)
 </details>
 
 ## Installing & Running
