@@ -25,7 +25,7 @@ export class Deck {
 		return this.cards.splice(0, n);
 	}
 
-	shuffle() {
+	shuffle(): Card[] {
 		return this.cards.sort(() => Math.random() - 0.5);
 	}
 }
