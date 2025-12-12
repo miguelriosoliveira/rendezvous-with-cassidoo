@@ -13,8 +13,14 @@ export function maxProduct(arr: number[]): number {
 		throw new Error('Invalid list, must have size 3!');
 	}
 
-	return arr
-		.sort((a, b) => b - a)
-		.slice(0, 3)
-		.reduce((acc, number) => acc * number, 1);
+	const sorted = arr.slice().sort((a, b) => a - b);
+	const n = sorted.length;
+
+	// Maximum product can either be:
+	// 1. Three largest positive numbers, OR
+	// 2. Two smallest (most negative) numbers * largest positive number
+	const option1 = sorted[n - 1] * sorted[n - 2] * sorted[n - 3];
+	const option2 = sorted[0] * sorted[1] * sorted[n - 1];
+
+	return Math.max(option1, option2);
 }
