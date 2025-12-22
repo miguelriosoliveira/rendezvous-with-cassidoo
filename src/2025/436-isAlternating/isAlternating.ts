@@ -15,10 +15,6 @@ Examples:
 */
 
 export function isAlternating(values: number[]): boolean {
-	return values.every((value, i, [v1, v2]) => {
-		if (i % 2 === 0) {
-			return value === v1;
-		}
-		return value === v2;
-	});
+	const [v1, v2] = values;
+	return values.every((value, i) => value === (i % 2 === 0 ? v1 : v2));
 }
