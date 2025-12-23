@@ -27,14 +27,21 @@ interface Task {
 }
 
 export function doTasks(tasks: Task[], timeToWork: number): string[] {
-	return tasks
-		.map<[number, Task]>((task, i) => [i, task])
-		.sort(([, t1], [, t2]) => t1.duration - t2.duration)
-		.filter((_, i, array) => {
-			const partialTasks = array.slice(0, i + 1);
-			const partialDuration = partialTasks.reduce((sum, [, task]) => sum + task.duration, 0);
-			return partialDuration <= timeToWork;
-		})
+	const indexedTasks = tasks.map<[number, Task]>((task, i) => [i, task]);
+	const sortedByDuration = indexedTasks.slice().sort(([, t1], [, t2]) => t1.duration - t2.duration);
+
+	const selectedTasks: [number, Task][] = [];
+	let totalDuration = 0;
+
+	for (const indexedTask of sortedByDuration) {
+		const [, task] = indexedTask;
+		if (totalDuration + task.duration <= timeToWork) {
+			selectedTasks.push(indexedTask);
+			totalDuration += task.duration;
+		}
+	}
+
+	return selectedTasks
 		.sort(([originalIndex1], [originalIndex2]) => originalIndex1 - originalIndex2)
 		.map(([, task]) => task.name);
 }
