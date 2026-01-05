@@ -25,23 +25,21 @@ export function maxScoreWithOneReset(nums: number[]): number {
 	let withResetScore = 0;
 
 	for (const num of nums) {
-		// If we've already used reset, we just continue adding
-		const newWithResetScore = withResetScore + num;
+		// Calculate score options for withReset state:
+		// 1. Continue from previous reset: withResetScore + num
+		// 2. Reset right before this element: start fresh with just num
+		const continueAfterReset = withResetScore + num;
+		const resetNow = num;
 
-		// If we haven't used reset, we have two choices:
-		// 1. Don't reset: continue adding
-		// 2. Reset now: start fresh from 0 and add current number
+		// Calculate score for noReset state: just keep adding
 		const newNoResetScore = noResetScore + num;
-		const resetNowScore = num;
 
-		// Update withResetScore: either continue after previous reset, or reset now
-		withResetScore = Math.max(newWithResetScore, resetNowScore);
-
-		// Update noResetScore: continue without reset
+		// Update states: choose the best option for each
+		withResetScore = Math.max(continueAfterReset, resetNow);
 		noResetScore = newNoResetScore;
 	}
 
-	// Return the maximum of final scores (with or without reset)
-	// But we want the maximum score we can END with, and we must allow negative scores to become 0
+	// Return the maximum final score
+	// We can also reset at the very end to get 0 if both scores are negative
 	return Math.max(0, noResetScore, withResetScore);
 }
