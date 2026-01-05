@@ -149,6 +149,10 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [433 - sortHtmlColors](src/2025/433-sortHtmlColors)
 - [434 - deck](src/2025/434-deck)
 - [436 - isAlternating](src/2025/436-isAlternating)
+
+#### 2026
+
+- [438 - maxScoreWithOneReset](src/2026/438-maxScoreWithOneReset)
 </details>
 
 ## Installing & Running
