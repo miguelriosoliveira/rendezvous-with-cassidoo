@@ -153,6 +153,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 #### 2026
 
 - [438 - maxScoreWithOneReset](src/2026/438-maxScoreWithOneReset)
+- [439 - hungryBears](src/2026/439-hungryBears)
 </details>
 
 ## Installing & Running
