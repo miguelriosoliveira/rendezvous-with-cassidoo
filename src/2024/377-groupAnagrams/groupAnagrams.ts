@@ -18,15 +18,17 @@ export function getSortedAnagram(str: string): string {
 }
 
 export function groupAnagrams(strings: string[]): string[][] {
-	return Object.values(
-		strings
-			.map(str => [str, getSortedAnagram(str)])
-			.reduce<Record<string, string[]>>(
-				(map, [str, sortedStr]) => ({
-					...map,
-					[sortedStr]: [...(map[sortedStr] || []), str],
-				}),
-				{},
-			),
-	);
+	const anagramMap = new Map<string, string[]>();
+
+	for (const str of strings) {
+		const sortedStr = getSortedAnagram(str);
+		const group = anagramMap.get(sortedStr);
+		if (group) {
+			group.push(str);
+		} else {
+			anagramMap.set(sortedStr, [str]);
+		}
+	}
+
+	return Array.from(anagramMap.values());
 }
