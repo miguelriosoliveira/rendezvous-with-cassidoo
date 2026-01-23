@@ -152,6 +152,13 @@ code {
 	background-color: var(--primary-dark);
 	transform: translateY(-2px);
 	box-shadow: 0 4px 12px var(--shadow);
+	color: #ffffff; /* ensure text stays visible on hover */
+}
+
+/* Keep primary button text white for all anchor states */
+.btn-primary:visited,
+.btn-primary:focus {
+	color: #ffffff;
 }
 
 .btn-secondary {
