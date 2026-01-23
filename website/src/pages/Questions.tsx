@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 import './Questions.css';
 
 import questionsData from '../data/questions.json';
@@ -84,11 +85,13 @@ function Questions() {
 							</div>
 							<h3 className="question-title">{question.title || question.name}</h3>
 							{question.description && (
-								<p className="question-description">
-									{question.description.length > 150
-										? `${question.description.substring(0, 150)}...`
-										: question.description}
-								</p>
+								<div className="question-description">
+									<ReactMarkdown>
+										{question.description.length > 150
+											? `${question.description.substring(0, 150)}...`
+											: question.description}
+									</ReactMarkdown>
+								</div>
 							)}
 						</Link>
 					))}

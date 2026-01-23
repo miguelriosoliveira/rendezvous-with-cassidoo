@@ -141,6 +141,26 @@
 	-webkit-box-orient: vertical;
 }
 
+.question-description p {
+	margin: 0;
+	display: inline;
+}
+
+.question-description code {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 0.2rem 0.4rem;
+	border-radius: 3px;
+	font-family: 'Fira Code', 'Courier New', monospace;
+	font-size: 0.85em;
+	color: var(--primary-color);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.question-description strong,
+.question-description em {
+	color: var(--text-primary);
+}
+
 .no-results {
 	text-align: center;
 	padding: 3rem 1rem;
