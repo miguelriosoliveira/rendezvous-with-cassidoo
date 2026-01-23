@@ -4,7 +4,7 @@ Interview question of the [issue #252 of rendezvous with cassidoo](https://butto
 
 ## The Question
 
-Create a loooong teeeext generator that takes in a string and an integer n, and multiplies the vowels in the string by n.
+Create a loooong teeeext generator that takes in a string and an integer `n`, and multiplies the vowels in the string by `n`.
 
 Example:
 ```js

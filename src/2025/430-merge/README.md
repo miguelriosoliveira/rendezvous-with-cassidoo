@@ -1,4 +1,4 @@
-# sumNeighbors
+# merge
 
 Interview question of the [issue #430 of rendezvous with cassidoo](https://buttondown.com/cassidoo/archive/if-youre-not-failing-youre-not-trying-reshma/).
 
@@ -8,7 +8,7 @@ Interview question of the [issue #430 of rendezvous with cassidoo](https://butto
 
 Example:
 
-```
+```js
 let a = [1, 3, 5, 0, 0, 0];
 let b = [2, 4, 6];
 
