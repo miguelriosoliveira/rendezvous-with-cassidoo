@@ -1,4 +1,4 @@
-# isValidTrafficSequence
+# minMonsterDistance
 
 Interview question of the [issue #416 of rendezvous with cassidoo](https://buttondown.com/cassidoo/archive/you-pray-for-rain-you-gotta-deal-with-the-mud-too/).
 

@@ -1,4 +1,4 @@
-# betweenNums
+# rotatedNum
 
 Interview question of the [issue #329 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/the-best-preparation-for-tomorrow-is-doing-your-9764/).
 

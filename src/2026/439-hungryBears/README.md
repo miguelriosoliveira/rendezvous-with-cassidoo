@@ -8,7 +8,7 @@ Interview question of the [issue #439 of rendezvous with cassidoo](https://butto
 
 Example:
 
-```
+```js
 const bears = [
   { name: 'Baloo', hunger: 6 },
   { name: 'Yogi', hunger: 9 },

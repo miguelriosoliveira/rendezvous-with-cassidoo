@@ -2,7 +2,7 @@
 
 Interview question of the [issue #254 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/fight-for-the-things-that-you-care-about-but-do/).
 
-# The Question
+## The Question
 
 Given a string str and a set of words dict, find the longest word in dict that is a subsequence of str.
 
@@ -17,6 +17,6 @@ $ 'apple'
 // "bale" has all the right letters, but not in the right order
 ```
 
-# Installing & Running
+## Installing & Running
 
 Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!

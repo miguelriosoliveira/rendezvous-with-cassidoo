@@ -5,6 +5,12 @@
 
 My answers to the Interview Questions of the [rendezvous with cassidoo](https://buttondown.email/cassidoo/archive) newsletter.
 
+## 🌐 Website
+
+**[View the interactive website](https://miguelriosoliveira.github.io/rendezvous-with-cassidoo/)** featuring all questions and solutions with syntax highlighting!
+
+## About
+
 Each directory is related to a issue and has its own tests.
 
 I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-are-what-we-repeatedly-do-excellence-then-is/)!
@@ -159,3 +165,22 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 ## Installing & Running
 
 Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!
+
+## Website Development
+
+The website is built with React, TypeScript, and Vite. To run it locally:
+
+```bash
+cd website
+pnpm install
+pnpm dev
+```
+
+To build for production:
+
+```bash
+cd website
+pnpm build
+```
+
+The website is automatically deployed to GitHub Pages when changes are pushed to the main branch.

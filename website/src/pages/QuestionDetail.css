@@ -1,0 +1,231 @@
+.question-detail {
+	padding: 2rem 0;
+}
+
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+	font-size: 0.95rem;
+}
+
+.breadcrumb a {
+	color: var(--text-secondary);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+	color: var(--primary-color);
+}
+
+.breadcrumb .separator {
+	color: var(--text-muted);
+}
+
+.breadcrumb .current {
+	color: var(--text-primary);
+	font-weight: 600;
+}
+
+.detail-header {
+	margin-bottom: 3rem;
+}
+
+.detail-meta {
+	display: flex;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.detail-title {
+	font-size: 2.5rem;
+	color: var(--text-primary);
+	margin-bottom: 1rem;
+	font-weight: 700;
+}
+
+.newsletter-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.newsletter-link:hover {
+	color: var(--primary-dark);
+	text-decoration: underline;
+}
+
+.detail-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.question-section,
+.solution-section,
+.repo-section {
+	background-color: var(--surface);
+	padding: 2rem;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+}
+
+.question-section h2,
+.solution-section h2,
+.repo-section h3 {
+	font-size: 1.75rem;
+	color: var(--text-primary);
+	margin-bottom: 1.5rem;
+}
+
+.repo-section h3 {
+	font-size: 1.25rem;
+}
+
+.description {
+	font-size: 1.125rem;
+	color: var(--text-secondary);
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+}
+
+.description p {
+	margin-bottom: 1rem;
+}
+
+.description a {
+	color: var(--primary-color);
+	text-decoration: none;
+	border-bottom: 1px solid var(--primary-color);
+	transition: all 0.2s;
+}
+
+.description a:hover {
+	color: var(--primary-dark);
+	border-bottom-color: var(--primary-dark);
+}
+
+.description code {
+	background-color: var(--background);
+	padding: 0.2rem 0.4rem;
+	border-radius: 4px;
+	font-family: 'Fira Code', 'Courier New', monospace;
+	font-size: 0.9em;
+	color: var(--primary-color);
+	border: 1px solid var(--border);
+}
+
+.description pre {
+	background-color: var(--background);
+	padding: 1rem;
+	border-radius: 8px;
+	overflow-x: auto;
+	border: 1px solid var(--border);
+	margin: 1rem 0;
+}
+
+.description pre code {
+	background: none;
+	padding: 0;
+	border: none;
+	color: inherit;
+	font-size: 0.9rem;
+}
+
+.example-section {
+	margin-top: 2rem;
+}
+
+.example-section h3 {
+	font-size: 1.25rem;
+	color: var(--text-primary);
+	margin-bottom: 1rem;
+}
+
+.example-section p {
+	margin-bottom: 1rem;
+	color: var(--text-secondary);
+}
+
+.example-section pre {
+	background-color: var(--background);
+	padding: 1rem;
+	border-radius: 8px;
+	overflow-x: auto;
+	border: 1px solid var(--border);
+}
+
+.example-section code {
+	font-family: 'Fira Code', 'Courier New', monospace;
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+.code-container {
+	margin-top: 1rem;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid var(--border);
+}
+
+.repo-link {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.repo-link:hover {
+	color: var(--primary-dark);
+	text-decoration: underline;
+}
+
+.navigation-buttons {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 3rem;
+}
+
+.error-message {
+	text-align: center;
+	padding: 4rem 2rem;
+}
+
+.error-message h2 {
+	font-size: 2rem;
+	color: var(--text-primary);
+	margin-bottom: 1rem;
+}
+
+.error-message p {
+	font-size: 1.125rem;
+	color: var(--text-secondary);
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+	.detail-title {
+		font-size: 1.75rem;
+	}
+
+	.question-section,
+	.solution-section,
+	.repo-section {
+		padding: 1.5rem;
+	}
+
+	.navigation-buttons {
+		flex-direction: column;
+	}
+
+	.navigation-buttons .btn {
+		width: 100%;
+	}
+}

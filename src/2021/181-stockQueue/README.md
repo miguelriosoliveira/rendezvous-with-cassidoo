@@ -2,7 +2,7 @@
 
 Interview question of the [issue #181 of rendezvous with cassidoo](https://buttondown.email/cassidoo/archive/the-most-certain-sign-of-wisdom-is-cheerfulness/).
 
-# The Question
+## The Question
 
 You are given a snapshot of a queue of stocks that have changing prices coming in from a stream. Remove the outdated stocks from the queue.
 
@@ -21,6 +21,6 @@ $ [{ sym: ‘PYPL’, cost: 234 },
    { sym: ‘GME’, cost: 325 }]
 ```
 
-# Installing & Running
+## Installing & Running
 
 Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!

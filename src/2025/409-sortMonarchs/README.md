@@ -1,4 +1,4 @@
-# isValidTrafficSequence
+# sortMonarchs
 
 Interview question of the [issue #409 of rendezvous with cassidoo](https://buttondown.com/cassidoo/archive/to-be-afraid-is-to-behave-as-if-the-truth-were/).
 

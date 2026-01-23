@@ -8,7 +8,7 @@ Interview question of the [issue #438 of rendezvous with cassidoo](https://butto
 
 Example:
 
-```
+```js
 > maxScoreWithOneReset([2, -1, 2, -5, 2, 2]) // reset after -5
 > 4
 
