@@ -1,0 +1,144 @@
+.home {
+	padding: 0;
+}
+
+.hero {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	padding: 4rem 0;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.hero-title {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	color: white;
+}
+
+.hero-subtitle {
+	display: block;
+	font-size: 1.75rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.95);
+	margin-top: 0.5rem;
+}
+
+.hero-description {
+	font-size: 1.25rem;
+	color: rgba(255, 255, 255, 0.9);
+	max-width: 700px;
+	margin: 0 auto 2rem;
+	line-height: 1.8;
+}
+
+.hero-description a {
+	color: white;
+	text-decoration: underline;
+}
+
+.hero-actions {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.stats {
+	margin: 3rem 0;
+}
+
+.stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5rem;
+}
+
+.stat-card {
+	background-color: var(--surface);
+	padding: 2rem;
+	border-radius: 12px;
+	text-align: center;
+	border: 1px solid var(--border);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px var(--shadow);
+}
+
+.stat-value {
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--primary-color);
+	margin-bottom: 0.5rem;
+}
+
+.stat-label {
+	font-size: 1rem;
+	color: var(--text-secondary);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.about {
+	margin: 4rem 0;
+}
+
+.about h2 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	color: var(--text-primary);
+}
+
+.about p {
+	font-size: 1.125rem;
+	color: var(--text-secondary);
+	margin-bottom: 1.5rem;
+	line-height: 1.8;
+}
+
+.about a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.about a:hover {
+	text-decoration: underline;
+}
+
+.features-list {
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0;
+}
+
+.features-list li {
+	font-size: 1.125rem;
+	color: var(--text-secondary);
+	padding: 0.75rem 0;
+	border-bottom: 1px solid var(--border);
+}
+
+.features-list li:last-child {
+	border-bottom: none;
+}
+
+@media (max-width: 768px) {
+	.hero-title {
+		font-size: 2rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+	}
+
+	.hero-description {
+		font-size: 1rem;
+	}
+
+	.stat-value {
+		font-size: 2rem;
+	}
+}

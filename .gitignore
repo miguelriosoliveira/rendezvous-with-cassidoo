@@ -135,3 +135,7 @@ dist
 # stryker temp files
 .stryker-tmp
 reports/
+
+# Website build artifacts
+website/dist
+website/src/data/questions.json
