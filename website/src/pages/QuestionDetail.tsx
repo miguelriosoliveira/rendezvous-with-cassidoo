@@ -11,6 +11,7 @@ const questions = questionsData as Question[];
 function QuestionDetail() {
 	const { questionId } = useParams<{ questionId: string }>();
 	const question = questions.find((q) => q.id === questionId);
+	const currentIndex = questions.findIndex((q) => q.id === questionId);
 
 	if (!question) {
 		return (
@@ -104,17 +105,17 @@ function QuestionDetail() {
 				</div>
 
 				<div className="navigation-buttons">
-					{questions.findIndex((q) => q.id === questionId) > 0 && (
+					{currentIndex > 0 && (
 						<Link
-							to={`/questions/${questions[questions.findIndex((q) => q.id === questionId) - 1].id}`}
+							to={`/questions/${questions[currentIndex - 1].id}`}
 							className="btn btn-secondary"
 						>
 							← Previous
 						</Link>
 					)}
-					{questions.findIndex((q) => q.id === questionId) < questions.length - 1 && (
+					{currentIndex < questions.length - 1 && (
 						<Link
-							to={`/questions/${questions[questions.findIndex((q) => q.id === questionId) + 1].id}`}
+							to={`/questions/${questions[currentIndex + 1].id}`}
 							className="btn btn-secondary"
 						>
 							Next →

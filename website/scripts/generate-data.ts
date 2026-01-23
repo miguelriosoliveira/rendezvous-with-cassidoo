@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, writeFileSync, statSync } from 'fs';
+import { readdirSync, readFileSync, writeFileSync, statSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 interface Question {
@@ -146,7 +146,6 @@ const dataDir = join(process.cwd(), 'src', 'data');
 try {
 	readdirSync(dataDir);
 } catch {
-	const { mkdirSync } = await import('fs');
 	mkdirSync(dataDir, { recursive: true });
 }
 
