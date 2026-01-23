@@ -3,17 +3,17 @@
 
 # Rendezvous With Cassidoo
 
-My answers to the Interview Questions of the [rendezvous with cassidoo](https://buttondown.email/cassidoo/archive) newsletter.
+My answers to the Interview Questions of the <a href="https://buttondown.email/cassidoo/archive" target="_blank" rel="noopener noreferrer">rendezvous with cassidoo</a> newsletter.
 
 ## 🌐 Website
 
-**[View the interactive website](https://miguelriosoliveira.github.io/rendezvous-with-cassidoo/)** featuring all questions and solutions with syntax highlighting!
+**<a href="https://miguelriosoliveira.github.io/rendezvous-with-cassidoo/" target="_blank" rel="noopener noreferrer">View the interactive website</a>** featuring all questions and solutions with syntax highlighting!
 
 ## About
 
 Each directory is related to a issue and has its own tests.
 
-I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-are-what-we-repeatedly-do-excellence-then-is/)!
+I started this in the <a href="https://buttondown.email/cassidoo/archive/we-are-what-we-repeatedly-do-excellence-then-is/" target="_blank" rel="noopener noreferrer">issue #176</a>!
 
 ## Questions
 
