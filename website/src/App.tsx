@@ -1,13 +1,25 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
 import './App.css'
 
+function ScrollToTop() {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+	}, [pathname]);
+
+	return null;
+}
+
 function App() {
 	return (
 		<Router basename="/rendezvous-with-cassidoo">
 			<div className="app">
+				<ScrollToTop />
 				<nav className="navbar">
 					<div className="container">
 						<Link to="/" className="logo">
