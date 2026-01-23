@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# Rendezvous with Cassidoo - Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application showcasing interview questions and their TypeScript solutions from the [Rendezvous with Cassidoo](https://cassidoo.co/) newsletter.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse Questions**: View all 117+ interview questions organized by year
+- **Search & Filter**: Search questions by name, description, or number, and filter by year
+- **Question Details**: Read the full question description with formatted markdown, example code, and complete TypeScript solutions
+- **Syntax Highlighting**: Code blocks are highlighted with proper syntax coloring
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **GitHub Integration**: Links to view full source code and tests on GitHub
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI framework
+- **TypeScript** - Type-safe development
+- **Vite** - Build tool and dev server
+- **React Router** - Client-side routing
+- **React Markdown** - Markdown rendering with syntax highlighting
+- **React Syntax Highlighter** - Code block highlighting
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js 24+
+- pnpm
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd website
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm dev
 ```
+
+The app will be available at `http://localhost:5173/rendezvous-with-cassidoo`
+
+### Building
+
+```bash
+pnpm build
+```
+
+### Preview
+
+```bash
+pnpm preview
+```
+
+## Project Structure
+
+```
+src/
+├── pages/          # Page components (Home, Questions, QuestionDetail)
+├── data/           # Generated questions data
+├── types/          # TypeScript type definitions
+└── styles/         # CSS stylesheets
+```
+
+## Data Generation
+
+Questions data is automatically generated from the source code repository:
+
+```bash
+pnpm generate-data
+```
+
+This script reads all question folders, extracts the README content, and generates the `src/data/questions.json` file used by the app.
+
+## License
+
+MIT
