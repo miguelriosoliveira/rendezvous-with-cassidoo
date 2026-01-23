@@ -8,7 +8,8 @@
 		"test": "vitest",
 		"test:cov": "vitest run --coverage",
 		"test:mutation": "dotenv stryker run",
-		"index": "sh generate-index.sh"
+		"index": "sh generate-index.sh",
+		"website": "cd website && pnpm generate-data && pnpm dev"
 	},
 	"dependencies": {
 		"dotenv-cli": "^11.0.0"

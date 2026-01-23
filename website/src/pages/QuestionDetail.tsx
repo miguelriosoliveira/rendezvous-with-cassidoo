@@ -1,6 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import ReactMarkdown from 'react-markdown';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeRaw from 'rehype-raw';
 import './QuestionDetail.css';
 
 import questionsData from '../data/questions.json';
@@ -61,12 +64,20 @@ function QuestionDetail() {
 				<div className="detail-content">
 					<section className="question-section">
 						<h2>The Question</h2>
-						{question.description && <p className="description">{question.description}</p>}
+						{question.description && (
+							<div className="description">
+								<ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+									{question.description}
+								</ReactMarkdown>
+							</div>
+						)}
 
 						{question.example && (
 							<div className="example-section">
 								<h3>Example:</h3>
-								<pre className="example-code">{question.example}</pre>
+								<ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+									{question.example}
+								</ReactMarkdown>
 							</div>
 						)}
 					</section>

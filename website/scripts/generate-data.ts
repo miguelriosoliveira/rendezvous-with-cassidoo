@@ -30,7 +30,7 @@ function extractQuestionFromReadme(readmePath: string): Partial<Question> {
 	const issueNumber = issueLinkMatch ? parseInt(issueLinkMatch[1]) : 0;
 	const issueLink = issueLinkMatch ? issueLinkMatch[2] : '';
 
-	// Extract question description (text between "## The Question" and "Example:" or next ##)
+	// Extract question description (text between "## The Question" and "Example:" or next section)
 	const questionStart = content.indexOf('## The Question');
 	let description = '';
 	let example = '';
@@ -38,7 +38,7 @@ function extractQuestionFromReadme(readmePath: string): Partial<Question> {
 	if (questionStart !== -1) {
 		const afterQuestion = content.substring(questionStart + 15);
 		const exampleStart = afterQuestion.indexOf('Example:');
-		const nextSectionStart = afterQuestion.indexOf('## ', 1);
+		const nextSectionStart = afterQuestion.search(/\n#{1,2} /);
 
 		if (exampleStart !== -1) {
 			description = afterQuestion
