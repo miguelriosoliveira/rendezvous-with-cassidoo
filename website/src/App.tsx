@@ -12,7 +12,10 @@ function HandleRedirect() {
 		const redirect = sessionStorage.redirect;
 		if (redirect && redirect !== location.pathname) {
 			delete sessionStorage.redirect;
-			navigate(redirect, { replace: true });
+			// Remove basename from the path since React Router handles it automatically
+			const basename = '/rendezvous-with-cassidoo';
+			const path = redirect.startsWith(basename) ? redirect.slice(basename.length) || '/' : redirect;
+			navigate(path, { replace: true });
 		}
 	}, [navigate]);
 
