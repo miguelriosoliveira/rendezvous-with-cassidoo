@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Questions from './pages/Questions';
@@ -8,7 +8,7 @@ import './App.css'
 function HandleRedirect() {
 	const navigate = useNavigate();
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const redirect = sessionStorage.redirect;
 		if (redirect && redirect !== location.pathname) {
 			delete sessionStorage.redirect;
