@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
@@ -16,12 +16,16 @@ function getRedirectPath(): string | null {
 }
 
 function HandleRedirect() {
-	const [redirectPath] = useState(() => getRedirectPath());
+	const redirectRef = useRef<string | null>(getRedirectPath());
+	const navigate = useNavigate();
 
-	if (redirectPath) {
+	useEffect(() => {
+		const redirectPath = redirectRef.current;
+		if (!redirectPath) return;
+		redirectRef.current = null;
 		console.log('Redirecting to:', redirectPath);
-		return <Navigate to={redirectPath} replace />;
-	}
+		navigate(redirectPath, { replace: true });
+	}, [navigate]);
 
 	return null;
 }
