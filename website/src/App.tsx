@@ -11,13 +11,16 @@ function HandleRedirect() {
 
 	useLayoutEffect(() => {
 		const redirect = sessionStorage.redirect;
+		console.log('HandleRedirect:', { redirect, currentPath: location.pathname });
 		if (redirect) {
 			delete sessionStorage.redirect;
 			// Remove basename from the path since React Router handles it automatically
 			const basename = '/rendezvous-with-cassidoo';
 			const path = redirect.startsWith(basename) ? redirect.slice(basename.length) || '/' : redirect;
+			console.log('Computed path:', path, 'Current:', location.pathname);
 			// Only navigate if we're not already at the target
 			if (path !== location.pathname) {
+				console.log('Navigating to:', path);
 				navigate(path, { replace: true });
 			}
 		}
