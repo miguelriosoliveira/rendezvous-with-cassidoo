@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import ReactMarkdown from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeRaw from 'rehype-raw';
@@ -87,7 +87,7 @@ function QuestionDetail() {
 						<div className="code-container">
 							<SyntaxHighlighter
 								language="typescript"
-								style={vscDarkPlus}
+								style={dracula}
 								showLineNumbers
 								customStyle={{
 									margin: 0,
