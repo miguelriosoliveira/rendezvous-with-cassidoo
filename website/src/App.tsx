@@ -7,17 +7,21 @@ import './App.css'
 
 function HandleRedirect() {
 	const navigate = useNavigate();
+	const location = useLocation();
 
 	useLayoutEffect(() => {
 		const redirect = sessionStorage.redirect;
-		if (redirect && redirect !== location.pathname) {
+		if (redirect) {
 			delete sessionStorage.redirect;
 			// Remove basename from the path since React Router handles it automatically
 			const basename = '/rendezvous-with-cassidoo';
 			const path = redirect.startsWith(basename) ? redirect.slice(basename.length) || '/' : redirect;
-			navigate(path, { replace: true });
+			// Only navigate if we're not already at the target
+			if (path !== location.pathname) {
+				navigate(path, { replace: true });
+			}
 		}
-	}, [navigate]);
+	}, [navigate, location.pathname]);
 
 	return null;
 }
