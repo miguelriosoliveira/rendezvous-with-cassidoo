@@ -1,18 +1,20 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
 import './App.css'
 
 function HandleRedirect() {
+	const navigate = useNavigate();
+
 	useEffect(() => {
 		const redirect = sessionStorage.redirect;
 		if (redirect && redirect !== location.pathname) {
 			delete sessionStorage.redirect;
-			window.history.replaceState(null, '', redirect);
+			navigate(redirect, { replace: true });
 		}
-	}, []);
+	}, [navigate]);
 
 	return null;
 }
