@@ -24,7 +24,7 @@ function HandleRedirect() {
 				navigate(path, { replace: true });
 			}
 		}
-	}, [navigate, location.pathname]);
+	}, []);
 
 	return null;
 }
