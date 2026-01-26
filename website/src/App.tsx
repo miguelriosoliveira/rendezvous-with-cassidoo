@@ -1,30 +1,27 @@
-import { useEffect, useLayoutEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
 import './App.css'
 
-function HandleRedirect() {
-	const navigate = useNavigate();
-	const location = useLocation();
+function getRedirectPath(): string | null {
+	const redirect = sessionStorage.redirect;
+	if (redirect) {
+		delete sessionStorage.redirect;
+		const basename = '/rendezvous-with-cassidoo';
+		return redirect.startsWith(basename) ? redirect.slice(basename.length) || '/' : redirect;
+	}
+	return null;
+}
 
-	useLayoutEffect(() => {
-		const redirect = sessionStorage.redirect;
-		console.log('HandleRedirect:', { redirect, currentPath: location.pathname });
-		if (redirect) {
-			delete sessionStorage.redirect;
-			// Remove basename from the path since React Router handles it automatically
-			const basename = '/rendezvous-with-cassidoo';
-			const path = redirect.startsWith(basename) ? redirect.slice(basename.length) || '/' : redirect;
-			console.log('Computed path:', path, 'Current:', location.pathname);
-			// Only navigate if we're not already at the target
-			if (path !== location.pathname) {
-				console.log('Navigating to:', path);
-				navigate(path, { replace: true });
-			}
-		}
-	}, []);
+function HandleRedirect() {
+	const [redirectPath] = useState(() => getRedirectPath());
+
+	if (redirectPath) {
+		console.log('Redirecting to:', redirectPath);
+		return <Navigate to={redirectPath} replace />;
+	}
 
 	return null;
 }
