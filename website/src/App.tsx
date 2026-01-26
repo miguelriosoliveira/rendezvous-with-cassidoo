@@ -5,7 +5,34 @@ import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
 import './App.css'
 
-function HandleRedirect() {
+// function HandleRedirect() {
+// const navigate = useNavigate();
+
+// useLayoutEffect(() => {
+// 	const redirect = sessionStorage.redirect;
+// 	if (redirect && redirect !== location.pathname) {
+// 		delete sessionStorage.redirect;
+// 		// Remove basename from the path since React Router handles it automatically
+// 		const basename = '/rendezvous-with-cassidoo';
+// 		const path = redirect.startsWith(basename) ? redirect.slice(basename.length) || '/' : redirect;
+// 		navigate(path, { replace: true });
+// 	}
+// }, [navigate]);
+
+// return null;
+// }
+
+function ScrollToTop() {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+	}, [pathname]);
+
+	return null;
+}
+
+function App() {
 	const navigate = useNavigate();
 
 	useLayoutEffect(() => {
@@ -19,24 +46,10 @@ function HandleRedirect() {
 		}
 	}, [navigate]);
 
-	return null;
-}
-
-function ScrollToTop() {
-	const { pathname } = useLocation();
-
-	useEffect(() => {
-		window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-	}, [pathname]);
-
-	return null;
-}
-
-function App() {
 	return (
 		<Router basename="/rendezvous-with-cassidoo">
 			<div className="app">
-				<HandleRedirect />
+				{/* <HandleRedirect /> */}
 				<ScrollToTop />
 				<nav className="navbar">
 					<div className="container">
