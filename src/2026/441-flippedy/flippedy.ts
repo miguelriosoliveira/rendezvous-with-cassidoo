@@ -22,14 +22,10 @@ function reverseWord(word: string): string {
 	return [...word].reverse().join('');
 }
 
-function shouldReverse(word: string, targetCount: number): boolean {
-	return countVowels(word) === targetCount;
-}
-
 export const flippedy = (sentence: string): string => {
 	const [head, ...tail] = sentence.split(' ');
 	const vowelCount = countVowels(head);
-	const flippedRest = tail.map(word => shouldReverse(word, vowelCount) ? reverseWord(word) : word)
+	const flippedRest = tail.map(word => countVowels(word) === vowelCount ? reverseWord(word) : word)
 	return [head, ...flippedRest].join(' ');
 };
 
