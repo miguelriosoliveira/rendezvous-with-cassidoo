@@ -5,6 +5,18 @@ import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
 import './App.css'
 
+function HandleRedirect() {
+	useEffect(() => {
+		const redirect = sessionStorage.redirect;
+		if (redirect && redirect !== location.pathname) {
+			delete sessionStorage.redirect;
+			window.history.replaceState(null, '', redirect);
+		}
+	}, []);
+
+	return null;
+}
+
 function ScrollToTop() {
 	const { pathname } = useLocation();
 
@@ -19,6 +31,7 @@ function App() {
 	return (
 		<Router basename="/rendezvous-with-cassidoo">
 			<div className="app">
+				<HandleRedirect />
 				<ScrollToTop />
 				<nav className="navbar">
 					<div className="container">
