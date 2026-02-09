@@ -44,7 +44,6 @@ export function deepCopy(nodeList: Node | null): Node | null {
 	while (currentNode != null) {
 		currentNodeCopy = copyNode(currentNode);
 		currentNode = currentNode.next;
-		currentNodeCopy = currentNodeCopy.next;
 	}
 
 	return nodesCopy;

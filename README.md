@@ -162,6 +162,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [439 - hungryBears](src/2026/439-hungryBears)
 - [441 - flippedy](src/2026/441-flippedy)
 - [442 - nearestPerfectMonths](src/2026/442-nearestPerfectMonths)
+- [443 - moveNums](src/2026/443-moveNums)
 </details>
 
 ## Installing & Running
