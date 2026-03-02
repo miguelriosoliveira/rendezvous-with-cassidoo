@@ -164,6 +164,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [442 - nearestPerfectMonths](src/2026/442-nearestPerfectMonths)
 - [443 - moveNums](src/2026/443-moveNums)
 - [445 - maxSubarraySum](src/2026/445-maxSubarraySum)
+- [446 - majorityElement](src/2026/446-majorityElement)
 </details>
 
 ## Installing & Running
