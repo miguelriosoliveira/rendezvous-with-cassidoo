@@ -5,19 +5,22 @@
 
 version: 2
 
-multi-ecosystem-groups:
-  weekly-dependencies:
-    schedule:
-      interval: "weekly"
-
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
-    multi-ecosystem-group: "weekly-dependencies"
+    open-pull-requests-limit: 1
+    groups:
+      all-npm-dependencies:
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    multi-ecosystem-group: "weekly-dependencies"
+    open-pull-requests-limit: 1
+    groups:
+      all-github-actions-dependencies:
+        patterns:
+          - "*"
