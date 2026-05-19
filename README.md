@@ -166,6 +166,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [445 - maxSubarraySum](src/2026/445-maxSubarraySum)
 - [446 - majorityElement](src/2026/446-majorityElement)
 - [450 - resolvePath](src/2026/450-resolvePath)
+- [457 - toggleChar](src/2026/457-toggleChar)
 </details>
 
 ## Installing & Running

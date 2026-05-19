@@ -1,4 +1,3 @@
-
 /*
 You are given a file system represented as an object where keys are absolute paths and values are
 either null (real file/directory) or a string (a symlink pointing to another path).
@@ -25,7 +24,7 @@ resolvePath(fs, "/real");   // "/real"
 
 type FsObject = {
 	[key: string]: string | null;
-}
+};
 
 export function resolvePath(fs: FsObject, symlink: string): string | null {
 	let current: string | null = symlink;
@@ -44,4 +43,3 @@ export function resolvePath(fs: FsObject, symlink: string): string | null {
 
 	return current;
 }
-
