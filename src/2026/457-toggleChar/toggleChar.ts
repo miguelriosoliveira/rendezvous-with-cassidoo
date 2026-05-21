@@ -17,23 +17,23 @@ toggleChar("This will be alternated", alternating)
 > "ThIs WiLl Be AlTeRnAtEd"
 */
 
-function setCase(char: string, forceLower = false): string {
-	if (forceLower) {
-		return char.toLowerCase();
+function setCase(char: string, enforceUpperCase: boolean): string {
+	if (enforceUpperCase) {
+		return char.toUpperCase();
 	}
-	return char.toUpperCase();
+	return char.toLowerCase();
 }
 
 export function toggleChar(s: string, alternate = false): string {
 	if (!alternate) {
-		return [...s].map(char => setCase(char, char === char.toUpperCase())).join('');
+		return [...s].map(char => setCase(char, char === char.toLowerCase())).join('');
 	}
 
-	let forceLowerCase = true;
+	let isUpperCase = false;
 	return [...s]
 		.map(char => {
-			forceLowerCase = char === ' ' ? forceLowerCase : !forceLowerCase;
-			return setCase(char, forceLowerCase);
+			isUpperCase = char === ' ' ? isUpperCase : !isUpperCase;
+			return setCase(char, isUpperCase);
 		})
 		.join('');
 }
