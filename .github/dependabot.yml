@@ -10,6 +10,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+      day: "wednesday"
     open-pull-requests-limit: 1
     groups:
       all-npm-dependencies:
@@ -19,6 +20,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "wednesday"
     open-pull-requests-limit: 1
     groups:
       all-github-actions-dependencies:
