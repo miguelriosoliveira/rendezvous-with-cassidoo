@@ -28,4 +28,12 @@ describe('shuffleLine', () => {
 	it('should not move anyone if n is greater than array length', () => {
 		expect(shuffleLine(['A', 'B', 'C'], 5)).toEqual(['A', 'B', 'C']);
 	});
+
+	it('should return the same array when n = 0', () => {
+		expect(shuffleLine(['A', 'B', 'C'], 0)).toEqual(['A', 'B', 'C']);
+	});
+
+	it('should return the same array when n is negative', () => {
+		expect(shuffleLine(['A', 'B', 'C'], -2)).toEqual(['A', 'B', 'C']);
+	});
 });

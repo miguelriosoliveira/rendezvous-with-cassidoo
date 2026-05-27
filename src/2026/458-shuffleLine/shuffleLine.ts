@@ -17,7 +17,20 @@ shuffleLine(["Mo", "Noah", "Oli"], 1);
 */
 
 export function shuffleLine(names: string[], n: number): string[] {
-	const head = names.filter((_, i) => (i + 1) % n > 0);
-	const tail = names.filter((_, i) => (i + 1) % n === 0);
-	return head.concat(tail);
+	if (n < 2) {
+		return names;
+	}
+
+	const head: string[] = [];
+	const tail: string[] = [];
+
+	names.forEach((name, i) => {
+		if ((i + 1) % n === 0) {
+			tail.push(name);
+		} else {
+			head.push(name);
+		}
+	});
+
+	return [...head, ...tail];
 }
