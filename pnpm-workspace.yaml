@@ -1,7 +1,5 @@
+minimumReleaseAgeStrict: true
 packages:
   - 'website'
 allowBuilds:
   esbuild: true
-minimumReleaseAgeExclude:
-  - react-router-dom@7.18.0
-  - react-router@7.18.0
