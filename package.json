@@ -16,15 +16,15 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@stryker-mutator/core": "^9.6.1",
-		"@stryker-mutator/vitest-runner": "^9.6.1",
-		"@types/node": "^26.1.1",
+		"@stryker-mutator/core": "^10.0.0",
+		"@stryker-mutator/vitest-runner": "^10.0.0",
+		"@types/node": "^26.2.0",
 		"@vitest/coverage-v8": "^4.1.10",
-		"eslint": "^10.7.0",
-		"globals": "^17.7.0",
+		"eslint": "^10.8.1",
+		"globals": "^17.11.0",
 		"husky": "^9.1.7",
 		"typescript": "^7.0.2",
-		"typescript-eslint": "^8.65.0",
+		"typescript-eslint": "^8.67.0",
 		"vitest": "^4.1.10"
 	}
 }
