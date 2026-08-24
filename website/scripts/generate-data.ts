@@ -1,5 +1,5 @@
-import { readdirSync, readFileSync, writeFileSync, statSync, mkdirSync } from 'fs';
-import { join } from 'path';
+import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 
 interface Question {
 	id: string;
@@ -22,12 +22,14 @@ function extractQuestionFromReadme(readmePath: string): Partial<Question> {
 	const lines = content.split('\n');
 
 	// Extract title (first line after #)
-	const titleLine = lines.find((line) => line.startsWith('# '));
+	const titleLine = lines.find(line => line.startsWith('# '));
 	const title = titleLine ? titleLine.replace(/^# /, '').trim() : '';
 
 	// Extract issue link
-	const issueLinkMatch = content.match(/\[issue #(\d+) of rendezvous with cassidoo\]\((https?:\/\/[^\)]+)\)/);
-	const issueNumber = issueLinkMatch ? parseInt(issueLinkMatch[1]) : 0;
+	const issueLinkMatch = content.match(
+		/\[issue #(\d+) of rendezvous with cassidoo\]\((https?:\/\/[^)]+)\)/,
+	);
+	const issueNumber = issueLinkMatch ? Number(issueLinkMatch[1]) : 0;
 	const issueLink = issueLinkMatch ? issueLinkMatch[2] : '';
 
 	// Extract question description (text between "## The Question" and "Example:" or next section)
@@ -41,10 +43,7 @@ function extractQuestionFromReadme(readmePath: string): Partial<Question> {
 		const nextSectionStart = afterQuestion.search(/\n#{1,2} /);
 
 		if (exampleStart !== -1) {
-			description = afterQuestion
-				.substring(0, exampleStart)
-				.replace(/\*\*/g, '')
-				.trim();
+			description = afterQuestion.substring(0, exampleStart).replace(/\*\*/g, '').trim();
 			const exampleEnd = nextSectionStart !== -1 ? nextSectionStart : afterQuestion.length;
 			example = afterQuestion.substring(exampleStart, exampleEnd).trim();
 		} else if (nextSectionStart !== -1) {
@@ -65,14 +64,14 @@ function extractQuestionFromReadme(readmePath: string): Partial<Question> {
 
 function getQuestions(): Question[] {
 	const questions: Question[] = [];
-	const years = readdirSync(SRC_DIR).filter((name) => {
+	const years = readdirSync(SRC_DIR).filter(name => {
 		const path = join(SRC_DIR, name);
 		return statSync(path).isDirectory() && /^\d{4}$/.test(name);
 	});
 
 	for (const year of years) {
 		const yearPath = join(SRC_DIR, year);
-		const questionFolders = readdirSync(yearPath).filter((name) => {
+		const questionFolders = readdirSync(yearPath).filter(name => {
 			const path = join(yearPath, name);
 			return statSync(path).isDirectory();
 		});
@@ -84,7 +83,7 @@ function getQuestions(): Question[] {
 			if (!match) continue;
 
 			const [, numberStr, name] = match;
-			const number = parseInt(numberStr);
+			const number = Number(numberStr);
 
 			// Read README
 			const readmePath = join(folderPath, 'README.md');
@@ -101,8 +100,8 @@ function getQuestions(): Question[] {
 				join(folderPath, `${name}.ts`),
 				// Try to find any .ts file that's not a test
 				...readdirSync(folderPath)
-					.filter((f) => f.endsWith('.ts') && !f.endsWith('.test.ts'))
-					.map((f) => join(folderPath, f)),
+					.filter(f => f.endsWith('.ts') && !f.endsWith('.test.ts'))
+					.map(f => join(folderPath, f)),
 			];
 
 			let code = '';
@@ -123,7 +122,7 @@ function getQuestions(): Question[] {
 				id: `${year}-${number}`,
 				number,
 				name,
-				year: parseInt(year),
+				year: Number(year),
 				title: questionData.title || name,
 				description: questionData.description || '',
 				example: questionData.example || '',

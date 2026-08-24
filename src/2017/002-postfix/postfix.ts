@@ -26,11 +26,11 @@ export function postfix(expression: string): number {
 			return;
 		}
 
-		const b = stack.pop()!;
-		const a = stack.pop()!;
+		const b = stack.pop() ?? Number.NaN;
+		const a = stack.pop() ?? Number.NaN;
 		const result = operation(a, b);
 		stack.push(result);
 	});
 
-	return stack.pop()!;
+	return stack.pop() ?? Number.NaN;
 }

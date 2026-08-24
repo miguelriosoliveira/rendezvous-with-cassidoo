@@ -1,7 +1,7 @@
-import { useParams, Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import { Link, useParams } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import ReactMarkdown from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeRaw from 'rehype-raw';
 import './QuestionDetail.css';
@@ -13,8 +13,8 @@ const questions = questionsData as Question[];
 
 function QuestionDetail() {
 	const { questionId } = useParams<{ questionId: string }>();
-	const question = questions.find((q) => q.id === questionId);
-	const currentIndex = questions.findIndex((q) => q.id === questionId);
+	const question = questions.find(q => q.id === questionId);
+	const currentIndex = questions.findIndex(q => q.id === questionId);
 
 	if (!question) {
 		return (
@@ -117,18 +117,12 @@ function QuestionDetail() {
 
 				<div className="navigation-buttons">
 					{currentIndex > 0 && (
-						<Link
-							to={`/questions/${questions[currentIndex - 1].id}`}
-							className="btn btn-secondary"
-						>
+						<Link to={`/questions/${questions[currentIndex - 1].id}`} className="btn btn-secondary">
 							← Previous
 						</Link>
 					)}
 					{currentIndex < questions.length - 1 && (
-						<Link
-							to={`/questions/${questions[currentIndex + 1].id}`}
-							className="btn btn-secondary"
-						>
+						<Link to={`/questions/${questions[currentIndex + 1].id}`} className="btn btn-secondary">
 							Next →
 						</Link>
 					)}

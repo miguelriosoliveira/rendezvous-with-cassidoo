@@ -25,7 +25,7 @@ export function removeDigit(number: number, digit: number): number {
 				.map(digitIndex =>
 					numberStr
 						.split('')
-						.filter((d, i) => i !== digitIndex)
+						.filter((_, i) => i !== digitIndex)
 						.join(''),
 				)
 				.sort()

@@ -6,8 +6,12 @@ describe('#scoreWordGame', () => {
 		const A_CODE = 'a'.charCodeAt(0);
 		const Z_CODE = 'z'.charCodeAt(0);
 		const TOTAL_LETTERS = Z_CODE - A_CODE + 1;
-		const letterScores: Record<string, number> = [...Array(TOTAL_LETTERS).keys()].reduce(
-			(scores, i) => ({ ...scores, [String.fromCharCode(A_CODE + i)]: i + 1 }),
+		const letterScores = [...Array(TOTAL_LETTERS).keys()].reduce<Record<string, number>>(
+			(scores, i) => {
+				const letter = String.fromCharCode(A_CODE + i);
+				scores[letter] = i + 1;
+				return scores;
+			},
 			{},
 		);
 		expect(scoreWordGame(wordList, letterScores)).toBe('cherry');

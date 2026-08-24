@@ -18,7 +18,9 @@ describe('#createLaundryItem', () => {
 		const item = createLaundryItem();
 
 		// Exhaust all cycles
-		expectedCycles.forEach(() => item.nextCycle());
+		expectedCycles.forEach(() => {
+			item.nextCycle();
+		});
 
 		// Now it should always be "done"
 		for (let i = 0; i < 20; i++) {

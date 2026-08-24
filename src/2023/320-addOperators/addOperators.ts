@@ -37,10 +37,10 @@ function backtrack(
 		if (index === 0) {
 			backtrack(numStr, num, i, num, source, target, results);
 		} else {
-			backtrack(expression + '+' + numStr, current + num, i, num, source, target, results);
-			backtrack(expression + '-' + numStr, current - num, i, -num, source, target, results);
+			backtrack(`${expression}+${numStr}`, current + num, i, num, source, target, results);
+			backtrack(`${expression}-${numStr}`, current - num, i, -num, source, target, results);
 			backtrack(
-				expression + '*' + numStr,
+				`${expression}*${numStr}`,
 				current - previous + previous * num,
 				i,
 				previous * num,

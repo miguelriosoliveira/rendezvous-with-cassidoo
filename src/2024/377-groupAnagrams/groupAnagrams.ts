@@ -21,12 +21,9 @@ export function groupAnagrams(strings: string[]): string[][] {
 	return Object.values(
 		strings
 			.map(str => [str, getSortedAnagram(str)])
-			.reduce<Record<string, string[]>>(
-				(map, [str, sortedStr]) => ({
-					...map,
-					[sortedStr]: [...(map[sortedStr] || []), str],
-				}),
-				{},
-			),
+			.reduce<Record<string, string[]>>((map, [str, sortedStr]) => {
+				map[sortedStr] = [...(map[sortedStr] || []), str];
+				return map;
+			}, {}),
 	);
 }

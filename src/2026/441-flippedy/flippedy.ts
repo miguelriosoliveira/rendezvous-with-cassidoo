@@ -25,7 +25,8 @@ function reverseWord(word: string): string {
 export function flippedy(sentence: string): string {
 	const [head, ...tail] = sentence.split(' ');
 	const vowelCount = countVowels(head);
-	const flippedRest = tail.map(word => countVowels(word) === vowelCount ? reverseWord(word) : word);
+	const flippedRest = tail.map(word =>
+		countVowels(word) === vowelCount ? reverseWord(word) : word,
+	);
 	return [head, ...flippedRest].join(' ');
 }
-

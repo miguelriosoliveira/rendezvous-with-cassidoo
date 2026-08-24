@@ -1,4 +1,3 @@
-
 /*
 Find the majority element in an array (one that appears more than n/2 times) in O(n) time and O(1)
 space without hashmaps.
@@ -24,9 +23,8 @@ export function majorityElement(arr: number[]): number | null {
 			return;
 		}
 
-		votes += (num === candidate) ? 1 : -1;
+		votes += num === candidate ? 1 : -1;
 	});
 
 	return candidate;
 }
-

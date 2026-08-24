@@ -40,10 +40,7 @@ export function findLongestTimeGap(timestamps: Timestamp[]): number {
 		.sort((a, b) => a - b);
 
 	return (
-		Math.max(
-			0,
-			...sortedDates.map((date, i, dates) => (dates[i + 1] ? dates[i + 1] - date : 0)),
-		) /
+		Math.max(0, ...sortedDates.map((date, i, dates) => (dates[i + 1] ? dates[i + 1] - date : 0))) /
 		1000 /
 		60
 	);

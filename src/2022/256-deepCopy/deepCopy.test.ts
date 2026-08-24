@@ -16,12 +16,12 @@ describe('#deepCopy', () => {
 		node1.random = node3;
 		node3.random = node2;
 
-		const copy = deepCopy(node1)!;
+		const copy = deepCopy(node1) ?? null;
 
 		expect(copy).toStrictEqual(node1);
-		expect(copy.next).toStrictEqual(node2);
-		expect(copy.next?.next).toStrictEqual(node3);
-		expect(copy.next?.next?.next).toBeNull();
+		expect(copy?.next).toStrictEqual(node2);
+		expect(copy?.next?.next).toStrictEqual(node3);
+		expect(copy?.next?.next?.next).toBeNull();
 	});
 
 	it('should make a null copy from a null linked list', () => {
@@ -31,7 +31,7 @@ describe('#deepCopy', () => {
 
 	it('should handle single node with null random', () => {
 		const node: Node = { val: 5, next: null, random: null };
-		const copy = deepCopy(node)!;
+		const copy = deepCopy(node) ?? null;
 		expect(copy).toStrictEqual(node);
 		expect(copy.next).toBeNull();
 		expect(copy.random).toBeNull();
@@ -45,8 +45,8 @@ describe('#deepCopy', () => {
 		node2.next = null;
 		node2.random = null;
 
-		const copy = deepCopy(node1)!;
-		expect(copy.val).toBe(1);
-		expect(copy.random).toBeNull();
+		const copy = deepCopy(node1) ?? null;
+		expect(copy?.val).toBe(1);
+		expect(copy?.random).toBeNull();
 	});
 });

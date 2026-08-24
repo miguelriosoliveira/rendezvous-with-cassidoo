@@ -47,5 +47,5 @@ const CONSONANTS_REGEX = `[^${VOWELS_STRING}]`;
 
 export function capitalAfterVowelWithRegex(string: string): string {
 	const replaceRegex = new RegExp(`(${VOWELS_REGEX}\\s?)(${CONSONANTS_REGEX})`, 'g');
-	return string.replace(replaceRegex, (match, vowel, consonant) => vowel + consonant.toUpperCase());
+	return string.replace(replaceRegex, (_, vowel, consonant) => vowel + consonant.toUpperCase());
 }

@@ -25,7 +25,8 @@ interface Bear {
 export function hungryBears(bears: Bear[]): string[] {
 	const hungerSum = bears.reduce((sum, bear) => sum + bear.hunger, 0);
 	const avg = hungerSum / bears.length;
-	return bears.filter(bear => bear.hunger > avg)
+	return bears
+		.filter(bear => bear.hunger > avg)
 		.map(bear => bear.name)
-		.sort()
+		.sort();
 }

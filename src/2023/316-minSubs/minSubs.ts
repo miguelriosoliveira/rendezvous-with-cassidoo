@@ -22,7 +22,7 @@ type SliceAndSum = [number[], number];
 export function minSubs(integers: number[], k: number): number[] {
 	return integers
 		.slice(0, integers.length - k)
-		.map((num, i) => integers.slice(i, i + k))
+		.map((_, i) => integers.slice(i, i + k))
 		.map(slice => [slice, sumArray(slice)] as SliceAndSum)
 		.sort(([, sum1], [, sum2]) => sum1 - sum2)[0][0];
 }

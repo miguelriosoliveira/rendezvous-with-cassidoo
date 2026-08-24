@@ -16,12 +16,13 @@ function getSlope([x1, y1]: Point, [x2, y2]: Point): number {
 }
 
 export function maxPointsOnLine(points: Point[]): number {
-	const collinearCounts = points.map((p1, i) => {
+	const collinearCounts = points.map(p1 => {
 		const slopeCountMap = points
 			.map(p2 => getSlope(p1, p2))
 			.reduce<SlopeCountMap>((countMap, slope) => {
 				const slopeCount = countMap[slope] || 1;
-				return { ...countMap, [slope]: slopeCount + 1 };
+				countMap[slope] = slopeCount + 1;
+				return countMap;
 			}, {});
 		return Math.max(...Object.values(slopeCountMap));
 	});

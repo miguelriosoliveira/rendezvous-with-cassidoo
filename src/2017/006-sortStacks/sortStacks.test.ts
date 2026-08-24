@@ -1,4 +1,4 @@
-import { sortStackSmallestOnTop, sortStackLargestOnTop, Stack } from './sortStacks';
+import { Stack, sortStackLargestOnTop, sortStackSmallestOnTop } from './sortStacks';
 
 describe('#sortStacks', () => {
 	describe('#sortStackSmallestOnTop', () => {

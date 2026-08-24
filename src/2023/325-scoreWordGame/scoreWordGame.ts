@@ -25,9 +25,9 @@ export function scoreWordGame(
 			word,
 			word.length * word.split('').reduce((score, char) => score + LETTER_SCORES[char], 0),
 		])
-		.filter(([word, score]) => score > 0)
-		.sort(([word1, score1], [word2, score2]) => score2 - score1)
-		.filter(([word, score], i, [[firstWord, highestScore]]) => score === highestScore)
+		.filter(([, score]) => score > 0)
+		.sort(([, score1], [, score2]) => score2 - score1)
+		.filter(([, score], _, [[, highestScore]]) => score === highestScore)
 		.map(([word]) => word)
 		.sort((word1, word2) => word1.localeCompare(word2))
 		.at(0);

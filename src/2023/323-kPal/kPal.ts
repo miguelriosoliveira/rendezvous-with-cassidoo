@@ -15,7 +15,7 @@ function checkPalindrome(s: string): boolean {
 }
 
 function getSubstrings(s: string) {
-	return s.split('').map((c, i) => s.slice(0, i) + s.slice(i + 1));
+	return s.split('').map((_, i) => s.slice(0, i) + s.slice(i + 1));
 }
 
 export function kPal(s: string, k: number): boolean {

@@ -30,7 +30,7 @@ function convertRecursively({ number, romanNumber = '' }: ConvertRecursivelyProp
 		return romanNumber;
 	}
 
-	const largestValue = ARABIC_NUMBERS_DESC.find(value => value <= number)!;
+	const largestValue = ARABIC_NUMBERS_DESC.find(value => value <= number) ?? 0;
 	const quotient = Math.floor(number / largestValue);
 	const remainder = number % largestValue;
 	const result = SYMBOLS_MAP[largestValue].repeat(quotient);

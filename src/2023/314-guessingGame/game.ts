@@ -1,4 +1,4 @@
-import readline from 'readline';
+import readline from 'node:readline';
 import { guessingGame } from './guessingGame';
 
 const HINT_MAP = {

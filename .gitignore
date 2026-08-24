@@ -54,9 +54,6 @@ web_modules/
 # package-lock.json (project uses pnpm)
 package-lock.json
 
-# Optional eslint cache
-.eslintcache
-
 # Optional stylelint cache
 .stylelintcache
 

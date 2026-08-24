@@ -1,9 +1,16 @@
 import { useEffect, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
+import {
+	Link,
+	Route,
+	BrowserRouter as Router,
+	Routes,
+	useLocation,
+	useNavigate,
+} from 'react-router-dom';
 import Home from './pages/Home';
-import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
-import './App.css'
+import Questions from './pages/Questions';
+import './App.css';
 
 function getRedirectPath(): string | null {
 	const redirect = sessionStorage.redirect;
@@ -33,6 +40,7 @@ function HandleRedirect() {
 function ScrollToTop() {
 	const { pathname } = useLocation();
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: pathname retriggers scroll on route change
 	useEffect(() => {
 		window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 	}, [pathname]);
@@ -55,11 +63,7 @@ function App() {
 						<div className="nav-links">
 							<Link to="/">Home</Link>
 							<Link to="/questions">Questions</Link>
-							<a
-								href="https://buttondown.email/cassidoo"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://buttondown.email/cassidoo" target="_blank" rel="noopener noreferrer">
 								Newsletter
 							</a>
 						</div>
@@ -99,4 +103,4 @@ function App() {
 	);
 }
 
-export default App
+export default App;

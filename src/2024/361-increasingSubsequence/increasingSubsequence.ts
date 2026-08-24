@@ -16,7 +16,8 @@ export function increasingSubsequence(numbers: number[]): number {
 
 	numbers.forEach((num, i) => {
 		if (num < numbers[i + 1]) {
-			return counter++;
+			counter++;
+			return;
 		}
 		max = Math.max(counter, max);
 		counter = 0;

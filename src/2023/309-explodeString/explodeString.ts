@@ -23,6 +23,8 @@ export function explodeString(str: string): string[] {
 		.split('')
 		.filter(c => c !== ' ')
 		.sort()
-		.forEach(char => (map[char] += char));
+		.forEach(char => {
+			map[char] += char;
+		});
 	return Object.values(map);
 }

@@ -27,7 +27,8 @@ export function maxPairs(shoes: Shoe[]): number {
 			if (!map[size]) {
 				map[size] = [];
 			}
-			return { ...map, [size]: [...map[size], side] };
+			map[size].push(side);
+			return map;
 		}, {});
 
 	return Object.values(shoesMap).reduce((sum, sides) => {

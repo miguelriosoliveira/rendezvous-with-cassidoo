@@ -1,4 +1,3 @@
-
 /*
 February 2026 is a perfect month!
 Write a function that returns the closest previous and next perfect month around the given Gregorian year.
@@ -17,7 +16,7 @@ type YearFebruary = `${number}-02`;
 type NearestPerfectMonths = {
 	prev: YearFebruary;
 	next: YearFebruary;
-}
+};
 
 function hasPerfectFebruary(year: number): boolean {
 	// months are 0-based, so February = 1
@@ -41,4 +40,3 @@ export function nearestPerfectMonths(year: number): NearestPerfectMonths {
 		next: `${nextYear}-02`,
 	};
 }
-

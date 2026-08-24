@@ -17,5 +17,8 @@ Example:
 
 export function findShieldBreak(damages: number[], shield: number): number {
 	let totalDamage = 0;
-	return damages.findIndex(damage => (totalDamage += damage) > shield);
+	return damages.findIndex(damage => {
+		totalDamage += damage;
+		return totalDamage > shield;
+	});
 }

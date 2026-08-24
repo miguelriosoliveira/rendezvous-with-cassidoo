@@ -13,8 +13,8 @@ export function firstDuplicate(string: string): string | undefined {
 	});
 
 	return Object.entries(charCount)
-		.filter(([char, count]) => count > 1)
-		.map(([char, count]) => char)
+		.filter(([, count]) => count > 1)
+		.map(([char]) => char)
 		.at(0);
 }
 

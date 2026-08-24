@@ -1,4 +1,4 @@
-import { getDirection, fromTo } from './fromTo';
+import { fromTo, getDirection } from './fromTo';
 
 describe('#getDirection', () => {
 	it('should positive direction', () => {

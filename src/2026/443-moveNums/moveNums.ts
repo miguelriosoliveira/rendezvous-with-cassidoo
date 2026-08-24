@@ -1,4 +1,3 @@
-
 /*
 Given an integer array and a number n,
 move all of the ns to the end of the array while maintaining the relative order of the non-ns.
@@ -19,4 +18,3 @@ export function moveNums(arr: number[], n: number): number[] {
 	});
 	return arr;
 }
-

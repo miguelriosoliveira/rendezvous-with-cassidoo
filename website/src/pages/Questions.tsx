@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { useMemo, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router-dom';
 import './Questions.css';
 
 import questionsData from '../data/questions.json';
@@ -13,11 +13,11 @@ function Questions() {
 	const [selectedYear, setSelectedYear] = useState<string>('all');
 
 	const years = useMemo(() => {
-		return Array.from(new Set(questions.map((q) => q.year))).sort((a, b) => b - a);
+		return Array.from(new Set(questions.map(q => q.year))).sort((a, b) => b - a);
 	}, []);
 
 	const filteredQuestions = useMemo(() => {
-		return questions.filter((q) => {
+		return questions.filter(q => {
 			const matchesSearch =
 				searchTerm === '' ||
 				q.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -46,7 +46,7 @@ function Questions() {
 							type="text"
 							placeholder="Search by name, description, or number..."
 							value={searchTerm}
-							onChange={(e) => setSearchTerm(e.target.value)}
+							onChange={e => setSearchTerm(e.target.value)}
 							className="search-input"
 						/>
 					</div>
@@ -55,11 +55,11 @@ function Questions() {
 						<select
 							id="year-filter"
 							value={selectedYear}
-							onChange={(e) => setSelectedYear(e.target.value)}
+							onChange={e => setSelectedYear(e.target.value)}
 							className="year-select"
 						>
 							<option value="all">All Years</option>
-							{years.map((year) => (
+							{years.map(year => (
 								<option key={year} value={year}>
 									{year}
 								</option>
@@ -73,12 +73,8 @@ function Questions() {
 				</div>
 
 				<div className="questions-grid">
-					{filteredQuestions.map((question) => (
-						<Link
-							key={question.id}
-							to={`/questions/${question.id}`}
-							className="question-card"
-						>
+					{filteredQuestions.map(question => (
+						<Link key={question.id} to={`/questions/${question.id}`} className="question-card">
 							<div className="question-header">
 								<span className="question-number">#{question.number}</span>
 								<span className="question-year">{question.year}</span>
@@ -100,7 +96,14 @@ function Questions() {
 				{filteredQuestions.length === 0 && (
 					<div className="no-results">
 						<p>No questions found matching your criteria.</p>
-						<button onClick={() => { setSearchTerm(''); setSelectedYear('all'); }} className="btn btn-secondary">
+						<button
+							type="button"
+							onClick={() => {
+								setSearchTerm('');
+								setSelectedYear('all');
+							}}
+							className="btn btn-secondary"
+						>
 							Clear Filters
 						</button>
 					</div>

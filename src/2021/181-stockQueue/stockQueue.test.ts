@@ -1,4 +1,4 @@
-import { stockQueue, type Stock } from './stockQueue';
+import { type Stock, stockQueue } from './stockQueue';
 
 describe('#stockQueue', () => {
 	it('should return stock queue with 3 stocks', () => {

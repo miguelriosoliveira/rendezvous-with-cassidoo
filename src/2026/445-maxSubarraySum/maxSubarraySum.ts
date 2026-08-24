@@ -1,4 +1,3 @@
-
 /*
 Given an array of integers, find the contiguous subarray that has the largest sum and return that
 sum. A subarray must contain at least one element. If all elements are negative, return the largest
@@ -31,4 +30,3 @@ export function maxSubarraySum(arr: number[]): number {
 
 	return max;
 }
-

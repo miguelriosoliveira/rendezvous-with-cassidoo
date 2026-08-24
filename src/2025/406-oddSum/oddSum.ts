@@ -20,15 +20,15 @@ export function oddSum(numbers1: number[], numbers2: number[]): Array<[number, n
 	const result: Array<[number, number]> = [];
 
 	const numbers2Rev = numbers2.toSorted((a, b) => b - a);
-	numbers1.forEach(n1 =>
+	numbers1.forEach(n1 => {
 		numbers2Rev.forEach(n2 => {
 			if (isOddSum(n1, n2) && !usedMap1[n1] && !usedMap2[n2]) {
 				usedMap1[n1] = true;
 				usedMap2[n2] = true;
 				result.push([n1, n2]);
 			}
-		}),
-	);
+		});
+	});
 
 	return result.length ? result : null;
 }

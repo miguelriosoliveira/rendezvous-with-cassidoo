@@ -8,7 +8,7 @@ const questions = questionsData as Question[];
 
 function Home() {
 	const totalQuestions = questions.length;
-	const years = Array.from(new Set(questions.map((q) => q.year))).sort();
+	const years = Array.from(new Set(questions.map(q => q.year))).sort();
 	const latestQuestion = questions[questions.length - 1];
 
 	return (
@@ -22,11 +22,7 @@ function Home() {
 					</h1>
 					<p className="hero-description">
 						A comprehensive collection of solutions to the weekly interview questions from{' '}
-						<a
-							href="https://buttondown.email/cassidoo"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="https://buttondown.email/cassidoo" target="_blank" rel="noopener noreferrer">
 							Cassidy Williams' newsletter
 						</a>
 						. All solutions are implemented in TypeScript with comprehensive tests.
