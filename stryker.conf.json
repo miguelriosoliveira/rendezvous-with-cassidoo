@@ -1,5 +1,6 @@
 {
 	"testRunner": "vitest",
+	"tsconfigFile": "tsconfig.stryker-absent.json",
 	"ignoreStatic": true,
 	"mutate": ["src/**/*.ts", "!src/**/*.test.ts"],
 	"incremental": true,

@@ -8,12 +8,9 @@
 		"lint:check": "biome check",
 		"test": "vitest",
 		"test:cov": "vitest run --coverage",
-		"test:mutation": "dotenv stryker run",
+		"test:mutation": "stryker run",
 		"index": "sh generate-index.sh",
 		"website": "cd website && pnpm generate-data && pnpm dev"
-	},
-	"dependencies": {
-		"dotenv-cli": "^11.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.10",

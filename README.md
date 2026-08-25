@@ -168,11 +168,14 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [450 - resolvePath](src/2026/450-resolvePath)
 - [457 - toggleChar](src/2026/457-toggleChar)
 - [458 - shuffleLine](src/2026/458-shuffleLine)
+- [471 - partitionArray](src/2026/471-partitionArray)
 </details>
 
 ## Installing & Running
 
 Just `pnpm i` to install all dependencies and then `pnpm t` to run the tests!
+
+Mutation testing is `pnpm test:mutation`. A local `.env` is not loaded. CI sets `STRYKER_DASHBOARD_API_KEY` for dashboard uploads; for a local upload, export that variable yourself. To skip the dashboard locally, pass `--reporters clear-text,progress,html`.
 
 ## Website Development
 
