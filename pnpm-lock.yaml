@@ -61,13 +61,13 @@ importers:
         version: 7.0.0
     devDependencies:
       '@types/node':
-        specifier: ^26.4.0
+        specifier: ^26.4.1
         version: 26.4.1
       '@types/react':
         specifier: ^19.2.18
         version: 19.2.18
       '@types/react-dom':
-        specifier: ^19.2.5
+        specifier: ^19.2.7
         version: 19.2.7(@types/react@19.2.18)
       '@types/react-syntax-highlighter':
         specifier: ^15.5.13
