@@ -109,7 +109,7 @@ function getQuestions(): Question[] {
 				try {
 					code = readFileSync(tsFile, 'utf-8');
 					break;
-				} catch (e) {
+				} catch {
 					// Try next file
 				}
 			}

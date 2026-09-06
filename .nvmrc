@@ -1,0 +1,3 @@
+24
+# COPY-ONLY template from https://github.com/miguelriosoliveira/shared-configs
+# Copy this file to the repo root as .nvmrc. Do not extend or import it.

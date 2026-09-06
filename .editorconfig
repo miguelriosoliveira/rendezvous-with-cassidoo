@@ -1,3 +1,6 @@
+# COPY-ONLY template from https://github.com/miguelriosoliveira/shared-configs
+# Copy this file to the repo root as .editorconfig. Do not extend or import it.
+
 root = true
 
 [*]
@@ -8,7 +11,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.yml]
+[*.yml, *.yaml]
 indent_style = space
 
 [*.txt]

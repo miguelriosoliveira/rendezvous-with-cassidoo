@@ -1,0 +1,11 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["github>miguelriosoliveira/shared-configs//renovate/default"],
+	"packageRules": [
+		{
+			"description": "Stryker vitest-runner 10 does not support Vitest 5 test names yet. Drop this rule when Stryker does.",
+			"matchPackageNames": ["vitest", "@vitest/coverage-v8"],
+			"allowedVersions": "<5"
+		}
+	]
+}
