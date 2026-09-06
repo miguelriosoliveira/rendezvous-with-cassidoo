@@ -24,27 +24,21 @@ export interface Node {
 	random: Node | null;
 }
 
-function copyNode(node: Node): Node {
-	return {
-		val: node.val,
-		next: node.next != null ? { ...node.next } : null,
-		random: node.random != null ? { ...node.random } : null,
-	};
-}
-
 export function deepCopy(nodeList: Node | null): Node | null {
-	if (nodeList == null) {
-		return null;
+	const copies = new Map<Node, Node>();
+
+	for (let current: Node | null = nodeList; current != null; current = current.next) {
+		copies.set(current, {
+			val: current.val,
+			next: null,
+			random: null,
+		});
 	}
 
-	const nodesCopy = copyNode(nodeList);
-	let currentNode: Node | null = nodeList;
-	let currentNodeCopy: Node | null = nodesCopy;
-	// Stryker disable next-line ConditionalExpression,EqualityOperator: Loop builds copy chain but copyNode already deep copies via spread
-	while (currentNode != null) {
-		currentNodeCopy = copyNode(currentNode);
-		currentNode = currentNode.next;
+	for (const [current, copy] of copies) {
+		copy.next = copies.get(current.next as Node) || null;
+		copy.random = copies.get(current.random as Node) || null;
 	}
 
-	return nodesCopy;
+	return copies.get(nodeList as Node) || null;
 }
