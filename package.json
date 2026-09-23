@@ -16,7 +16,7 @@
 		"website": "cd website && pnpm generate-data && pnpm dev"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.12",
+		"@biomejs/biome": "2.5.14",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
 		"@stryker-mutator/core": "^10.0.0",
 		"@stryker-mutator/vitest-runner": "^10.0.0",
