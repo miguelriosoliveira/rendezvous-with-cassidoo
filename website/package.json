@@ -15,23 +15,23 @@
 	},
 	"dependencies": {
 		"highlight.js": "^11.12.0",
-		"react": "^19.2.8",
-		"react-dom": "^19.2.8",
+		"react": "^19.3.0",
+		"react-dom": "^19.3.0",
 		"react-markdown": "^10.1.0",
-		"react-router-dom": "^7.18.3",
+		"react-router-dom": "^7.18.4",
 		"react-syntax-highlighter": "^16.1.1",
 		"rehype-highlight": "^7.0.2",
 		"rehype-raw": "^7.0.0"
 	},
 	"devDependencies": {
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
-		"@types/node": "^26.4.1",
-		"@types/react": "^19.2.18",
-		"@types/react-dom": "^19.2.7",
+		"@types/node": "^26.6.3",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
 		"@types/react-syntax-highlighter": "^15.5.13",
 		"@vitejs/plugin-react": "^6.1.1",
-		"tsx": "^4.23.13",
+		"tsx": "^4.23.15",
 		"typescript": "~7.0.2",
-		"vite": "^8.2.2"
+		"vite": "^8.3.1"
 	}
 }
