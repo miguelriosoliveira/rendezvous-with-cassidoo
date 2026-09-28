@@ -8,8 +8,8 @@ export default defineConfig({
 		isolate: false,
 		coverage: {
 			reporter: ['text', 'json', 'html', 'lcov'],
-			include: ['src/'],
-			exclude: ['*.md', 'src/2023/314-guessingGame/game.ts'],
+			include: ['src/**/*.ts'],
+			exclude: ['src/2023/314-guessingGame/game.ts'],
 		},
 	},
 });
