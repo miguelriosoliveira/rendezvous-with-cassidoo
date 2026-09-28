@@ -13,7 +13,7 @@ importers:
         version: 2.5.14
       '@miguelriosoliveira/shared-configs':
         specifier: github:miguelriosoliveira/shared-configs
-        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/5416b2788245796c94c12c9bc6a87b97b61ad627
+        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52
       '@stryker-mutator/core':
         specifier: ^10.0.0
         version: 10.0.0(@types/node@26.6.3)
@@ -65,7 +65,7 @@ importers:
     devDependencies:
       '@miguelriosoliveira/shared-configs':
         specifier: github:miguelriosoliveira/shared-configs
-        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/5416b2788245796c94c12c9bc6a87b97b61ad627
+        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52
       '@types/node':
         specifier: ^26.6.3
         version: 26.6.3
@@ -663,8 +663,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/5416b2788245796c94c12c9bc6a87b97b61ad627':
-    resolution: {gitHosted: true, integrity: sha512-9x8meEyWQVhCHRdcb96XAwfhOtHc/nncQXVUibdcQgj3U6ffYa65Seq1jUlxS8Wp/nkbnTvZB1v0M5FlcKkOPw==, tarball: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/5416b2788245796c94c12c9bc6a87b97b61ad627}
+  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52':
+    resolution: {gitHosted: true, integrity: sha512-f8wPVNNZEYBMLvlYsR0MSD0dhVKpf8WOJp+cKNbR1zfvkWZT4M0QGD3YyiaH7gatbj/Kj79FK1eXG1W6vJH4zQ==, tarball: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52}
     version: 0.1.0
 
   '@oxc-project/types@0.151.0':
@@ -2516,7 +2516,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/5416b2788245796c94c12c9bc6a87b97b61ad627': {}
+  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52': {}
 
   '@oxc-project/types@0.151.0': {}
 
