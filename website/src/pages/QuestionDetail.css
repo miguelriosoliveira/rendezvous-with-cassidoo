@@ -88,6 +88,35 @@
 	font-size: 1.25rem;
 }
 
+.example-section {
+	margin-top: 2rem;
+}
+
+.example-section h3 {
+	font-size: 1.25rem;
+	color: var(--text-primary);
+	margin-bottom: 1rem;
+}
+
+.example-section p {
+	margin-bottom: 1rem;
+	color: var(--text-secondary);
+}
+
+.example-section pre {
+	background-color: var(--background);
+	padding: 1rem;
+	border-radius: 8px;
+	overflow-x: auto;
+	border: 1px solid var(--border);
+}
+
+.example-section code {
+	font-family: "Fira Code", "Courier New", monospace;
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
 .description {
 	font-size: 1.125rem;
 	color: var(--text-secondary);
@@ -136,35 +165,6 @@
 	border: none;
 	color: inherit;
 	font-size: 0.9rem;
-}
-
-.example-section {
-	margin-top: 2rem;
-}
-
-.example-section h3 {
-	font-size: 1.25rem;
-	color: var(--text-primary);
-	margin-bottom: 1rem;
-}
-
-.example-section p {
-	margin-bottom: 1rem;
-	color: var(--text-secondary);
-}
-
-.example-section pre {
-	background-color: var(--background);
-	padding: 1rem;
-	border-radius: 8px;
-	overflow-x: auto;
-	border: 1px solid var(--border);
-}
-
-.example-section code {
-	font-family: "Fira Code", "Courier New", monospace;
-	font-size: 0.9rem;
-	line-height: 1.6;
 }
 
 .code-container {

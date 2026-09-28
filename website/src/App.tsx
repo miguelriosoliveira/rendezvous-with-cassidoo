@@ -40,7 +40,6 @@ function HandleRedirect() {
 function ScrollToTop() {
 	const { pathname } = useLocation();
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: pathname retriggers scroll on route change
 	useEffect(() => {
 		window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 	}, [pathname]);
