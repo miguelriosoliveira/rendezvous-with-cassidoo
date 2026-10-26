@@ -4,7 +4,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"engines": {
-		"node": "24.22.0"
+		"node": "24.22.1"
 	},
 	"scripts": {
 		"generate-data": "tsx scripts/generate-data.ts",
@@ -32,6 +32,6 @@
 		"@vitejs/plugin-react": "^6.1.2",
 		"tsx": "^4.23.15",
 		"typescript": "~7.0.2",
-		"vite": "^8.3.4"
+		"vite": "^8.3.5"
 	}
 }

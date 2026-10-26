@@ -9,17 +9,17 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: 2.5.15
-        version: 2.5.15
+        specifier: 2.6.3
+        version: 2.6.3
       '@miguelriosoliveira/shared-configs':
         specifier: github:miguelriosoliveira/shared-configs
         version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52
       '@stryker-mutator/core':
-        specifier: ^10.0.0
-        version: 10.0.0(@types/node@26.6.5)
+        specifier: ^10.1.1
+        version: 10.1.1(@types/node@26.6.5)
       '@stryker-mutator/vitest-runner':
-        specifier: ^10.0.0
-        version: 10.0.0(@stryker-mutator/core@10.0.0(@types/node@26.6.5))(vitest@5.0.5)
+        specifier: ^10.1.1
+        version: 10.1.1(@stryker-mutator/core@10.1.1(@types/node@26.6.5))(vitest@5.0.5)
       '@types/node':
         specifier: ^26.6.5
         version: 26.6.5
@@ -34,7 +34,7 @@ importers:
         version: 7.0.2
       vitest:
         specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
+        version: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
 
   website:
     dependencies:
@@ -80,7 +80,7 @@ importers:
         version: 15.5.13
       '@vitejs/plugin-react':
         specifier: ^6.1.2
-        version: 6.1.2(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
+        version: 6.1.2(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -88,8 +88,8 @@ importers:
         specifier: ~7.0.2
         version: 7.0.2
       vite:
-        specifier: ^8.3.4
-        version: 8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
+        specifier: ^8.3.5
+        version: 8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
 
 packages:
 
@@ -303,59 +303,71 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@biomejs/biome@2.5.15':
-    resolution: {integrity: sha512-WZTW4slm/pdkh92K6t/3aEN++44JD1PQ7squ7RCMLI1flHGl43DVOIGXvCjHiZgBMO1V4uYxoFNtqrIA4qGuIQ==}
+  '@biomejs/biome@2.6.3':
+    resolution: {integrity: sha512-va/0xPku7wnfzv+D8Zpdm5uKiGJWiV8neqoEPnRjvNQQwhl4tVXS4fETs4H0CCB2rGeqJ4cu9y4iOZOnOYKAUA==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.5.15':
-    resolution: {integrity: sha512-BZVzFhJ/mUvTLMYbc9x6el0o2Uv5zP7bACYyhFb6fSc1giroXm7PL0a5KqMJ9F+/BnkYRjagD/ROSDVOZ6eapg==}
+  '@biomejs/cli-android-arm64@2.6.3':
+    resolution: {integrity: sha512-5JD7QQDEHxdeEb4sftEHG+lsuUyu8Cob/hVLqRELbgGlFl68Rldv/PPi2k4dRjERZ/EItJ3O6Xmv8lqsEtUBiw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [android]
+
+  '@biomejs/cli-android-x64@2.6.3':
+    resolution: {integrity: sha512-70WOGKCgpT+Uqg6LFdTLqefV54/DypdZg+LnBQDO6AWvkgXO+9xhVClajQyDsIHYjnXMtI1pRO5sP+zMXlS/bw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [android]
+
+  '@biomejs/cli-darwin-arm64@2.6.3':
+    resolution: {integrity: sha512-ezf+XEKeyJ2yYlBhrzyEEHLvfRYrhtNKc6maLzR/WcAcBccb4RVDeFxsymjBve2LO0bpIMRUAiS90D4bUBRT0A==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.5.15':
-    resolution: {integrity: sha512-V5Kw63V+fVGNFhFrizDxMbGXAzZCh8kYzJpy3GI6gTapWDg7bZK9oYC9CbVgQSEdTnupz0U5Efz8Ev+5vdBBXw==}
+  '@biomejs/cli-darwin-x64@2.6.3':
+    resolution: {integrity: sha512-Lg2tFdg4elJo+7i707PpLMs6N1hATVt4kqDo6MD/q/VnPs8rsKReKXsz1TA5GNdfRVAQNJ5GRiyK2EwNptK+MA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.5.15':
-    resolution: {integrity: sha512-tGzZUTcJCV7tj5Adh/Gn6nR4MycqA3iohq2LEcrarAgRBkU0h0OKd2UzCRkOsOYOuUGaUJb4YmqRqyy2feGGSw==}
+  '@biomejs/cli-linux-arm64-musl@2.6.3':
+    resolution: {integrity: sha512-dYU70A89OFHzakQPE9VOPbE60JNcQt4mtxvUGQl+EgTkGtqCFxLD2RUn1SbiMu8Mu5xFscS1bfYDpoasaUrqNA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-arm64@2.5.15':
-    resolution: {integrity: sha512-XaG7P7eeSLYETD3K9grfB0mQmpLQZjygdbsxekWBJAg4am79fGAtRpfRyNnTvXB2fZFNnJZG3nXm7HBat0+VUw==}
+  '@biomejs/cli-linux-arm64@2.6.3':
+    resolution: {integrity: sha512-8Stcvq98n1gs9VyLKuaWrnsd8kbXE2nKDAHtuLHGSYdGyNWN5JIIm5a28xdnmgdKzKHmiDgYyATetkEv7+zGow==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-linux-x64-musl@2.5.15':
-    resolution: {integrity: sha512-IlxUcyxilVGPsE008x13pWdkTbU3nQpP2i9b5UrbOYj6goBkKsRX1XB7yJLcV+O1H9LBchIIm4adOaVLZBX0ZQ==}
+  '@biomejs/cli-linux-x64-musl@2.6.3':
+    resolution: {integrity: sha512-j6eFjUcWSphmgVTbrobEMA0wdbfNHKrGi8hRsFkc17jeS1n7nHwFACxp6jWqe9sxQqyFAeyOgt2/1bOGVcbATA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-x64@2.5.15':
-    resolution: {integrity: sha512-xE4iEW/3LqlYj9GFgGrFsFSH51dEEpUbYWBfeOv0q87WkUDxK2o/HhreSb7qMJqck70RVM6Lg96hgedcAYcOkA==}
+  '@biomejs/cli-linux-x64@2.6.3':
+    resolution: {integrity: sha512-CShmx0bO6BngywT3minv8K1xsQX1ig1vsBqYTLnmDY3mBiDYHlaLRIsdHoM1pEU9dV3BN5a0uiH0IGDtYh9TWA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-win32-arm64@2.5.15':
-    resolution: {integrity: sha512-2kPKzhNlm8C+Ru3GcO0Me2ODkCBLrVOUNuyi84RJyWDVKAA4+Kjj3jMjL938lF6BRfvltC4vB2nPY9SvN51Ovg==}
+  '@biomejs/cli-win32-arm64@2.6.3':
+    resolution: {integrity: sha512-00SthDxBPwNiT7IL/mOneif6fiEU1PXK875zhr+InpeZjovY1mF5tCuDhXo1Hh0GYyiKHKzLbItzn58SAyLhJQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.5.15':
-    resolution: {integrity: sha512-yAzh4UqEImV6Hcy0zjUqNfJAsUhoD64FBQCdTG8Md/Z2wQeVP/ZmJ3XRYAs1g8J9fjTFyl2fCtc5FB5til47+g==}
+  '@biomejs/cli-win32-x64@2.6.3':
+    resolution: {integrity: sha512-GhtOPphBWlnCepqpNk/w5eGN5oGRCzL20EbAkL1XCIpyboeVC9R642noyT43l8LSenGS4qz9IL8sKPfwY37V/Q==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -776,27 +788,27 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@stryker-mutator/api@10.0.0':
-    resolution: {integrity: sha512-ZtAJ0ZT3MVRCWJTBE2h90XB/6E+4lifHYtcTyNG6nU2nLekPgTo4gD5esjX6Okxo1b/JB4jJzyxYB54fwKAoJw==}
+  '@stryker-mutator/api@10.1.1':
+    resolution: {integrity: sha512-3s/ECsrD1Tf1WEB7amBk0HxjN7zgkabKvmqnI2C831rTNszJ6o2HoV9PVxtElDEWxb2+t4iavK5x25G+DTUOUA==}
     engines: {node: '>=22.0.0'}
 
-  '@stryker-mutator/core@10.0.0':
-    resolution: {integrity: sha512-ZvMsRyaXQQ5e6Thcid9pkuODv6Fn9E3nrBQJUap+hcJuGJ4unm26afo3m6YKSjn8kinyxJ/3TXf0cTWRDaTxVw==}
+  '@stryker-mutator/core@10.1.1':
+    resolution: {integrity: sha512-4xJAOCw9utJMLyrTk9gINi434tBxnyuwt8lU/InyoKagKd2/zh/2ui7ncWoD0qZeJrxClYzblg8iUh5ewBAB3Q==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@stryker-mutator/instrumenter@10.0.0':
-    resolution: {integrity: sha512-B7Wmn1KlEWyFeOz6D6oGvQGRfi5Xw3VemG6dEKvFQp4qLvxD9Mf4kcZghfxffgnYwXd3bFgqXsJ+ZGlhdfIOrQ==}
+  '@stryker-mutator/instrumenter@10.1.1':
+    resolution: {integrity: sha512-Vyude2i8LhDciLV1q6J55KtdA7gZpRuMfZcBcmWV6hLHAvWocoPKnCKc5BlZt1mwGWkX3Olc0457I7Ue6F1WEg==}
     engines: {node: '>=22.0.0'}
 
-  '@stryker-mutator/util@10.0.0':
-    resolution: {integrity: sha512-LzOpHiJaCp2ABQgnPMlrQQcsK43bd5Vo/2FGL78aN62yDoeRQ+4j3tzeuXxK5OAHdC3fUz6TDoy4IsoAuLAd3w==}
+  '@stryker-mutator/util@10.1.1':
+    resolution: {integrity: sha512-Z0zDzsmhoSykE1gT3DvD1knFxySgNMfBlpSSs1j87kWvjEMfeMqfLOk0bqEPRg/rTFIUNSEXLZapxePUhZmfZA==}
 
-  '@stryker-mutator/vitest-runner@10.0.0':
-    resolution: {integrity: sha512-SHK2/vfvRUpiz7jXPnQMBnr6zLdm69DK03Mo5mPhaZWcRSygrKUqYsPqWsXsK+5ySHzlMTfCyFK5NQ/X9sJFFw==}
+  '@stryker-mutator/vitest-runner@10.1.1':
+    resolution: {integrity: sha512-w/OmNt1vHD4Yeacy8Rxhl2Ue/9l662iyOW8XxM4rc9huixF6IySHW3cvhTs8JnMvG9tG7vS7ZZ52wUXx7xy1IQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
-      '@stryker-mutator/core': 10.0.0
+      '@stryker-mutator/core': 10.1.1
       vitest: '>=2.0.0'
 
   '@types/chai@5.2.3':
@@ -1917,13 +1929,13 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@8.3.4:
-    resolution: {integrity: sha512-IftLE8phJhdNRIGNEV4JCCvfNScoZQVfcXaN8TQropWGJtOHcu+iAB9pHcuGvmEb/kddw0LBe/jS8ztdC6xdiQ==}
+  vite@8.3.5:
+    resolution: {integrity: sha512-z1YpjieJ9g0ebTmQpLBv/oq9E3F9EIlOe+7LahW8SrE3LTiG3udBRUXQOlYXP9b+IC2q2phHeVxj9xGlw34OEQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
       '@types/node': ^20.19.0 || >=22.12.0
-      '@vitejs/devtools': ^0.7.1
+      '@vitejs/devtools': ^0.7.1 || ^0.8.0
       esbuild: ^0.27.0 || ^0.28.0
       jiti: '>=1.21.0'
       less: ^4.0.0
@@ -2270,39 +2282,47 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@biomejs/biome@2.5.15':
+  '@biomejs/biome@2.6.3':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.5.15
-      '@biomejs/cli-darwin-x64': 2.5.15
-      '@biomejs/cli-linux-arm64': 2.5.15
-      '@biomejs/cli-linux-arm64-musl': 2.5.15
-      '@biomejs/cli-linux-x64': 2.5.15
-      '@biomejs/cli-linux-x64-musl': 2.5.15
-      '@biomejs/cli-win32-arm64': 2.5.15
-      '@biomejs/cli-win32-x64': 2.5.15
+      '@biomejs/cli-android-arm64': 2.6.3
+      '@biomejs/cli-android-x64': 2.6.3
+      '@biomejs/cli-darwin-arm64': 2.6.3
+      '@biomejs/cli-darwin-x64': 2.6.3
+      '@biomejs/cli-linux-arm64': 2.6.3
+      '@biomejs/cli-linux-arm64-musl': 2.6.3
+      '@biomejs/cli-linux-x64': 2.6.3
+      '@biomejs/cli-linux-x64-musl': 2.6.3
+      '@biomejs/cli-win32-arm64': 2.6.3
+      '@biomejs/cli-win32-x64': 2.6.3
 
-  '@biomejs/cli-darwin-arm64@2.5.15':
+  '@biomejs/cli-android-arm64@2.6.3':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.5.15':
+  '@biomejs/cli-android-x64@2.6.3':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.5.15':
+  '@biomejs/cli-darwin-arm64@2.6.3':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.5.15':
+  '@biomejs/cli-darwin-x64@2.6.3':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.5.15':
+  '@biomejs/cli-linux-arm64-musl@2.6.3':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.5.15':
+  '@biomejs/cli-linux-arm64@2.6.3':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.5.15':
+  '@biomejs/cli-linux-x64-musl@2.6.3':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.5.15':
+  '@biomejs/cli-linux-x64@2.6.3':
+    optional: true
+
+  '@biomejs/cli-win32-arm64@2.6.3':
+    optional: true
+
+  '@biomejs/cli-win32-x64@2.6.3':
     optional: true
 
   '@esbuild/aix-ppc64@0.28.2':
@@ -2571,19 +2591,19 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@stryker-mutator/api@10.0.0':
+  '@stryker-mutator/api@10.1.1':
     dependencies:
       mutation-testing-metrics: 3.8.4
       mutation-testing-report-schema: 3.8.4
       tslib: 2.8.1
       typed-inject: 5.0.0
 
-  '@stryker-mutator/core@10.0.0(@types/node@26.6.5)':
+  '@stryker-mutator/core@10.1.1(@types/node@26.6.5)':
     dependencies:
       '@inquirer/prompts': 8.7.4(@types/node@26.6.5)
-      '@stryker-mutator/api': 10.0.0
-      '@stryker-mutator/instrumenter': 10.0.0
-      '@stryker-mutator/util': 10.0.0
+      '@stryker-mutator/api': 10.1.1
+      '@stryker-mutator/instrumenter': 10.1.1
+      '@stryker-mutator/util': 10.1.1
       ajv: 8.20.0
       chalk: 5.6.2
       commander: 14.0.3
@@ -2609,7 +2629,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@stryker-mutator/instrumenter@10.0.0':
+  '@stryker-mutator/instrumenter@10.1.1':
     dependencies:
       '@babel/core': 8.0.7
       '@babel/generator': 8.0.6
@@ -2619,23 +2639,23 @@ snapshots:
       '@babel/preset-react': 8.0.1(@babel/core@8.0.7)
       '@babel/preset-typescript': 8.0.7(@babel/core@8.0.7)
       '@babel/traverse': 8.0.7
-      '@stryker-mutator/api': 10.0.0
-      '@stryker-mutator/util': 10.0.0
+      '@stryker-mutator/api': 10.1.1
+      '@stryker-mutator/util': 10.1.1
       angular-html-parser: 10.11.0
       semver: 7.8.5
       tslib: 2.8.1
       weapon-regex: 2.0.6
 
-  '@stryker-mutator/util@10.0.0': {}
+  '@stryker-mutator/util@10.1.1': {}
 
-  '@stryker-mutator/vitest-runner@10.0.0(@stryker-mutator/core@10.0.0(@types/node@26.6.5))(vitest@5.0.5)':
+  '@stryker-mutator/vitest-runner@10.1.1(@stryker-mutator/core@10.1.1(@types/node@26.6.5))(vitest@5.0.5)':
     dependencies:
-      '@stryker-mutator/api': 10.0.0
-      '@stryker-mutator/core': 10.0.0(@types/node@26.6.5)
-      '@stryker-mutator/util': 10.0.0
+      '@stryker-mutator/api': 10.1.1
+      '@stryker-mutator/core': 10.1.1(@types/node@26.6.5)
+      '@stryker-mutator/util': 10.1.1
       semver: 7.8.5
       tslib: 2.8.1
-      vitest: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
+      vitest: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
 
   '@types/chai@5.2.3':
     dependencies:
@@ -2752,10 +2772,10 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@vitejs/plugin-react@6.1.2(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))':
+  '@vitejs/plugin-react@6.1.2(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
+      vite: 8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
 
   '@vitest/coverage-v8@5.0.5(vitest@5.0.5)':
     dependencies:
@@ -2767,7 +2787,7 @@ snapshots:
       obug: 3.0.0
       std-env: 4.3.0
       tinyrainbow: 3.2.0
-      vitest: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
+      vitest: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
 
   '@vitest/istanbul-lib-coverage@1.0.2': {}
 
@@ -2775,14 +2795,14 @@ snapshots:
     dependencies:
       '@vitest/istanbul-lib-coverage': 1.0.2
 
-  '@vitest/mocker@5.0.5(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))':
+  '@vitest/mocker@5.0.5(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.0.5
       estree-walker: 3.0.3
       magic-string: 1.4.3
     optionalDependencies:
-      vite: 8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
+      vite: 8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
 
   '@vitest/spy@5.0.5': {}
 
@@ -3872,7 +3892,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15):
+  vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -3885,10 +3905,10 @@ snapshots:
       fsevents: 2.3.3
       tsx: 4.23.15
 
-  vitest@5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)):
+  vitest@5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.5(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
+      '@vitest/mocker': 5.0.5(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15))
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -3899,7 +3919,7 @@ snapshots:
       tinybench: 6.2.2
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      vite: 8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
+      vite: 8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(tsx@4.23.15)
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 26.6.5
