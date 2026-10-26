@@ -1,4 +1,9 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"extends": ["@miguelriosoliveira/shared-configs/biome"]
+	"extends": ["@miguelriosoliveira/shared-configs/biome"],
+	"markdown": {
+		"formatter": {
+			"formatEmbeds": false
+		}
+	}
 }

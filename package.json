@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"engines": {
-		"node": "24.22.0"
+		"node": "24.22.1"
 	},
 	"scripts": {
 		"prepare": "husky",
@@ -16,10 +16,10 @@
 		"website": "cd website && pnpm generate-data && pnpm dev"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.15",
+		"@biomejs/biome": "2.6.3",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
-		"@stryker-mutator/core": "^10.0.0",
-		"@stryker-mutator/vitest-runner": "^10.0.0",
+		"@stryker-mutator/core": "^10.1.1",
+		"@stryker-mutator/vitest-runner": "^10.1.1",
 		"@types/node": "^26.6.5",
 		"@vitest/coverage-v8": "^5.0.5",
 		"husky": "^9.1.7",
