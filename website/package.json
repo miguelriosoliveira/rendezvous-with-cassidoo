@@ -4,7 +4,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"engines": {
-		"node": "24.22.1"
+		"node": "26.13.0"
 	},
 	"scripts": {
 		"generate-data": "tsx scripts/generate-data.ts",
