@@ -16,14 +16,14 @@
 		"website": "cd website && pnpm generate-data && pnpm dev"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.6.4",
+		"@biomejs/biome": "2.6.5",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
 		"@stryker-mutator/core": "^10.1.1",
 		"@stryker-mutator/vitest-runner": "^10.1.1",
 		"@types/node": "^26.6.6",
-		"@vitest/coverage-v8": "^5.0.5",
+		"@vitest/coverage-v8": "^5.1.0",
 		"husky": "^9.1.7",
 		"typescript": "^7.0.2",
-		"vitest": "^5.0.5"
+		"vitest": "^5.1.0"
 	}
 }
