@@ -7,6 +7,7 @@ Interview question of the [issue #264 of rendezvous with cassidoo](https://butto
 **Write a function `fromTo` that produces a generator, that will produce values in a range.**
 
 Usage:
+
 ```js
 let gen = fromTo(5,7)
 

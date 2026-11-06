@@ -7,6 +7,7 @@ Interview question of the [issue #254 of rendezvous with cassidoo](https://butto
 Given a string str and a set of words dict, find the longest word in dict that is a subsequence of str.
 
 Example:
+
 ```js
 let str = "abppplee"
 let dict = {"able", "ale", "apple", "bale", "kangaroo"}

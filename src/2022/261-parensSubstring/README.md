@@ -7,6 +7,7 @@ Interview question of the [issue #261 of rendezvous with cassidoo](https://butto
 **Given a string `s` consisting of various parenthesis `(` and `)`, find the length of the longest valid parenthesis substring.**
 
 Example:
+
 ```js
 > parensSubstring('(()(')
 > 2

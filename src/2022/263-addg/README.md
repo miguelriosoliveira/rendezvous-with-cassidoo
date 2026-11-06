@@ -8,6 +8,7 @@ Interview question of the [issue #263 of rendezvous with cassidoo](https://butto
 Consider edge cases, side effects, incorrect usage of the function, and expected values!
 
 Function to test:
+
 ```js
 function addg(a) {
     if (a === undefined) return a;

@@ -7,6 +7,7 @@ Interview question of the [issue #181 of rendezvous with cassidoo](https://butto
 You are given a snapshot of a queue of stocks that have changing prices coming in from a stream. Remove the outdated stocks from the queue.
 
 Example:
+
 ```
 $ snapshot = [
   { sym: ‘GME’, cost: 280 },

@@ -8,6 +8,7 @@ Interview question of the [issue #262 of rendezvous with cassidoo](https://butto
 A formatted markdown table means that the width of each column is the width of the longest cell in the column.
 
 Example:
+
 ```
 Input:
 | Syntax | Description |

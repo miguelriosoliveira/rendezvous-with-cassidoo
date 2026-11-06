@@ -7,6 +7,7 @@ Interview question of the [issue #002 of rendezvous with cassidoo](https://butto
 **Write a simple postfix calculator function that takes in a string expression and returns the result.**
 
 Example usage:
+
 ```js
 postfix('5 4 * 6 2 / +')
 > 23

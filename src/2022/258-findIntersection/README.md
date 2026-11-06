@@ -8,6 +8,7 @@ Given two arrays A and B, return the indices at which the two arrays intersect. 
 (see [this diagram](https://i.imgur.com/UyglRcN.png) if it helps you visualize it)
 
 Example:
+
 ```js
 let listA = [1,4,5,6]
 let listB = [2,3,4,5,6]

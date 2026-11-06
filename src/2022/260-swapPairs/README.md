@@ -8,6 +8,7 @@ Interview question of the [issue #260 of rendezvous with cassidoo](https://butto
 Something to think about: How would your code change if this were a linked list, versus an array?
 
 Example:
+
 ```js
 > swapPairs([1,2,3,4])
 > [2,1,4,3]

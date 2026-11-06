@@ -7,6 +7,7 @@ Interview question of the [issue #298 of rendezvous with cassidoo](https://butto
 **Given a non-empty array containing only non-negative integers, return the list with trailing and leading zeroes removed.**
 
 Example:
+
 ```js
 > removeZeroes([0, 0, 0, 3, 1, 4, 1, 5, 9, 0, 0, 0, 0])
 > [3, 1, 4, 1, 5, 9]
