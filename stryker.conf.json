@@ -4,6 +4,11 @@
 	"ignoreStatic": true,
 	"mutate": ["src/**/*.ts", "!src/**/*.test.ts"],
 	"incremental": true,
+	"thresholds": {
+		"high": 80,
+		"low": 60,
+		"break": 100
+	},
 	"ignorePatterns": ["src/2023/314-guessingGame/game.ts"],
 	"checkers": [],
 	"plugins": ["@stryker-mutator/vitest-runner"],
