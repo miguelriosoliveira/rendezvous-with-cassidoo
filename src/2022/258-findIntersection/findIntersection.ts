@@ -16,7 +16,7 @@ let listB = [2,3,4,5,6]
 */
 
 export function findIntersectionInArrays(listA: number[], listB: number[]) {
-	let indexInB = -1;
+	let indexInB: number;
 	const indexInA = listA.findIndex(itemInA => {
 		indexInB = listB.indexOf(itemInA);
 		return indexInB > -1;
