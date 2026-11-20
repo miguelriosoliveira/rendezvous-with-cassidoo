@@ -12,7 +12,7 @@
 		"test": "vitest",
 		"test:cov": "vitest run --coverage",
 		"test:mutation": "stryker run",
-		"index": "sh generate-index.sh",
+		"index": "bash generate-index.sh",
 		"website": "cd website && pnpm generate-data && pnpm dev"
 	},
 	"devDependencies": {
