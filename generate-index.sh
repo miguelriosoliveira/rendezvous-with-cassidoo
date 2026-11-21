@@ -19,10 +19,13 @@ for year_dir in src/*; do
 	done
 done
 
-awk -v new_index="${new_index}" '
-  BEGIN { flag = 0 }
-  /<details>/ { print new_index; flag = 1; next }
-  /<\/details>/ { flag = 0 }
-  !flag { print }' README.md > README-tmp.md
+tmp_dir=$(mktemp -d .readme-index.XXXXXX)
+trap 'rm -rf -- "$tmp_dir"' EXIT
 
-mv README-tmp.md README.md
+GENERATED_README_INDEX="$new_index" awk '
+  BEGIN { flag = 0 }
+  /<details>/ { print ENVIRON["GENERATED_README_INDEX"]; flag = 1; next }
+  /<\/details>/ { flag = 0 }
+  !flag { print }' README.md > "$tmp_dir/README.md"
+
+mv "$tmp_dir/README.md" README.md
