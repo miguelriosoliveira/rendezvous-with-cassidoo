@@ -21,6 +21,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 	<summary>Click to expand!</summary>
 
 #### 2017
+
 - [001 - convertToRomans](src/2017/001-convertToRomans)
 - [002 - postfix](src/2017/002-postfix)
 - [003 - anagramCheck](src/2017/003-anagramCheck)
@@ -30,13 +31,16 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [008 - rotateArray](src/2017/008-rotateArray)
 
 #### 2020
+
 - [176 - find2020](src/2020/176-find2020)
 
 #### 2021
+
 - [177 - canToggle](src/2021/177-canToggle)
 - [181 - stockQueue](src/2021/181-stockQueue)
 
 #### 2022
+
 - [252 - longText](src/2022/252-longText)
 - [254 - longestWord](src/2022/254-longestWord)
 - [256 - deepCopy](src/2022/256-deepCopy)
@@ -60,6 +64,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [280 - replaceZeros](src/2022/280-replaceZeros)
 
 #### 2023
+
 - [281 - maxSubarray](src/2023/281-maxSubarray)
 - [282 - sumEveryOther](src/2023/282-sumEveryOther)
 - [283 - spinTheWheel](src/2023/283-spinTheWheel)
@@ -109,6 +114,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [332 - returnGift](src/2023/332-returnGift)
 
 #### 2024
+
 - [333 - happyNewYear](src/2024/333-happyNewYear)
 - [334 - letters](src/2024/334-letters)
 - [335 - flip](src/2024/335-flip)
@@ -130,6 +136,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [385 - newYearsDay](src/2024/385-newYearsDay)
 
 #### 2025
+
 - [392 - findShieldBreak](src/2025/392-findShieldBreak)
 - [397 - findLongestStreak](src/2025/397-findLongestStreak)
 - [398 - findLongestTimeGap](src/2025/398-findLongestTimeGap)
@@ -150,6 +157,7 @@ I started this in the [issue #176](https://buttondown.email/cassidoo/archive/we-
 - [436 - isAlternating](src/2025/436-isAlternating)
 
 #### 2026
+
 - [438 - maxScoreWithOneReset](src/2026/438-maxScoreWithOneReset)
 - [439 - hungryBears](src/2026/439-hungryBears)
 - [441 - flippedy](src/2026/441-flippedy)

@@ -10,7 +10,7 @@ for year_dir in src/*; do
 	if [[ ! $year =~ ^[0-9]+$ ]]; then
 		continue
 	fi
-	new_index+=$'\n\n#### '"$year"
+	new_index+=$'\n\n#### '"$year"$'\n'
 	for dir in "$year_dir"/*; do
 		question="${dir##*/}"
 		question_number="${question%%-*}"

@@ -16,13 +16,14 @@ let listB = [2,3,4,5,6]
 */
 
 export function findIntersectionInArrays(listA: number[], listB: number[]) {
-	let indexInB: number;
-	const indexInA = listA.findIndex(itemInA => {
-		indexInB = listB.indexOf(itemInA);
-		return indexInB > -1;
-	});
+	for (const [indexInA, itemInA] of listA.entries()) {
+		const indexInB = listB.indexOf(itemInA);
+		if (indexInB > -1) {
+			return [indexInA, indexInB];
+		}
+	}
 
-	return indexInA > -1 ? [indexInA, indexInB] : null;
+	return null;
 }
 
 export type Node = null | {
