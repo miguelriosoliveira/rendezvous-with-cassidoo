@@ -1,4 +1,4 @@
+pnpm index
 pnpm lint
 pnpm test:cov
-pnpm index
 git add README.md

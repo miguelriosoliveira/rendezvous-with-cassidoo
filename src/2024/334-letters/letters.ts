@@ -23,7 +23,7 @@ function permute(arr: string[], start: number, n: number, result: string[]): voi
 
 	for (let i = start; i < arr.length; i++) {
 		swap(arr, start, i);
-		permute([...arr], start + 1, n, result);
+		permute(arr, start + 1, n, result);
 		swap(arr, start, i);
 	}
 }

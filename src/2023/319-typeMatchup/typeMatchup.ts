@@ -38,7 +38,7 @@ interface TypeData {
 
 async function request<T>(url: string): Promise<T> {
 	const request = await fetch(url);
-	return await request.json();
+	return (await request.json()) as T;
 }
 
 function formatTypeArray(types: string[]): string {

@@ -17,7 +17,7 @@ const OPERATIONS_MAP: OperationsMap = {
 
 export function postfix(expression: string): number {
 	const stack: number[] = [];
-	const tokens = expression.split(' ');
+	const tokens = expression.split(' ').filter(token => token !== '');
 
 	tokens.forEach(token => {
 		const operation = OPERATIONS_MAP[token];
