@@ -6,6 +6,27 @@ describe('#typeMatchup', () => {
 
 	afterEach(() => fetchSpy.mockReset());
 
+	it('parses JSON response bodies from both PokéAPI endpoints', async () => {
+		fetchSpy
+			.mockResolvedValueOnce(
+				Response.json({
+					results: [{ name: 'water', url: 'https://pokeapi.co/api/v2/type/11/' }],
+				}),
+			)
+			.mockResolvedValueOnce(
+				Response.json({
+					damage_relations: {
+						double_damage_from: [{ name: 'electric' }, { name: 'grass' }],
+						double_damage_to: [{ name: 'ground' }, { name: 'rock' }, { name: 'fire' }],
+					},
+				}),
+			);
+
+		await expect(typeMatchup('water')).resolves.toBe(
+			'Weak against electric, and grass. Strong against ground, rock, and fire.',
+		);
+	});
+
 	it('returns type matchups for "fighting" type', async () => {
 		fetchSpy
 			.mockResolvedValueOnce({
