@@ -47,9 +47,13 @@ jobs:
 
       - name: Restore Stryker incremental cache
         uses: actions/cache@v6
+        env:
+          STRYKER_CACHE_PREFIX: stryker-incremental-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.nvmrc', 'package.json', 'pnpm-lock.yaml', 'stryker.conf.json', 'tsconfig.json', 'vitest.config.mts') }}
         with:
           path: reports
-          key: stryker-incremental-${{ runner.os }}-${{ github.sha }}
+          key: ${{ env.STRYKER_CACHE_PREFIX }}-${{ github.sha }}
+          restore-keys: |
+            ${{ env.STRYKER_CACHE_PREFIX }}-
 
       - name: Run mutations
         run: pnpm test:mutation
