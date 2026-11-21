@@ -50,8 +50,6 @@ jobs:
         with:
           path: reports
           key: stryker-incremental-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            stryker-incremental-${{ runner.os }}-
 
       - name: Run mutations
         run: pnpm test:mutation
