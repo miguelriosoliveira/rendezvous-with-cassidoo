@@ -24,4 +24,8 @@ describe('#postfix', () => {
 	it('should handle unbalanced expression with extra operator', () => {
 		expect(postfix('+')).toBeNaN();
 	});
+
+	it('should handle an empty expression', () => {
+		expect(postfix('')).toBeNaN();
+	});
 });

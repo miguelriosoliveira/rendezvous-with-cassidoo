@@ -43,4 +43,8 @@ describe('#convertToRomans', () => {
 		const romanNumber = convertToRomans(0);
 		expect(romanNumber).toBe('nulla');
 	});
+
+	it('should reject negative numbers', () => {
+		expect(() => convertToRomans(-1)).toThrow('Number must be positive');
+	});
 });

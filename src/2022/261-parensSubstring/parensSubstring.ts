@@ -30,7 +30,7 @@ export function parensSubstring(parensString: string): number {
 			return;
 		}
 
-		const top = stack.at(-1) ?? 0; // stack.length > 0 guaranteed by above if
+		const top = stack[stack.length - 1];
 		const validSubstringLength = index - top;
 		result = Math.max(result, validSubstringLength);
 	});
