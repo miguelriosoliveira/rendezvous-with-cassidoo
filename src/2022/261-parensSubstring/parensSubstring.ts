@@ -25,12 +25,12 @@ export function parensSubstring(parensString: string): number {
 		}
 
 		stack.pop();
-		if (stack.length === 0) {
+		const top = stack.at(-1);
+		if (top == null) {
 			stack.push(index);
 			return;
 		}
 
-		const top = stack[stack.length - 1];
 		const validSubstringLength = index - top;
 		result = Math.max(result, validSubstringLength);
 	});
